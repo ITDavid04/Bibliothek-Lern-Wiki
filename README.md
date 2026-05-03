@@ -2,11 +2,7 @@
 Sammlung von Recherche Materialien und anderen Hilfreichen Dingen
 
 
-Das ist eine hervorragende Idee! Ein zentraler „Wissens-Hub“ während einer Umschulung ist Gold wert – besonders, wenn alle an einem Strang ziehen.
 
-Hier ist ein Entwurf für deine `README.md`, der professionell, einladend und klar strukturiert ist. Du kannst den Text einfach kopieren und bei Bedarf noch kleine Details anpassen.
-
----
 
 # 📚 Online-Wiki: Unser Wissens-Hub
 
