@@ -1,10 +1,4 @@
-Das ist eine exzellente Ergänzung! Da ihr als Team zusammenarbeitet und jeder Admin-Rechte hat, sorgt eine kleine „Anleitung“ dafür, dass das Wiki einheitlich und sauber aussieht. 
 
-Ich empfehle dir, dafür eine separate Datei namens `GUIDE.md` oder `MARKDOWN.md` im Hauptverzeichnis zu erstellen und diese im README kurz zu verlinken. So bleibt die Startseite übersichtlich, aber die Hilfe ist nur einen Klick entfernt.
-
-Hier ist ein passender Entwurf für diesen Guide:
-
----
 
 # ✍️ Schreib-Guide & Tools
 
