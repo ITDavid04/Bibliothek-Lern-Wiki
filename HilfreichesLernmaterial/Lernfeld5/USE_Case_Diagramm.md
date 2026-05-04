@@ -134,3 +134,7 @@ Die Schankgenehmigung (Akteur: Gast) löst den Use Case „Getränk bestellen“
 ---
 
 **Zusammengefasst:** Das Anwendungsfalldiagramm ist der fachliche Einstiegspunkt, der die Bedürfnisse der Nutzer:innen in den Mittelpunkt stellt. Es ergänzt deine Werkzeuge Struktogramm, PAP und ERM perfekt um die **Wer-macht-was-Sicht** und übersetzt Anforderungen direkt in ein für alle verständliches Bild – bevor du in die technische Tiefe gehst.
+
+https://de.wikipedia.org/wiki/Anwendungsfall_(UML)
+https://t2informatik.de/wissen-kompakt/use-case-diagramm/
+https://www.youtube.com/watch?v=eQoC4GDzYbI
