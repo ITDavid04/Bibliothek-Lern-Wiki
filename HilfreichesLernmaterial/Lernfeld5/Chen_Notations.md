@@ -71,3 +71,8 @@ Du musst beide Darstellungen souverän lesen und erklären können. In IHK-Prüf
 ---
 
 Damit hast du die Chen-Notation als Fundament sicher im Griff. Sie ist das begriffliche Rückgrat für jede Art von Datenmodellierung, auch wenn die Diagramme später anders aussehen.
+
+https://de.wikipedia.org/wiki/Chen-Notation
+https://studyflix.de/informatik/er-modell-7476
+https://www.tinohempel.de/info/info/datenbank/kardinalitaet.htm
+https://users.informatik.uni-halle.de/~brass/db19/print/de_ermod.pdf
