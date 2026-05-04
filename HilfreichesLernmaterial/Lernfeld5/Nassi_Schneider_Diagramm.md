@@ -56,6 +56,8 @@ Das folgende Struktogramm (Textversion) liest du strikt von oben nach unten. Jed
 +-------------------------------------------+
 ```
 
+![](image.png)
+
 Du siehst: In der Schleife steckt eine Verzweigung, und in deren „Ja“-Strang eine weitere Verzweigung. Diese **Schachtelung** ist völlig logisch und direkt auf Code übertragbar.
 
 ---
