@@ -169,3 +169,10 @@ Es ist wie eine Schnitzeljagd: Du gehst in ein Gebäude (erste Raute, „Ja“),
 ---
 
 **Zusammengefasst:** Der Programmablaufplan ist dein intuitiver, pfeilbasierter Bauplan für Algorithmen und Prozesse. Er gibt dir die Freiheit, Abläufe so flexibel und verzweigt darzustellen, wie sie in der echten Welt passieren. Aus jedem Beruf kennst du das Prinzip vorgegebener Abläufe mit Entscheidungspunkten – der PAP liefert dir die genormte IT-Sprache dazu.
+
+Quellen:
+
+https://de.wikipedia.org/wiki/Programmablaufplan
+https://de.wikipedia.org/wiki/Programmablaufplan?diff=88628160
+https://akademie.123effizientdabei.de/wp-content/uploads/2023/02/DIN66001-1966.pdf
+https://www.peterjohann-consulting.de/flussdiagramm/
