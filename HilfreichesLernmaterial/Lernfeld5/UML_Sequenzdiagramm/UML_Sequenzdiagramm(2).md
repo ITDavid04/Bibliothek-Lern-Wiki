@@ -49,7 +49,7 @@ Interpretation: Der Webshop hat einen Aktivitätsbalken ab Empfang der Bestellun
 Beispiel-Struktur (Code-Nah mit Aktivitätsbalken)
 text
 
-```mermaid
+````mermaid
 sequenceDiagram
     participant Kunde
     participant Webshop
@@ -58,7 +58,8 @@ sequenceDiagram
     Kunde->>+Webshop: bestellungAufgeben()
     Webshop->>+Zahlungsdienst: zahlungAnfordern()
     Zahlungsdienst-->>-Webshop: bestätigung()
-    Webshop-->>-Kunde: auftragsbestätigung
+    Webshop-->>-Kunde: auftragsbestätigung()
+```
 ```
 
 (Der Aktivitätsbalken wird durch das Zeichen ┃ innerhalb der Lebenslinie angedeutet – in professionellen Tools ein breites Rechteck.)
