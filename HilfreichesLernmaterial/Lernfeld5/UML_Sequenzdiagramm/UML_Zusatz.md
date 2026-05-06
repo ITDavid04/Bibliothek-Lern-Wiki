@@ -16,34 +16,25 @@ break	Sofortiger Abbruch des umschließenden Fragments, meist bei Fehler	Rahmen 
 3. Komplettes Beispiel: Bestellung mit Prüfung, Wiederholung und Fehlerbehandlung
 text
 
-Kunde         Webshop        Zahlungsdienst
-  │              │                 │
-  │ bestellungAufgeben()           │
-  ├─────────────>┃                 │
-  │              ┃                 │
-  │   ┌───────────────────────────────────┐
-  │   │ loop [für jeden Artikel]         │
-  │   │  │              │                │
-  │   │  │ prüfeLager() │                │
-  │   │  ├─────────────>┃                │
-  │   │  │              ┃                │
-  │   │  │    ┌─────────────────────────┐│
-  │   │  │ alt│ [Artikel verfügbar]     ││
-  │   │  │    ├──────────────────────────
-  │   │  │    │ reserviere()             ││
-  │   │  │    │<─────────────┃           ││
-  │   │  │   ────────────────────────────
-  │   │  │    [nicht verfügbar]          ││
-  │   │  │    ├──────────────────────────
-  │   │  │    │ artikelStornieren()      ││
-  │   │  │    │<─────────────┃           ││
-  │   │  │   ────────────────────────────
-  │   │  │    │                          ││
-  │   │  └────┼──────────────────────────┘│
-  │   └───────┼──────────────────────────┘
-  │           ┃                 │
-  │           ┃ zahlungAnfordern()
-  │           ├─────────────────>┃
+```mermaid
+sequenceDiagram
+    participant Kunde
+    participant Webshop
+    participant Zahlungsdienst
+
+    Kunde->>Webshop: bestellungAufgeben()
+    loop für jeden Artikel
+        Webshop->>Webshop: prüfeLager()
+        alt Artikel verfügbar
+            Webshop->>Webshop: reserviere()
+        else nicht verfügbar
+            Webshop->>Webshop: artikelStornieren()
+        end
+    end
+    Webshop->>Zahlungsdienst: zahlungAnfordern()
+    Zahlungsdienst-->>Webshop: bestätigung()
+    Webshop-->>Kunde: auftragsbestätigung()
+```
   │  ...     ...
 
 Interpretation:
