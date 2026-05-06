@@ -23,18 +23,17 @@ Darstellung: Statt bloßer gestrichelter Linie setzt man einen dicken vertikalen
 3. Beispiel: Webshop mit Aktivitätsbalken
 text
 
-Kunde       Webshop        Zahlungsdienst
-  │            │                 │
-  │ bestellungAufgeben()        │
-  ├───────────>┃                │
-  │            ┃ zahlungAnfordern()
-  │            ├────────────────>┃
-  │            ┃                 ┃ bestätigung()
-  │            ┃ <───────────────┤
-  │ auftragsbestätigung          │
-  │<───────────┤                 │
-  │            │                 │
-  v            v                 v
+```mermaid
+sequenceDiagram
+    participant Kunde
+    participant Webshop
+    participant Zahlungsdienst
+
+    Kunde->>+Webshop: bestellungAufgeben()
+    Webshop->>+Zahlungsdienst: zahlungAnfordern()
+    Zahlungsdienst-->>-Webshop: bestätigung()
+    Webshop-->>-Kunde: auftragsbestätigung()
+```
 
 Interpretation: Der Webshop hat einen Aktivitätsbalken ab Empfang der Bestellung. Er umspannt die Wartezeit auf die Antwort des Zahlungsdienstes. Erst nachdem die Bestätigung zurück ist, sendet der Webshop die auftragsbestätigung an den Kunden und sein Balken endet.
 4. Profi-Tipps für die Prüfung
@@ -50,18 +49,16 @@ Interpretation: Der Webshop hat einen Aktivitätsbalken ab Empfang der Bestellun
 Beispiel-Struktur (Code-Nah mit Aktivitätsbalken)
 text
 
--------------------------------
-| Kunde |  Webshop  | Zahlungsdienst
--------------------------------
-|       | ┃         |            (Webshop aktiv)
-|       bestellungAufgeben()
-|       |<---------┃
-|       | ┃ zahlungAnfordern()
-|       | ┃-------->┃            (Zahlungsdienst aktiv)
-|       | ┃         ┃ bestätigung()
-|       | ┃<--------┃
-|       auftragsbestätigung
-|       |<---------┃
--------------------------------
+```mermaid
+sequenceDiagram
+    participant Kunde
+    participant Webshop
+    participant Zahlungsdienst
+
+    Kunde->>+Webshop: bestellungAufgeben()
+    Webshop->>+Zahlungsdienst: zahlungAnfordern()
+    Zahlungsdienst-->>-Webshop: bestätigung()
+    Webshop-->>-Kunde: auftragsbestätigung
+```
 
 (Der Aktivitätsbalken wird durch das Zeichen ┃ innerhalb der Lebenslinie angedeutet – in professionellen Tools ein breites Rechteck.)
