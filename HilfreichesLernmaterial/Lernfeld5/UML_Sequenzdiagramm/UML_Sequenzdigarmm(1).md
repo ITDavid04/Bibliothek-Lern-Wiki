@@ -27,16 +27,14 @@ Wichtige Notationselemente
 3. Einfaches Beispiel: Kunde bestellt etwas
 text
 
-Kunde                  Webshop
-  │                       │
-  │   bestellungAufgeben()│
-  │──────────────────────>│
-  │                       │
-  │  auftragsbestätigung  │
-  │<──────────────────────│
-  │                       │
-  v                       v
- Zeit
+```mermaid
+sequenceDiagram
+    participant Kunde
+    participant Webshop
+
+    Kunde->>Webshop: bestellungAufgeben()
+    Webshop-->>Kunde: auftragsbestätigung()
+```
 
 Interpretation: Der Kunde ruft bestellungAufgeben() auf (synchron). Der Webshop verarbeitet und sendet eine Antwort auftragsbestätigung zurück. Alles Weitere geschah später.
 4. Profi-Tipps für die Prüfung
@@ -52,15 +50,6 @@ Interpretation: Der Kunde ruft bestellungAufgeben() auf (synchron). Der Webshop 
 Beispiel-Struktur (Code-Nah)
 text
 
------------------------------------------
-| Kunde |          | Webshop            |
------------------------------------------
-|       |          |                    |
-|       bestellungAufgeben()            |
-|       |--------> |                    |
-|       |          |                    |
-|       |  auftragsbestätigung          |
-|       |<-------- |                    |
------------------------------------------
+
 
 (Hinweis: Die obige Textdarstellung ist didaktisch reduziert – echte UML-Werkzeuge zeichnen Lebenslinien durchgehend.)
