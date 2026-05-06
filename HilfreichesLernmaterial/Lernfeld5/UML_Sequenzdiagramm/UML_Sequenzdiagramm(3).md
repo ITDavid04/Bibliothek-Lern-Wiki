@@ -17,18 +17,23 @@ In UML ist eine asynchrone Nachricht ein Pfeil mit offener Spitze. Häufig wird 
 3. Beispiel: Logger als unabhängiger Dienst
 text
 
-Kunde         Webshop      Logger        Zahlungsdienst
-  │              │            │                 │
-  │ bestellungAufgeben()     │                  │
-  ├─────────────>┃           │                  │
-  │              ┃ ereignisLoggen("...")
-  │              ├ - - - - ->┃                  │
-  │              ┃           ┃                  │
-  │              ┃           ┃ (Logger arbeitet parallel)
-  │              ┃ zahlungAnfordern()
-  │              ├───────────┃─────────────────>┃
-  │              ┃           ┃                  ┃
-  ...           ...
+```mermaid
+sequenceDiagram
+    participant Kunde
+    participant Webshop
+    participant Logger
+    participant Zahlungsdienst
+
+    Kunde->>+Webshop: bestellungAufgeben()
+    par Logger (asynchron) und Zahlung (synchron)
+        Webshop--)Logger+: ereignisLoggen("...")
+        Logger-->>-Webshop: Log gespeichert
+    and
+        Webshop->>+Zahlungsdienst: zahlungAnfordern()
+        Zahlungsdienst-->>-Webshop: bestätigung()
+    end
+    Webshop-->>-Kunde: auftragsbestätigung()
+```
 
 Interpretation: Der Webshop sendet zuerst eine asynchrone Log-Nachricht, bleibt aber aktiv (Balken läuft durch). Er muss nicht warten, bis der Logger fertig ist; stattdessen schickt er sofort die Zahlungsaufforderung an den Zahlungsdienst. Logger und Zahlungsdienst können jetzt parallel arbeiten – erkennbar an den überlappenden Aktivitätsbalken an unterschiedlichen Lebenslinien.
 4. Profi-Tipps für die Prüfung
@@ -44,16 +49,18 @@ Interpretation: Der Webshop sendet zuerst eine asynchrone Log-Nachricht, bleibt 
 Beispiel-Struktur (Code-Nah mit asynchronen Pfeilen)
 text
 
----------------------------------------------
-| Kunde | Webshop | Logger | Zahlungsdienst
----------------------------------------------
-|       | ┃       |        |
-|       bestellungAufgeben()
-|       |<--------┃
-|       | ┃ - - ->┃       (asynchroner Log)
-|       | ┃       |        (Logger aktiv)
-|       | ┃ zahlungAnfordern()
-|       | ┃------------------>┃
-|       ...     (parallele Aktivität)
----------------------------------------------
+```mermaid
+sequenceDiagram
+    participant Kunde
+    participant Webshop
+    participant Logger
+    participant Zahlungsdienst
+
+    Kunde->>+Webshop: bestellungAufgeben()
+    Webshop--)Logger+: ereignisLoggen("...")
+    Webshop->>+Zahlungsdienst: zahlungAnfordern()
+    Zahlungsdienst-->>-Webshop: bestätigung()
+    Webshop-->>-Kunde: auftragsbestätigung()
+    Logger-->>-Webshop: Log gespeichert
+```
 
