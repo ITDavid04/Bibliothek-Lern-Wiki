@@ -1,6 +1,7 @@
 
 
 **SQLite für Dummies – in 10 Schritten vom Nullpunkt zur eigenen Datenbank**  
+
 (für Umschüler in Anwendungsentwicklung und Netzwerkadministration – kein Geschwafel, nur das was zählt)
 
 ---
@@ -20,13 +21,16 @@ SQLite ist die einfachste Datenbank der Welt – eine einzige Datei, kein Server
 Öffne dein Notizbuch mit dem Kommandozeilen-Tool `sqlite3`. Es ist unter Linux/macOS meist vorhanden; unter Windows kannst du es als einzelne `.exe` herunterladen.
 
 **Im Terminal:**
+
 ```bash
 sqlite3 meine_firma.db
 ```
+
 - Existiert die Datei noch nicht, wird sie **automatisch neu angelegt**.
 - Existiert sie bereits, wird sie einfach geöffnet – alle deine Tabellen sind sofort da.
 
 Du siehst den Prompt `sqlite>`. Befehle, die mit einem Punkt beginnen, sind Steuerbefehle der Shell (kein SQL):
+
 - `.help` – zeigt alle verfügbaren Shell-Kommandos an.
 - `.quit` oder `.exit` – beendet die Shell und speichert die Datenbank.
 - `.tables` – listet alle vorhandenen Tabellen auf.
@@ -87,11 +91,14 @@ Die Ausgabe erscheint als einfache Tabelle im Terminal – ideal für schnelle K
 Du willst nicht das ganze Blatt durchgehen, sondern gezielt bestimmte Zeilen sehen.
 
 - **Filter (`WHERE`):**  
+
   ```sql
   SELECT * FROM personen WHERE stadt = 'Berlin';
   SELECT name, alter FROM personen WHERE alter > 25;
   ```
+
 - **Sortierung (`ORDER BY`):**  
+
   ```sql
   SELECT * FROM personen ORDER BY alter DESC;   -- älteste zuerst
   SELECT * FROM personen WHERE stadt = 'Berlin' ORDER BY name ASC;
@@ -104,10 +111,13 @@ Immer zuerst mit einem `SELECT` prüfen, welche Daten du erwischst, bevor du än
 ### Schritt 7 – Ändern und Löschen (Analogie: Radiergummi und Löschtaste)
 
 - **Ändern = Radiergummi:** `UPDATE` überschreibt vorhandene Werte.
+
   ```sql
   UPDATE personen SET alter = 29 WHERE name = 'Anna';
   ```
+
 - **Löschen = komplette Zeile entfernen:** `DELETE` löscht die ganze Zeile.
+
   ```sql
   DELETE FROM personen WHERE id = 3;
   ```
@@ -156,9 +166,11 @@ CREATE TABLE bestellungen (
 ```
 
 Damit SQLite diese Regel auch wirklich erzwingt, musst du einmalig im Terminal (oder in deinem Code) einschalten:
+
 ```sql
 PRAGMA foreign_keys = ON;
 ```
+
 Dann lehnt SQLite z. B. eine Bestellung mit `person_id = 99` ab, wenn es die Person nicht gibt.
 
 ---
@@ -189,6 +201,7 @@ SQLite ist dein Schweizer Taschenmesser. Hier die wichtigsten Einsatzszenarien �
 **Für Anwendungsentwickler:**
 
 - Lokale Speicherung in Python (Android/iOS/Desktop funktioniert analog):
+
   ```python
   import sqlite3
   conn = sqlite3.connect('meine_firma.db')
@@ -197,32 +210,41 @@ SQLite ist dein Schweizer Taschenmesser. Hier die wichtigsten Einsatzszenarien �
   for row in cursor.fetchall():
       print(row)
   conn.close()
+
   ```
+
 - Konfigurationen ablegen: eine Tabelle mit Schlüssel-Wert-Paaren statt einer INI-Datei, durchsuchbar mit SQL.
 
 **Für Netzwerkadministratoren:**
 
 - **CSV-Logs importieren und durchsuchen** – vorher das richtige Format einstellen:
+
   ```sql
   .mode csv               -- die Shell erwartet jetzt Komma-getrennte Zeilen
   .import server.log logs -- die Tabelle 'logs' wird automatisch angelegt
   SELECT * FROM logs WHERE status >= 400;
+
   ```
+
   Das ist extrem schnell, weil du keine externen Tools brauchst. `.mode` und `.import` sind reine Shell-Befehle, kein SQL.
 
 - **Sichere Backups:**  
   - **Schnelle Kopie mit `.backup`:**  
+
     ```sql
     .backup sicherung.db
     ```
+
     Das erzeugt eine konsistente Kopie, auch wenn gerade Änderungen anstehen.  
   - **Während die Datenbank offen ist, solltest du die Datei nicht einfach mit Dateimitteln kopieren** – das kann eine inkonsistente Version hinterlassen. Entweder `.backup` nutzen oder die Shell vor dem Kopieren schließen.  
   - Für Skripte im echten Leben: `sqlite3 prod.db ".backup prod_backup.db"` direkt aus der Kommandozeile aufrufbar.
 
 - **Performance-Tipp (bei Bedarf):** Wenn du große Tabellen oft nach einer bestimmten Spalte durchsuchst (`WHERE stadt = 'Berlin'`), kannst du mit einem **Index** die Suche beschleunigen:
+
   ```sql
   CREATE INDEX idx_personen_stadt ON personen(stadt);
   ```
+
   Für die meisten Admin-Tools nicht nötig, aber gut zu wissen, falls deine Log-Tabelle mehrere 100.000 Zeilen hat.
 
 ---
