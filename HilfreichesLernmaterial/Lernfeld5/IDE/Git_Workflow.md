@@ -1,108 +1,149 @@
- Git-Workflow in der Praxis: Vom Ändern bis zum Synchronisieren
 
-Damit die drei Zustände und die Remote-Befehle nicht nur graue Theorie bleiben, schauen wir uns jetzt einen kompletten Arbeitszyklus Schritt für Schritt an.
-📊 Die Zustände als Kreislauf (erweiterte Sicht)
-text
+# 🔄 Git-Workflow in der Praxis – Vom Ändern bis zum Synchronisieren
 
-[Working Directory]          [Staging Area]            [Lokales Repository]        [Remote-Server (z. B. GitHub)]
-    modified  ── git add ──>    staged   ── git commit ──>    committed
-                                                                   │
-                                                                   git push ──>  remote
-                                                                   │
-                                                                   git pull <──  remote
+Diese Anleitung verbindet die drei Zustände einer Datei in Git mit den zentralen Befehlen und der Synchronisation mit einem Remote-Server.
 
-    Modified – Datei wurde verändert, Git hat die Änderung bemerkt, aber noch nichts vorgemerkt.
+---
 
-    Staged – Die Änderung wurde mit git add in die „Vormerkliste“ aufgenommen.
+## 📊 Die drei Zustände einer Datei (Modified, Staged, Committed)
 
-    Committed – Ein unveränderlicher Snapshot wurde in der lokalen Historie gespeichert.
+Jede Datei in einem Git-Repository durchläuft genau diese drei Zustände:
 
-    Remote – Der Commit wurde mit git push auf den gemeinsamen Server hochgeladen (bzw. mit git pull holst du dir neue Commits von dort).
+| Zustand      | Bedeutung |
+|--------------|-----------|
+| **Modified** | Datei wurde verändert, aber noch nicht für den nächsten Commit vorgemerkt. |
+| **Staged**   | Datei wurde mit `git add` in die Staging-Area aufgenommen. Sie ist für den nächsten Commit vorgemerkt. |
+| **Committed**| Die Änderung ist als unveränderlicher Snapshot in der lokalen Git-Historie gespeichert. |
 
-🧭 Von Null auf synchronisiert – ein durchgängiges Beispiel
+```
 
-Stell dir vor, du arbeitest an einer Datei index.html in einem Teamprojekt.
+[Working Directory]    →    [Staging Area]    →    [Lokales Repository]
+     modified                 staged                 committed
+```
 
-1. Status prüfen (jederzeit möglich)
-bash
+- `git add`     → verschiebt Änderungen von *modified* nach *staged*
+- `git commit`  → speichert alles aus *staged* als neuen, dauerhaften Commit
 
-git status
+---
 
-Git sagt dir z. B.:
-text
+## 🧭 Vollständiger Arbeitsablauf mit `add`, `commit`, `push`, `pull`
+
+### 1. Änderungen vornehmen und Status prüfen
+
+```bash
+
+git status ```
+
+Git zeigt z. B.:```
 
 Changes not staged for commit:
+
   modified:   index.html
 
-→ Die Datei ist modified.
+```
 
-2. Änderung vormerken (stage)
-bash
+→ Die Datei ist **modified**.
+
+### 2. Änderungen vormerken (`add`)
+
+```bash
 
 git add index.html
 
-Jetzt ist die Datei staged. Ein erneutes git status zeigt:
-text
+```
+
+Jetzt ist die Datei **staged**. `git status` zeigt: ```
 
 Changes to be committed:
+
   modified:   index.html
 
-3. Snapshot erstellen (commit)
-bash
+```
+
+### 3. Snapshot lokal speichern (`commit`)
+
+```bash
 
 git commit -m "Header-Layout korrigiert"
 
-Die Änderung ist nun committed und dauerhaft in deiner lokalen Historie gespeichert. Der Commit hat einen eindeutigen Hash (z. B. a1b2c3d).
+```
 
-4. Lokale Commits auf den Remote-Server hochladen
-bash
+Die Änderung ist nun **committed** und hat einen eindeutigen Hash (z.B. `a1b2c3d`).
+
+### 4. Lokale Commits auf den Remote-Server hochladen (`push`)
+
+```bash
 
 git push origin main
 
-    origin = Name des Remote-Servers (Standard)
+```
 
-    main = Der Branch, auf den du pushen möchtest
+- `origin` = Standard-Name des Remote-Servers  
+- `main`  = der aktuelle Branch  
 
-Jetzt liegt dein Commit auch auf dem Server, und alle Teammitglieder können ihn sehen.
+Der Commit liegt jetzt auch auf dem Server, alle Teammitglieder können ihn sehen.
 
-5. Änderungen anderer herunterladen und integrieren
-bash
+### 5. Änderungen anderer herunterladen und integrieren (`pull`)
+
+```bash
 
 git pull
 
-Dieser Befehl ist eigentlich eine Kombination aus zwei Schritten:
+```
 
-    git fetch – Holt alle neuen Commits vom Remote, verändert aber noch nichts an deinen eigenen Dateien.
+Dieser Befehl vereint zwei Schritte:
 
-    git merge – Führt die neuen Commits mit deinem aktuellen Branch zusammen.
+1. `git fetch` – Holt alle neuen Commits vom Remote, ohne die eigenen Dateien zu ändern.  
+2. `git merge` – Führt die neuen Commits mit dem lokalen Branch zusammen.
 
-    ⚠️ Achtung Merge-Konflikt:
-    Wenn du und ein Teammitglied dieselbe Zeile in einer Datei verändert habt, kann Git nicht automatisch entscheiden, welche Version gelten soll. Dann entsteht ein Konflikt. Git markiert die betroffenen Stellen in der Datei, und du musst manuell die richtige Version auswählen, die Datei erneut git add und abschließend git commit ausführen.
+> **⚠️ Merge-Konflikt:**  
+> Wenn zwei Personen die gleiche Zeile unterschiedlich ändern, kann Git nicht automatisch mergen.  
+> Git markiert die Konfliktstelle in der Datei → manuell korrigieren → `git add` → `git commit` (ohne Message, Git generiert sie).
 
-💻 Kompakter Befehlsüberblick
-Befehl	Bedeutung / Wirkung
-git status	Zeigt Zustände aller Dateien an (modified, staged, …)
-git add <datei>	Datei in die Staging-Area aufnehmen (modified → staged)
-git commit -m "Text"	Snapshot der Staging-Area erstellen (staged → committed)
-git push origin main	Lokale Commits auf den Remote-Server hochladen
-git pull	Neue Commits vom Remote holen und in den aktuellen Branch integrieren
-git log --oneline	Zeigt die lokale Commit-Historie kompakt an
-✅ Erreichst du jetzt diese drei Kompetenzen? Teste dich selbst
+---
 
-    K1:
+## 📋 Befehlsübersicht (Spickzettel)
 
-        Kannst du erklären, was passiert, wenn du eine Datei bearbeitest, ohne git add auszuführen? (→ sie ist modified)
+| Befehl                    | Wirkung |
+|---------------------------|---------|
+| `git status`              | Zeigt den Zustand aller Dateien an (modified, staged, committed) |
+| `git add <datei>`         | Datei in die Staging-Area aufnehmen (modified → staged) |
+| `git commit -m "Text"`    | Snapshot der Staging-Area erstellen (staged → committed) |
+| `git push origin main`    | Lokale Commits auf den Remote-Server hochladen |
+| `git pull`                | Neue Commits vom Remote holen und integrieren |
+| `git log --oneline`       | Zeigt die Commit-Historie kompakt an |
 
-        Was versteht man unter der Staging-Area? (→ staged = vorgemerkte Änderungen für den nächsten Commit)
+---
 
-        Wann ist eine Änderung endgültig und unveränderlich in Git gespeichert? (→ nach commit)
+## ✅ Selbsttest – Erreiche ich die drei Lernziele?
 
-    K3 (add/commit):
+**K1 – Die drei Zustände definieren:**
 
-        Führe in einem Testprojekt eine kleine Änderung durch, stage sie mit git add und committe sie mit einer sprechenden Nachricht. Funktioniert es?
+- [ ] Ich kann erklären, was *modified* bedeutet und welcher Befehl zu *staged* führt.
+- [ ] Ich weiß, dass ein Commit nur Dinge aus der Staging-Area speichert.
+- [ ] Ich kann den Unterschied zwischen *staged* und *committed* in eigenen Worten beschreiben.
 
-    K3 (push/pull):
+**K3 – add und commit ausführen:**
 
-        Richte ein Remote-Repository ein (z. B. auf GitHub) und pushe einen Commit. Hole anschließend mit git pull eine Änderung eines anderen Branches (oder simuliere es). Verstehst du den Unterschied zwischen fetch und pull?
+- [ ] Ich kann mit `git add` eine geänderte Datei vormerken.
+- [ ] Ich kann mit `git commit -m "Nachricht"` einen Snapshot erstellen.
+- [ ] Ich verstehe, dass ein Commit immer eine logische Einheit sein sollte.
 
-Wenn du diese Fragen sicher beantworten und die Befehle ausführen kannst, sind die drei Lernziele erreicht. Die oben stehende Tabelle kannst du dir als Spickzettel aufbewahren. Viel Erfolg! 💪
+**K3 – push und pull nutzen:**
+
+- [ ] Ich kann lokale Commits mit `git push` auf einen Remote-Server übertragen.
+- [ ] Ich kann mit `git pull` Änderungen anderer abrufen und integrieren.
+- [ ] Ich weiß, dass `git pull` aus `fetch` + `merge` besteht und was bei einem Konflikt zu tun ist.
+
+---
+
+## 💡 Pro-Tipp für die Prüfung
+
+Behalte das Zusammenspiel im Kopf:  
+
+`modified` → `git add` → `staged` → `git commit` → `committed` → `git push` → Remote  
+Remote → `git pull` → lokaler Branch (Arbeitsverzeichnis)  
+
+Zeichne dir diesen Ablauf auf einen Zettel – viele IHK-Aufgaben verlangen genau diese Reihenfolge. 
+
+```
