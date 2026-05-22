@@ -75,7 +75,7 @@ Java verbindet die beiden großen Fachrichtungen der IT-Ausbildung, verlangt in 
 
 In älteren Sprachen wie C oder C++ muss belegter Arbeitsspeicher im Code manuell wieder freigegeben werden. Vergisst man das, läuft der RAM voll (Memory Leak) und das System stürzt ab.
 
-* **Die Analogie:** In C++ bist du ein Bauarbeiter, der jede geliehene Schubkarre penibel selbst zurückbringen muss. In Java fährt ein automatischer **Aufräum-Roboter (die Garbage Collection)** permanent durch die Fabrik und sammelt alle Objekte selbstständig ein, die nicht mehr im Code referenziert werden.
+* **Die Analogie:** In C++ bist du ein Bauarbeiter, der jede geliehene Schubkarre penibel selbst zurückbringen muss. In Java fährt ein automatischer **Aufräum-Roboter (die Garbage Collection)** selbsttätig durch die Fabrik und sammelt alle Objekte ein, die nicht mehr im Code referenziert werden.
 
 ### 2. Echte Parallelität: Project Loom & Virtuelle Threads
 
@@ -113,7 +113,7 @@ Wenn Java-Anwendungen im Rechenzentrum oder in der Cloud betrieben werden, gibt 
 
 ### 1. Die Oracle-Lizenzfalle
 
-Installiere niemals ungeprüft das offizielle "Oracle JDK" auf einem Firmenserver. Seit 2023 verlangt Oracle dafür Lizenzgebühren, die sich nach der *Gesamtmitarbeiterzahl* des Unternehmens richten – nicht nach den tatsächlichen Java-Nutzern. Ein Betrieb mit 1.000 Mitarbeitern zahlt so schnell über 140.000 Euro jährlich, selbst wenn nur ein einziger Entwickler Java nutzt.
+Installiere niemals ungeprüft das offizielle "Oracle JDK" auf einem Firmenserver. Das Oracle JDK ist zwar unter bestimmten Bedingungen (Oracle No-Fee Terms and Conditions) zeitlich befristet kostenlos nutzbar, doch für den langfristigen Produktivbetrieb ohne Supportvertrag besteht ein erhebliches Kostenrisiko. Nach Ablauf der kostenlosen Update-Phase verlangt Oracle Lizenzgebühren, die sich nach der *Gesamtmitarbeiterzahl* des Unternehmens richten – nicht nach den tatsächlichen Java-Nutzern. Ein Betrieb mit 1.000 Mitarbeitern zahlt so schnell über 140.000 Euro jährlich, selbst wenn nur ein einziger Entwickler Java nutzt.
 
 * **Die Lösung:** Nutze freie **OpenJDK**-Distributionen (z. B. *Eclipse Temurin*, *Amazon Corretto* oder *Red Hat OpenJDK*). Sie sind technisch identisch und komplett kostenlos.
 
@@ -133,3 +133,4 @@ Standardmäßig versucht die JVM, sich am Gesamtspeicher des physischen Servers 
 | **.java** | **.class** | .java ist der menschenlesbare Quellcode. .class ist der von Menschen unlesbare, plattformunabhängige Bytecode für die JVM. Nur die .class-Dateien werden an Kunden ausgeliefert. |
 | **java** | **javac** | Das **c** in javac steht für **Compiler**. javac übersetzt den Code (.java -> .class). Der Befehl java startet die JVM, um die fertige .class-Datei auszuführen. |
 | **Classpath** | **Path** | Die Umgebungsvariable *Path* sagt dem Betriebssystem, wo ausführbare Programme (wie java selbst) liegen. Der *Classpath* sagt der JVM, in welchen Ordnern sie nach den .class-Dateien des Programms suchen soll. |
+```
