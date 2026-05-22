@@ -38,7 +38,7 @@ Git zeigt z. B.:```
 
 Changes not staged for commit:
 
-  modified:   index.html
+modified:   index.html
 
 ```
 
