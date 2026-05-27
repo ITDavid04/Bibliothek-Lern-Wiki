@@ -67,24 +67,58 @@ Kernel-Capabilities	14 Capabilities	11 Capabilities	Variabel/Minimal
 
 3. Deep Dive: Der Workflow von der CLI bis zum Kernel-Level
 
-Am Beispiel docker run -d -p 8080:80 nginx wird der Weg eines Containers durch die Abstraktionsschichten nachvollzogen.
+Am Beispiel docker run -d -p 8080:80 nginx verfolgen wir den Weg eines Containers durch die Abstraktionsschichten – dargestellt als kompaktes Text-Flussdiagramm, das auch ohne Diagramm-Plugins in VS Code lesbar ist.
+text
+
+┌───────────────┐     REST API über Unix-Socket      ┌─────────────┐
+│  Docker CLI   │ ─────────────────────────────────> │   dockerd   │
+└───────────────┘                                    └──────┬──────┘
+                                                           │
+                                              Image lokal?  │
+                                           ┌───────────────┴───────────────┐
+                                           │                               │
+                                      Ja: weiter                     Nein: Registry Pull
+                                           │                               │
+                                           └───────────────┬───────────────┘
+                                                           │
+                                              gRPC-Aufruf  │
+                                                           v
+                                                    ┌─────────────┐
+                                                    │ containerd  │
+                                                    └──────┬──────┘
+                                                           │
+                                         Snapshotter &     │
+                                     OCI-Konfig erstellen  │
+                                                           v
+                                                  ┌──────────────┐
+                                                  │containerd-shim│ (hält STDIN/STDOUT)
+                                                  └──────┬───────┘
+                                                         │ initiiert
+                                                         v
+                                                   ┌─────────┐
+                                                   │  runc   │
+                                                   └────┬────┘
+                                                        │ clone(), cgroups
+                                                        v
+                                                  ┌─────────────┐
+                                                  │ Linux Kernel│
+                                                  └─────────────┘
+
 <details> <summary><b>🔍 Schritt-für-Schritt-Erläuterung</b></summary>
 
-    CLI & Daemon: Der Befehl wird als JSON-Payload über das Unix-Socket /var/run/docker.sock an dockerd gesendet.
+    CLI & Daemon: Der Befehl wird als JSON-Payload über das Unix-Socket /var/run/docker.sock an den Hintergrunddienst dockerd gesendet.
 
-    Image-Prüfung: Der Daemon prüft lokal. Fehlt das Image, wird es von der Registry geladen und gespeichert.
+    Image-Prüfung: Der Daemon prüft, ob das Image lokal vorhanden ist. Fehlt es, authentifiziert er sich bei der Registry, lädt die Layer herunter und persistiert sie.
 
-    Delegation: dockerd übergibt die Erstellung per gRPC an die High-Level-Runtime containerd.
+    Delegation an containerd: Sobald das Image bereit ist, delegiert dockerd die Container-Erstellung per gRPC an die High-Level-Runtime containerd.
 
-    Konfiguration: containerd bereitet das Dateisystem (Snapshotter) vor und erstellt die OCI-konforme config.json.
+    Vorbereitung: containerd erzeugt mithilfe eines Snapshotter das Dateisystem und schreibt die OCI-konforme config.json.
 
-    Isolation durch Shim: Der containerd-shim wird als Elternprozess gestartet. Er hält STDIN/STDOUT offen, selbst wenn der Daemon neu startet.
+    Shim als Isolationsschicht: Für jeden Container startet containerd einen eigenen containerd-shim-Prozess. Dieser bleibt als Elternprozess des Containers aktiv und hält die Ein-/Ausgabekanäle offen – selbst dann, wenn der Docker-Daemon oder containerd neu gestartet werden.
 
-    Kernel-Aufruf: Der Shim ruft runc auf. runc führt den Systemaufruf clone() mit Flags wie CLONE_NEWPID aus, um Namespaces zu erstellen.
+    runc erstellt den Container: Der Shim ruft die Low-Level-Runtime runc auf. runc führt den Systemaufruf clone() mit den erforderlichen Namespace-Flags (z.B. CLONE_NEWPID, CLONE_NEWNET) aus und setzt die Ressourcenlimits über das cgroups-Dateisystem (/sys/fs/cgroup/).
 
-    Ressourcenlimits: Parallel schreibt runc Limits in /sys/fs/cgroup/.
-
-    Beendigung: runc übergibt die Kontrolle an den Shim und beendet sich.
+    Übergabe und Beendigung: Nach erfolgreichem Start übergibt runc die Prozesskontrolle an den wartenden Shim und beendet sich selbst. Der Container läuft nun als isolierter Linux-Prozess.
 
 </details>
 4. Grundlagen-Warm-up: Das Linux-Prozessmodell und die Virtualisierungs-Divergenz
