@@ -67,42 +67,46 @@ Kernel-Capabilities	14 Capabilities	11 Capabilities	Variabel/Minimal
 
 3. Deep Dive: Der Workflow von der CLI bis zum Kernel-Level
 
-Am Beispiel docker run -d -p 8080:80 nginx verfolgen wir den Weg eines Containers durch die Abstraktionsschichten – dargestellt als kompaktes Text-Flussdiagramm, das auch ohne Diagramm-Plugins in VS Code lesbar ist.
+Am Beispiel docker run -d -p 8080:80 nginx wird der Weg eines Containers durch die Abstraktionsschichten nachvollzogen. Das folgende Flussdiagramm ist in einen robusten ASCII-Rahmen gepackt, damit es sowohl in VS Code als auch auf GitHub sauber ausgerichtet bleibt.
 text
 
-┌───────────────┐     REST API über Unix-Socket      ┌─────────────┐
-│  Docker CLI   │ ─────────────────────────────────> │   dockerd   │
-└───────────────┘                                    └──────┬──────┘
-                                                           │
-                                              Image lokal?  │
-                                           ┌───────────────┴───────────────┐
-                                           │                               │
-                                      Ja: weiter                     Nein: Registry Pull
-                                           │                               │
-                                           └───────────────┬───────────────┘
-                                                           │
-                                              gRPC-Aufruf  │
-                                                           v
-                                                    ┌─────────────┐
-                                                    │ containerd  │
-                                                    └──────┬──────┘
-                                                           │
-                                         Snapshotter &     │
-                                     OCI-Konfig erstellen  │
-                                                           v
-                                                  ┌──────────────┐
-                                                  │containerd-shim│ (hält STDIN/STDOUT)
-                                                  └──────┬───────┘
-                                                         │ initiiert
-                                                         v
-                                                   ┌─────────┐
-                                                   │  runc   │
-                                                   └────┬────┘
-                                                        │ clone(), cgroups
-                                                        v
-                                                  ┌─────────────┐
-                                                  │ Linux Kernel│
-                                                  └─────────────┘
++--------------------------------------------------------------------------------------------------+
+|                                                                                                  |
+|  ┌───────────────┐     REST API über Unix-Socket      ┌─────────────┐                            |
+|  │  Docker CLI   │ ─────────────────────────────────> │   dockerd   │                            |
+|  └───────────────┘                                    └──────┬──────┘                            |
+|                                                             │                                   |
+|                                                Image lokal?  │                                   |
+|                                             ┌───────────────┴───────────────┐                    |
+|                                             │                               │                    |
+|                                        Ja: weiter                     Nein: Registry Pull        |
+|                                             │                               │                    |
+|                                             └───────────────┬───────────────┘                    |
+|                                                             │                                   |
+|                                                gRPC-Aufruf  │                                   |
+|                                                             v                                   |
+|                                                      ┌─────────────┐                            |
+|                                                      │ containerd  │                            |
+|                                                      └──────┬──────┘                            |
+|                                                             │                                   |
+|                                           Snapshotter &     │                                   |
+|                                       OCI-Konfig erstellen  │                                   |
+|                                                             v                                   |
+|                                                    ┌──────────────┐                             |
+|                                                    │containerd-shim│ (hält STDIN/STDOUT)         |
+|                                                    └──────┬───────┘                             |
+|                                                           │ initiiert                           |
+|                                                           v                                     |
+|                                                     ┌─────────┐                                 |
+|                                                     │  runc   │                                 |
+|                                                     └────┬────┘                                 |
+|                                                          │ clone(), cgroups                     |
+|                                                          v                                     |
+|                                                   ┌─────────────┐                              |
+|                                                   │ Linux Kernel│                              |
+|                                                   └─────────────┘                              |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
 
 <details> <summary><b>🔍 Schritt-für-Schritt-Erläuterung</b></summary>
 
@@ -116,7 +120,7 @@ text
 
     Shim als Isolationsschicht: Für jeden Container startet containerd einen eigenen containerd-shim-Prozess. Dieser bleibt als Elternprozess des Containers aktiv und hält die Ein-/Ausgabekanäle offen – selbst dann, wenn der Docker-Daemon oder containerd neu gestartet werden.
 
-    runc erstellt den Container: Der Shim ruft die Low-Level-Runtime runc auf. runc führt den Systemaufruf clone() mit den erforderlichen Namespace-Flags (z.B. CLONE_NEWPID, CLONE_NEWNET) aus und setzt die Ressourcenlimits über das cgroups-Dateisystem (/sys/fs/cgroup/).
+    runc erstellt den Container: Der Shim ruft die Low-Level-Runtime runc auf. runc führt den Systemaufruf clone() mit den erforderlichen Namespace-Flags (z. B. CLONE_NEWPID, CLONE_NEWNET) aus und setzt die Ressourcenlimits über das cgroups-Dateisystem (/sys/fs/cgroup/).
 
     Übergabe und Beendigung: Nach erfolgreichem Start übergibt runc die Prozesskontrolle an den wartenden Shim und beendet sich selbst. Der Container läuft nun als isolierter Linux-Prozess.
 
