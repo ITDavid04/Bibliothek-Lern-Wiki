@@ -247,3 +247,98 @@ text
 [Vor der Prüfung] ──► Alte IHK-Originalprüfungen unter Zeitdruck lösen
 
     Viel Erfolg für deine Umschulung und die IHK-Prüfung!
+
+
+
+
+# Quellenverzeichnis nach Kategorien
+
+> Sortierte Linkliste für das Wiki – passend zu den Kapiteln der Ausarbeitung.
+
+---
+
+## 1. Allgemeine Trends & Best Practices 2026
+
+Artikel und Analysen zu den aktuellen Entwicklungen der Qualitätssicherung, strategischen Ansätzen und Branchenprognosen.
+
+| Titel / Beschreibung | URL |
+|----------------------|-----|
+| Software QA Testing in 2026: Best Practices, Tools & Strategies | https://ambalait.com/blogs/software-qa-testing-in-2026-best-practices-tools-strategies-for-web-and-mobile-apps |
+| Top Software Testing & QA Trends for 2026 | https://tsg-training.co.uk/blog/top-software-testing-qa-trends-for-2026/ |
+| Software Testing Trends (Testomat) | https://testomat.io/blog/software-testing-trends/ |
+| Top 5 Software Testing Trends 2026 (Xray) | https://www.getxray.app/blog/top-5-software-testing-trends-2026 |
+| Software Testing Best Practices (BugBug) | https://bugbug.io/blog/test-automation/software-testing-best-practices/ |
+
+---
+
+## 2. Künstliche Intelligenz im Testing
+
+Quellen zu KI-gestütztem Testen, dem AI Software Quality Gap und den Auswirkungen generativer KI auf die Qualitätssicherung.
+
+| Titel / Beschreibung | URL |
+|----------------------|-----|
+| How AI is Redefining Software Testing Practices in 2026 | https://www.evozon.com/how-ai-is-redefining-software-testing-practices-in-2026/ |
+| AI in Software Testing (Autify) | https://autify.com/blog/ai-in-software-testing |
+| SmartBear AI Software Quality Gap Report | https://smartbear.com/ai-software-quality-gap-report/ |
+| AI-Augmented Software Testing Tools (Gartner) | https://www.gartner.com/reviews/market/ai-augmented-software-testing-tools |
+
+---
+
+## 3. Testautomatisierung & Tools
+
+Vergleiche, Bewertungen und Fachartikel zu konkreten Testwerkzeugen und Automatisierungstrends (inkl. Enterprise-Tools und Open-Source).
+
+| Titel / Beschreibung | URL |
+|----------------------|-----|
+| Test Automation Trends 2026 | https://www.testdevlab.com/blog/test-automation-trends-2026 |
+| Best AI Testing Tools (Virtuoso QA) | https://www.virtuosoqa.com/post/best-ai-testing-tools |
+| Comparing the Best AI Automation Testing Tools in 2026 (Sauce Labs) | https://saucelabs.com/resources/blog/comparing-the-best-ai-automation-testing-tools-in-2026 |
+| Automated Testing (Rainforest QA) | https://www.rainforestqa.com/blog/automated-testing |
+| Reddit: I tested 50 AI tools so you don't have to – here's my tier list | https://www.reddit.com/r/automation/comments/1tr496j/i_tested_50_ai_tools_so_you_dont_have_to_heres/ |
+
+---
+
+## 4. IHK-Prüfungen & Ausbildungsrahmen
+
+Offizielle Dokumente der IHK, Prüfungsleitfäden, Umsetzungsempfehlungen und Prüfungsvorbereitung speziell für Fachinformatiker.
+
+| Titel / Beschreibung | URL |
+|----------------------|-----|
+| Leitfaden Systemintegration (IHK) | https://www.ihk.de/blueprint/servlet/resource/blob/6595910/9922dea3d1a2402026b5f361442799f5/leitfaden-systemintegration-data.pdf |
+| Merkblatt IHK Niederbayern | https://www.ihk-niederbayern.de/pdfs/merkblatt.pdf |
+| Umsetzungsempfehlungen für die AP (IHK) | https://www.ihk.de/blueprint/servlet/resource/blob/5797456/b90eac6a81b93de6ab68925bf10c5c79/it-berufe-umsetzungsempfehlungen-fuer-die-durchfuehrung-der-ap-data.pdf |
+| Prüfungsvorbereitung Fachinformatiker (ausbildung-in-der-it.de) | https://ausbildung-in-der-it.de/pruefungsvorbereitung-fachinformatiker |
+| Mögliche Themen GAP Teil 2 – FIAE (IT-Berufe-Podcast) | https://it-berufe-podcast.de/vorbereitung-auf-die-ihk-abschlusspruefung-der-it-berufe/moegliche-themen-von-teil-2-der-gestreckten-abschlusspruefung-gap-fuer-fachinformatiker-anwendungsentwicklung/ |
+| Mögliche Themen GAP Teil 1 (IT-Berufe-Podcast) | https://it-berufe-podcast.de/vorbereitung-auf-die-ihk-abschlusspruefung-der-it-berufe/moegliche-themen-von-teil-1-der-gestreckten-abschlusspruefung-gap-in-den-it-berufen/ |
+| AP Teil 2 Prüfungsguide für Fachinformatiker (PDF) | https://ausbildung-in-der-it.de/assets/pdfs/AP_Teil_2_Pruefungsguide_fuer_Fachinformatiker.pdf |
+
+---
+
+## 5. Lernmaterialien, Bücher & Verlage
+
+Empfohlene Fachliteratur, Verlagsseiten und Weiterbildungsanbieter für Softwaretesting und ISTQB-Zertifizierung.
+
+| Titel / Beschreibung | URL |
+|----------------------|-----|
+| Prüfungsvorbereitung Europa-Lehrmittel Verlag | https://www.europa-lehrmittel.de/Ausbildung/IT-Berufe/Pruefungsvorbereitung/ |
+| Basiswissen Softwaretest (dpunkt.verlag) | https://dpunkt.de/produkt/basiswissen-softwaretest-2/ |
+| Empfohlene Literatur (German Testing Board) | https://www.gtb.de/service/empfohlene-literatur/ |
+| Weiterbildung Softwaretester (WBSTraining) | https://www.wbstraining.de/kurse/weiterbildung/softwaretester-1/ |
+
+---
+
+## 6. Podcasts & Videos
+
+Audiovisuelle Lernressourcen – perfekt für den Einstieg oder die mobile Prüfungsvorbereitung.
+
+| Titel / Beschreibung | URL |
+|----------------------|-----|
+| IT-Berufe-Podcast – Neuer Prüfungskatalog AP1 ab 2025 (Episode 190) | https://www.podcast.de/episode/654873373/neuer-pruefungskatalog-fuer-die-ap1-der-it-berufe-ab-2025-it-berufe-podcast-190 |
+| YouTube: Grundlagen Softwaretesting (Video) | https://www.youtube.com/watch?v=iV8EF5aUrjU |
+| YouTube: ISTQB Foundation Level – Testmethoden (Video) | https://www.youtube.com/watch?v=v7dhi8ajza4 |
+
+---
+
+> **Hinweis:** Die Quellen sind thematisch nach den Kapiteln der Ausarbeitung sortiert. So findet jeder Leser auf einen Blick, welche Links zu welchem Thema gehören.
+```
+
