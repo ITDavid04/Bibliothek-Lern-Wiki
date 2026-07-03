@@ -116,7 +116,7 @@ Recherchiere kurz: Welchen Wert liefert `pandas.Series.quantile()` standardmäß
 
 - **ROT:** Bei ungerader Anzahl Werte den Gesamtmedian versehentlich in die untere oder obere Hälfte mit einrechnen – verfälscht Q1/Q3.
 - **ROT:** Ausreißer automatisch als "Fehler" oder "muss gelöscht werden" interpretieren, statt sie als Hinweis zur weiteren Prüfung zu behandeln.
-- **GELB:** Den Faktor 1,5 mit dem IQR selbst verwechseln (Grenze ist \ (Q1 - 1{,}5 \times IQR\ ), nicht \(Q1 - IQR\)).
+- **GELB:** Den Faktor 1,5 mit dem IQR selbst verwechseln (Grenze ist \ (Q1 - 1{,}5 x IQR\ ), nicht \(Q1 - IQR\)).
 - **GELB:** Vergessen, die Daten vor der Quartilsberechnung zu sortieren.
 - **GRÜN:** Nicht wissen, dass verschiedene Tools (z.B. Pandas, Excel) unterschiedliche Interpolationsmethoden für Quartile verwenden und deshalb leicht abweichende Werte liefern können.
 
