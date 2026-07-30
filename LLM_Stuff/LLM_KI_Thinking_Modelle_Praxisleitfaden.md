@@ -226,3 +226,5 @@ schlagworte:
   - Long-Context
   - Ollama
   - Hardware-Anforderungen
+
+  https://openlm.ai/chatbot-arena/ 
