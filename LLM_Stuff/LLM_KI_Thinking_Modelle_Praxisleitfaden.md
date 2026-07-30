@@ -109,18 +109,15 @@ Für lokale Wissensarbeit ist **RAG** (Retrieval-Augmented Generation) in der Re
 
 **Workflow-Vergleich:**
 
-RAG-Ansatz: Long-Context-Ansatz:
-Dokumente → Chunking → Kompletter Text
-Embeddings → Vektor-DB → direkt in den Prompt
-gezielter Abruf bei Anfrage
-
-    Skaliert gut + Einfacher Aufbau
-
-    Günstiger im Betrieb + Kein Retrieval-Fehler möglich
-
-    Mehr Infrastruktur - Hohe Kosten/Latenz bei jeder Anfrage
-
-    Retrieval kann Fehler haben - Begrenzt bei sehr großen Datenmengen
+| RAG-Ansatz | Long-Context-Ansatz |
+|---|---|
+| Dokumente → Chunking | Kompletter Text |
+| Embeddings → Vektor-DB | Direkt in den Prompt |
+| Gezielter Abruf bei Anfrage | Gesamter Kontext wird verarbeitet |
+| ✅ Skaliert gut | ✅ Einfacher Aufbau |
+| ✅ Günstiger im Betrieb | ✅ Kein Retrieval-Fehler |
+| ⚠️ Retrieval kann Fehler haben | ⚠️ Hohe Kosten und Latenz |
+| ⚠️ Mehr Infrastruktur | ⚠️ Begrenzt bei sehr großen Datenmengen |
 
 
 ---
@@ -158,18 +155,20 @@ Für eine IT-Umschulung ist KI besonders wertvoll als **Meta-Lernwerkzeug** – 
 
 **Didaktisch stärkste Kombination** – der Kreislauf des Lernens:
 
-┌─────────────────────────────────────────────────┐
-│ DIDAKTISCHER KREISLAUF                          │
-│                                                 │
-│ ┌──────────┐    ┌──────────┐    ┌──────────┐    │
-│ │ Eigene   │───►│ KI-Review│───►│ Vergleich│    │
-│ │ Lösung   │    │ & Kritik │    │ mit Doku │    │
-│ └──────────┘    └──────────┘    └─────┬────┘    │
-│     ▲                                 │         │
-│     │        ┌───────────┐            │         │
-│     └────────│Refactoring│◄───────────┘         │
-│              └───────────┘                      │
-└─────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A["💡 Eigene Lösung erstellen"]
+    B["🤖 KI analysiert und kritisiert"]
+    C["📚 Mit Dokumentation vergleichen"]
+    D["🔧 Refactoring und Verbesserung"]
+    E["✅ Neues Verständnis"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E -. Wissen vertiefen .-> A
+```
 
 
 
@@ -227,4 +226,5 @@ schlagworte:
   - Ollama
   - Hardware-Anforderungen
 
-  https://openlm.ai/chatbot-arena/ 
+quellen:
+  - https://openlm.ai/chatbot-arena/ 
