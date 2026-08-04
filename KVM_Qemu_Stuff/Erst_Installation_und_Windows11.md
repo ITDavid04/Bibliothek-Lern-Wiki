@@ -72,6 +72,8 @@ Du benötigst zwei Dateien. Lege sie am besten in deinem **Downloads-Ordner** ab
 | **VirtIO-Win ISO** | Hochgeschwindigkeitstreiber für Festplatte, Netzwerk, etc. | [Fedora GitHub (virtio-win.iso)](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) (direkter Download-Link: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso) |
 
 **Bilder:**
+
+
 ![Bild1_ISO_Auswahl](PNG/Bild1_ISO_Auswahl.png)
 
 ![Bild2_Iso_Auswahl](PNG/Bild2_Iso_Auswahl.png)
@@ -112,6 +114,8 @@ Jetzt öffnen wir den **Virtual Machine Manager** (kurz: Virt-Manager). Du finde
 💡 Wird in der Regel erkannt von VM-Manager das es ein Windows 11 ISO ist.
 
 **Bild**
+
+
 ![Bild4_KVM_erstellen](PNG/Bild4_KVM_erstellen.png)
 
 **3.2 RAM und CPU**:
@@ -123,6 +127,8 @@ Jetzt öffnen wir den **Virtual Machine Manager** (kurz: Virt-Manager). Du finde
 
 
 **Bild**
+
+
 ![Bild4_KVM_erstellen](PNG/Bild5_KVM_erstellen.png)
 
 **3.3 Festplatte**:
@@ -133,6 +139,8 @@ Jetzt öffnen wir den **Virtual Machine Manager** (kurz: Virt-Manager). Du finde
 - Klicke auf **Weiter**.
 
 **Bild**
+
+
 ![Bild6_KVM_erstellen](PNG/Bild6_KVM_erstellen.png)
 
 **3.4 Name und Konfiguration**:
@@ -142,6 +150,8 @@ Jetzt öffnen wir den **Virtual Machine Manager** (kurz: Virt-Manager). Du finde
 - Klicke auf **Fertigstellen**.
 
 **Bild**
+
+
 ![Bild7_KVM_erstellen](PNG/Bild7_KVM_erstellen.png)
 
 3.2 Detail-Konfiguration (vor dem ersten Start)
@@ -149,6 +159,8 @@ Jetzt öffnen wir den **Virtual Machine Manager** (kurz: Virt-Manager). Du finde
 Nach dem Klick auf Fertigstellen öffnet sich automatisch das Fenster mit den VM-Details. Hier nimmst du jetzt die entscheidenden Einstellungen vor:
 
 **Bild**
+
+
 ![Bild8_KVM_erstellen](PNG/Bild8_KVM_erstellen.png)
 
 #### Übersicht (ganz oben links)
@@ -158,6 +170,8 @@ Nach dem Klick auf Fertigstellen öffnet sich automatisch das Fenster mit den VM
 ## 💡Wichtig, nach jeder Änderung Übernehmen bestätigen über den Button!!!
 
 **Bild**
+
+
 ![Bild9_KVM_erstellen](PNG/Bild9_KVM_erstellen.png)
 
 #### CPUs
@@ -168,6 +182,8 @@ Nach dem Klick auf Fertigstellen öffnet sich automatisch das Fenster mit den VM
 Ist Stabdardmäßig Aktiviert!!!
 
 **Bild**
+
+
 ![Bild10_KVM_erstellen](PNG/Bild10_KVM_erstellen.png)
 
 #### SATA-Disk 1
@@ -177,6 +193,8 @@ Ist Stabdardmäßig Aktiviert!!!
   - _Hintergrund:_ VirtIO ist ein paravirtualisierter Treiber, der wesentlich schneller ist als die Emulation einer SATA-Festplatte. Windows benötigt dafür aber den Treiber von der VirtIO-ISO – den laden wir später während der Installation.
 
 **Bild**
+
+
 ![Bild11_KVM_erstellen](PNG/Bild11_KVM_erstellen.png)
 
 #### TPM (Trusted Platform Module)
@@ -189,6 +207,8 @@ Ist Stabdardmäßig Aktiviert!!!
   - Klicke auf **Fertigstellen**.
 
 **Bild**
+
+
 ![Bild12_KVM_erstellen](PNG/Bild12_KVM_erstellen.png)
 
 #### VirtIO-Treiber-ISO einlegen
@@ -201,11 +221,16 @@ Ist Stabdardmäßig Aktiviert!!!
   - Klicke auf **Fertigstellen**.
 
 **Bild**
+
+
 ![Bild13_KVM_erstellen](PNG/Bild13_KVM_erstellen.png)
+
 
 Auf Verwalten Klicken
 
+
 ![Bild14_KVM_erstellen](PNG/Bild14_KVM_erstellen.png)
+
 
 ![Bild15_KVM_erstellen](PNG/Bild15_KVM_erstellen.png)
 
@@ -226,21 +251,32 @@ Windows 11 fühlt sich mit dem Standard-VGA-Treiber sehr zäh an.
 - **Empfehlung:** In den VM-Details unter **Video** sollte idealerweise **Virtio** ausgewählt sein. Wenn der Host eine GPU mit 3D-Beschleunigung hat, aktiviere „3D-Beschleunigung“. Zusammen mit dem `virtio-win-guest-tools`\-Paket (Punkt 5) wird die UI dadurch butterweich.
 
 **Bild**
+
+
 ![Bild16_KVM_erstellen](PNG/Bild16_KVM_erstellen.png)
+
+
 
 💡 Hinweis: Du kannst auch später während der Installation die ISO nachträglich einlegen. Aber so ist sie schon da und du musst nicht unterbrechen.
 
 Jetzt ist die Hardware perfekt vorbereitet. Klicke oben links auf „Installation beginnen“.
 
 **Bild**
+
+
 ![Bild17_KVM_erstellen](PNG/Bild17_KVM_erstellen.png)
+
+
 
 💿 4. Windows 11 Installation & Fallstricke
 
 Die VM startet nun und bootet von der Windows-ISO. Drücke sofort eine beliebige Taste, wenn die Meldung „Press any key to boot from CD/DVD“ erscheint.
 
 **Bild**
+
+
 ![Bild18_Windows_setup](PNG/Bild18_Windows_setup.png)
+
 
 4.1 „Wo ist meine Festplatte?“ – VirtIO-Treiber laden
 
@@ -250,18 +286,26 @@ Akzeptiere die Lizenzbedingungen und wähle „Benutzerdefiniert: Nur Windows in
 Jetzt kommt der entscheidende Moment: Es wird keine Festplatte angezeigt! Das ist normal, weil wir den Bus auf VirtIO gestellt haben und der Treiber fehlt.
 
 **Bild**
+
+
 ![Bild19_Windows_setup](PNG/Bild19_Windows_setup.png)
+
 
 1. Klicke auf **„Treiber laden“**
 2. Es öffnet sich ein Fenster. Klicke auf **„Durchsuchen“**.
 3. Wähle das CD-Laufwerk mit der **VirtIO-ISO** (meistens **D:**).
 
 **Bild**
+
+
 ![Bild20_Windows_setup](PNG/Bild20_Windows_setup.png)
+
 
 Dropdownmenü Öffnen
 
+
 ![Bild21_Windows_setup](PNG/Bild21_Windows_setup.png)
+
 
 Navigiere zu `amd64` → `w11` (für Windows 11) oder `2k22` (für Windows Server).  
 Bei manchen Versionen heißt der Ordner nur `w10` – auch den kannst du verwenden.
@@ -271,37 +315,54 @@ Bei manchen Versionen heißt der Ordner nur `w10` – auch den kannst du verwend
 3. Nach einem kurzen Moment sollte deine 64-GB-Festplatte erscheinen.
 
 **Bild**
+
+
 ![Bild22_Windows_setup](PNG/Bild22_Windows_setup.png)
+
 
 💡 Hintergrund: Der Treiber wird jetzt installiert und Windows kann auf die VirtIO-Festplatte zugreifen. Wähle die Festplatte aus und klicke auf „Weiter“. Die Installation beginnt.
 
+
 ![Bild23_Windows_setup](PNG/Bild23_Windows_setup.png)
+
 
 Installation Starten
 
+
 ![Bild24_Windows_setup](PNG/Bild24_Windows_setup.png)
+
 
 🎊 Warten bis fertig, Ohne Scheiß wenn du alles richtig gemacht hast bist du auf diesem Schirm. 🎊
 
+
 ![Bild25_Windows_setup](PNG/Bild25_Windows_setup.png)
+
 
 ![Bild26_Windows_setup](PNG/Bild26_Windows_setup.png)
 
 🪔Folge der Installation. Bring Geduld mit es ist WINDOWS! 🪔
 
 **Bild**
+
+
 ![Bild27_Windows_setup](PNG/Bild27_Windows_setup.png)
+
 
 💡Nutze im Verlauf die Einstellung Privat Einrichten und nicht den Button Schüler etc. Damit du dich nicht mit einem Windows Konto anmelden musst.💡 (DA in Zukunft eventuell die Dualis Windowslizenz entfällt wird am Ende der Installation eine eigenes Konto angelegt.)
 
 **Bild**
+
+
 ![Bild28_Windows_setup](PNG/Bild28_Windows_setup.png)
+
 
 🪔Dann heist es wieder Geduld haben…Sorry Updates und so🪔. 30 MIN Einplanen
 
 Erstelle ein Windows Konto neu. Und führe den rest der Installtion durch. am ende solltest du auf dem Startbildschrim Landen.
 
+
 ![Bild29_Windows_setup](PNG/Bild29_Windows_setuo.png)
+
 
 ## 🧩 5. Post-Installation – Performance-Boost
 
@@ -310,15 +371,22 @@ Jetzt sind wir auf dem Desktop. Aber Netzwerk, Grafik und Mausintegration funkti
 1. Öffne den **Windows Explorer** und wechsle zu **Dieser PC**. Dort siehst du das CD-Laufwerk mit der **VirtIO-ISO** (meistens **D:**).
 
 **Bild**
+
+
 ![Bild30_Windows_boost](PNG/Bild30_Windows_boost.png)
+
 
 ![Bild31_Windows_boost](PNG/Bild31_Windows_boost.png)
 
+
 Öffne das Laufwerk. Suche nach der Datei virtio-win-gt-x64.msi (manchmal heißt sie auch virtio-win-guest-tools.msi). Starte sie mit einem Doppelklick.
+
 
 ![Bild32_Windows_boost](PNG/Bild32_Windows_boost.png)
 
+
 ![Bild33_Windows_boost](PNG/Bild33_Windows_boost.png)
+
 
 **Folge dem Installationsassistenten. Wähle die Standardinstallation (alle Komponenten).**
 
@@ -330,7 +398,10 @@ QEMU Guest Agent (ermöglicht sauberes Herunterfahren und flüssige Fensterskali
 Grafische Treiber (für bessere Auflösung)
 
 **Bild**
+
+
 ![Bild34_Windows_boost](PNG/Bild34_Windows_boost.png)
+
 
 1. Starte die VM nach Abschluss der Installation **neu** (über das Windows-Startmenü).
 
