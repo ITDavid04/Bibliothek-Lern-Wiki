@@ -43,6 +43,7 @@ Da wir im Linux-Umfeld arbeiten, gibt es hervorragende Editoren, die uns das Sch
 ### Links & Bilder
 *   **Link:** `[Titel des Links](https://beispiel.de)`
 *   **Bild:** `![Beschreibung](bild_url_oder_pfad)`
+Beispiel: ![Bild1_Iso_Auswahl] ((PNG/Bild1_ISO_Auswahl.png)
 
 ### Infoboxen (GitHub Spezial)
 ```markdown
