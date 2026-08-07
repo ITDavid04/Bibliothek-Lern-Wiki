@@ -210,7 +210,7 @@ export class UserController {
 | View | Reine Darstellung, keine Logik |
 | Controller | Steuerung, koordiniert Model und View |
 | Separation of Concerns | Trennung von Zuständigkeiten pro Schicht |
-| Thin Controller | Controller enthält möglichst wenig Fachlogik |
+
 | Fat Model | Fachlogik konzentriert sich im Model |
 | Observer Pattern | Model benachrichtigt View aktiv (klassisches MVC) |
 
