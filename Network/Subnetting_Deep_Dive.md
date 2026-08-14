@@ -164,3 +164,7 @@ verwandte_artikel:
   - OSI-Modell
   - IPv6-Adressierung
 ```
+Bonus
+Quelle Youtube: https://www.youtube.com/watch?v=s_Ntt6eTn94 /Subnet Mask Explained
+                https://www.youtube.com/watch?v=3jLTvJDbc2Q /Subnetting in 4 Min
+                https://www.youtube.com/watch?v=bWVrqReifJ8 /Osi Modell
