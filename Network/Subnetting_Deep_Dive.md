@@ -44,15 +44,15 @@ Subnetting-Rechnungen setzen voraus:
 **Rezept A – Subnetzmaske aus Hostanforderung ableiten:**
 
 1. Geforderte Hostanzahl notieren.
-2. Kleinstes \(n\) finden, für das gilt: \(2^n - 2 \geq \text{geforderte Hosts}\). \(n\) = Anzahl Hostbits.
-3. Netzbits berechnen: \(32 - n\) (IPv4) → ergibt das Präfix (z. B. `/26`).
+2. Kleinstes $n$ finden, für das gilt: $2^n - 2 \geq H$ (mit $H$ = geforderte Hostanzahl). $n$ = Anzahl Hostbits.
+3. Netzbits berechnen: $32 - n$ (IPv4) → ergibt das Präfix (z. B. `/26`).
 4. Präfix in Dotted-Decimal-Maske umrechnen.
 
-**Rezept B – Ein Netz in \(k\) gleich große Subnetze aufteilen:**
+**Rezept B – Ein Netz in $k$ gleich große Subnetze aufteilen:**
 
-1. Anzahl benötigter Subnetz-Bits \(s\) bestimmen: kleinstes \(s\) mit \(2^s \geq k\).
-2. Neues Präfix = altes Präfix \(+ s\).
-3. Blockgröße berechnen: \(2^{(32 - \text{neues Präfix})}\).
+1. Anzahl benötigter Subnetz-Bits $s$ bestimmen: kleinstes $s$ mit $2^s \geq k$.
+2. Neues Präfix = altes Präfix $+ s$.
+3. Blockgröße berechnen: $2^{(32 - p)}$ (mit $p$ = neues Präfix).
 4. Subnetze der Reihe nach auflisten, jeweils um die Blockgröße im relevanten Oktett weiterzählen.
 5. Pro Subnetz: erste Adresse = Netzadresse, letzte Adresse = Broadcastadresse, dazwischen = nutzbare Hosts.
 
@@ -83,7 +83,7 @@ Subnetting-Rechnungen setzen voraus:
 
 ## 6. Sidefacts mit IHK-Relevanz
 
-**ROT** – Formel für nutzbare Hosts: \(2^{\text{Hostbits}} - 2\). Die „−2" steht für Netz- und Broadcastadresse, die nie als Hostadresse vergeben werden.
+**ROT** – Formel für nutzbare Hosts: $2^h - 2$ (mit $h$ = Anzahl Hostbits). Die „−2" steht für Netz- und Broadcastadresse, die nie als Hostadresse vergeben werden.
 
 **ROT** – Ein VLAN entspricht in der Praxis meist genau einem Subnetz; die Broadcastdomäne bleibt dadurch auf das jeweilige Subnetz begrenzt.
 
@@ -109,19 +109,19 @@ Subnetting-Rechnungen setzen voraus:
 
 **GELB** – Bei IPv6-Aufgaben reflexhaft nach einer Broadcastadresse suchen, obwohl IPv6 diese nicht kennt.
 
-**GRÜN** – Bei Aufgaben zur Subnetzanzahl das \(2^s \geq k\) mit \(2^s = k\) verwechseln und dadurch bei ungeraden Subnetzanzahlen falsch runden.
+**GRÜN** – Bei Aufgaben zur Subnetzanzahl das $2^s \geq k$ mit $2^s = k$ verwechseln und dadurch bei ungeraden Subnetzanzahlen falsch runden.
 
 ---
 
 ## 8. Lösungen
 
 **Lösung 1:**  
-`/28` → Hostbits \(= 32 - 28 = 4\).  
-Nutzbare Hosts: \(2^4 - 2 = 16 - 2 = 14\).
+`/28` → Hostbits $= 32 - 28 = 4$.  
+Nutzbare Hosts: $2^4 - 2 = 16 - 2 = 14$.
 
 **Lösung 2:**  
-Ausgangsnetz `/24` → 8 Hostbits. Für 8 Subnetze: \(2^s \geq 8\) → \(s = 3\).  
-Neues Präfix: \(24 + 3 = 27\). Blockgröße: \(2^{32-27} = 2^5 = 32\).
+Ausgangsnetz `/24` → 8 Hostbits. Für 8 Subnetze: $2^s \geq 8$ → $s = 3$.  
+Neues Präfix: $24 + 3 = 27$. Blockgröße: $2^{32-27} = 2^5 = 32$.
 
 Die Subnetze im vierten Oktett zählen jeweils in 32er-Schritten:
 
@@ -134,21 +134,21 @@ Die Subnetze im vierten Oktett zählen jeweils in 32er-Schritten:
 → Drittes Subnetz: Netzadresse `192.168.10.64`, Broadcastadresse `192.168.10.95`, Hostbereich `192.168.10.65` – `192.168.10.94`.
 
 **Lösung 3:**  
-Gesucht: kleinstes \(n\) mit \(2^n - 2 \geq 100\).  
-\(2^6 - 2 = 62\) → zu wenig. \(2^7 - 2 = 126\) → ausreichend. Also \(n = 7\) Hostbits.  
-Präfix: \(32 - 7 = 25\) → `/25`.  
+Gesucht: kleinstes $n$ mit $2^n - 2 \geq 100$.  
+$2^6 - 2 = 62$ → zu wenig. $2^7 - 2 = 126$ → ausreichend. Also $n = 7$ Hostbits.  
+Präfix: $32 - 7 = 25$ → `/25`.  
 Dotted-Decimal-Maske für `/25`: `255.255.255.128`.
 
 **Lösung 4:**  
-`/26` → Hostbits = 6, Blockgröße im letzten Oktett = \(2^6 = 64\).  
+`/26` → Hostbits = 6, Blockgröße im letzten Oktett = $2^6 = 64$.  
 `.130` liegt im Block `128–191` (zweiter `/26`-Block ab 128).  
 Netzadresse: `172.16.50.128`.  
 Broadcastadresse: `172.16.50.191`.  
 Hostbereich: `172.16.50.129` – `172.16.50.190`.
 
 **Lösung 5:**  
-`/48` → `/64`: Differenz = \(64 - 48 = 16\) Bit stehen für Subnetze zur Verfügung.  
-Anzahl möglicher `/64`-Subnetze: \(2^{16} = 65.536\).
+`/48` → `/64`: Differenz = $64 - 48 = 16$ Bit stehen für Subnetze zur Verfügung.  
+Anzahl möglicher `/64`-Subnetze: $2^{16} = 65.536$.
 
 ---
 
