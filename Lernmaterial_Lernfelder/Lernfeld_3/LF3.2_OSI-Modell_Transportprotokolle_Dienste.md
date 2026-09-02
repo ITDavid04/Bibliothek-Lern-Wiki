@@ -3,7 +3,7 @@
 > **Zielgruppe:** Umschüler FIAE/FISI, 2. Lehrjahr
 > **Prüfungsrelevanz:** AP1 (schriftlich) + Fachgespräch
 > **Lernzeit:** Kerninhalt: 100–120 Min., mit Vertiefung (3-Way-Handshake, Protokoll-Stack eines Webseitenaufrufs): 140–160 Min.
-> **Status:** Draft
+> **Status:** Final
 > **Stand:** 2026-09-01
 
 **Legende:** 🔴 Prüfungsstoff (hohe Relevanz) · 🟡 Kontextwissen (mittlere Relevanz) · 🟢 Nice to know
