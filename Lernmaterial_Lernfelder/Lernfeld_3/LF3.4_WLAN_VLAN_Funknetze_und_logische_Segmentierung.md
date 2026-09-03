@@ -3,7 +3,7 @@
 > **Zielgruppe:** Umschüler FIAE/FISI, 2. Lehrjahr
 > **Prüfungsrelevanz:** AP1 (schriftlich) + Fachgespräch
 > **Lernzeit:** Kerninhalt: 100–120 Min., mit Vertiefung (EIRP-Berechnung, 802.1Q-Detailaufbau, Client-Troubleshooting): 140–160 Min.
-> **Status:** Draft
+> **Status:** Final
 > **Stand:** 2026-09-03
 
 **Legende:** 🔴 Prüfungsstoff (hohe Relevanz) · 🟡 Kontextwissen (mittlere Relevanz) · 🟢 Nice to know
@@ -240,7 +240,7 @@
 ```yaml
 lernfeld: LF3.4
 titel: WLAN & VLAN (Funknetze und logische Segmentierung)
-status: draft
+status: Final
 stand: 2026-09-03
 review: fachliche Praezisierungen in zwei Runden eingearbeitet (DFS-Ausfalldauer strukturiert, EIRP-Leitungsverluste inkl. Rechenbeispiel, 1000mW-Beispiel frequenzabhaengig eingeschraenkt, WPA2-CCMP/TKIP-Ausschluss, WPA3-SAE-Offline-Praezisierung, Repeater-Airtime-Begruendung, Client-Isolation nicht als absolute Trennung, Captive-Portal/VLAN/Firewall-Zusammenspiel, Tagged-Port ohne Multi-VLAN-Zwang, PVID/Native-VLAN-Trennung inkl. Trunk-Konsistenz, 1-VLAN-1-Subnetz als Designregel, BSSID/SSID-Klaerung, 5-GHz-Merksatz entschaerft); ergaenzt um PoE-Standards, VLAN-Kurzeinordnung, Layer-Typfrage
 quellen:
