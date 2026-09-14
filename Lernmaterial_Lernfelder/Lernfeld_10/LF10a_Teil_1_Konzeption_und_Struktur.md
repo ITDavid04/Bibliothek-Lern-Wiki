@@ -32,15 +32,15 @@
 
 Der **Problemraum** umfasst den heutigen Ablauf, beteiligte Personen, benötigte Informationen, beobachtbare Schwierigkeiten und offene Fragen. Der **Lösungsraum** beginnt erst mit konkreten Oberflächen, Funktionen oder Technologien. Jede Aussage wird einer von drei Klassen zugeordnet:
 
-| Klasse | Bedeutung |
-| --- | --- |
-| **Belegt** | Durch Auftrag, Beobachtung, Prozessdokument oder bestätigte Aussage gestützt |
-| **Annahme** | Plausibel, aber noch nicht bestätigt |
-| **Offene Frage** | Für eine Entscheidung fehlt Information |
+| Klasse | Bedeutung | IHK-Relevanz |
+| --- | --- | --- |
+| **Belegt** | Durch Auftrag, Beobachtung, Prozessdokument oder bestätigte Aussage gestützt | 🔴 |
+| **Annahme** | Plausibel, aber noch nicht bestätigt | 🔴 |
+| **Offene Frage** | Für eine Entscheidung fehlt Information | 🔴 |
 
 **Stakeholder** sind Personen oder Gruppen, die eine Lösung nutzen, beauftragen, betreiben, prüfen oder von ihr betroffen sind – Nutzer:innen sind eine wichtige, aber nicht die einzige Teilgruppe.
 
-> **Wichtig für die Prüfung:** Plausibilität ist kein Beleg. Wird eine Annahme nicht sichtbar gekennzeichnet, entstehen Anforderungen und Gestaltung auf einer möglicherweise falschen Grundlage.
+> **Wichtig für die Prüfung:** Plausibilität ist kein Beleg. Wird eine Annahme nicht sichtbar gekennzeichnet, entstehen Anforderungen und Gestaltung auf einer möglicherweise falschen Grundlage. 🔴
 
 ### 1.2 Ist-Prozess, Medienbruch und Personas
 
@@ -48,7 +48,7 @@ Zu jedem Prozessschritt gehören: ausführende Rolle, benötigte/erzeugte Inform
 
 Eine **Persona** ist ein verdichtetes Arbeitsmodell für eine relevante Nutzergruppe – keine erfundene Biografie. Sie beruht auf Erkenntnissen aus Beobachtungen, Interviews oder anderen Nutzungsdaten; liegen solche Belege noch nicht vor, handelt es sich um eine ausdrücklich als Annahme gekennzeichnete Proto-Persona (vgl. die Belegt/Annahme/offene-Frage-Klassifikation aus 1.1). Relevant sind Ziel/zentrale Aufgaben, Häufigkeit/Zeitdruck, Arbeitsumgebung/Endgerät, benötigte Informationen, Erfahrung, Einschränkungen. Der **Nutzungskontext** erklärt, unter welchen Bedingungen die Aufgabe erledigt wird (z. B. Handschuhe an einem Tablet vs. Büroarbeitsplatz).
 
-> **Wichtig für die Prüfung:** Alter, Name oder Hobbys sind nur relevant, wenn sie nachweisbar eine UI-Entscheidung beeinflussen (Navigation, Inhalt, Bedienung, Darstellung) – sonst gehören sie nicht in die Persona.
+> **Wichtig für die Prüfung:** Alter, Name oder Hobbys sind nur relevant, wenn sie nachweisbar eine UI-Entscheidung beeinflussen (Navigation, Inhalt, Bedienung, Darstellung) – sonst gehören sie nicht in die Persona. 🟡
 
 ### 1.3 User Flow, Anforderungen und Akzeptanzkriterien
 
@@ -56,11 +56,11 @@ Ein **User Flow** verbindet Nutzerziel, Aktionen, Entscheidungen und Rückmeldun
 
 **Funktionale Anforderungen** beschreiben, was ein System tun bzw. ermöglichen soll (z. B. "Nutzer können eine Anfrage erfassen"); **nichtfunktionale Anforderungen** beschreiben Qualitätsmerkmale und Randbedingungen, unter denen dies geschieht (z. B. "Das Formular muss per Tastatur bedienbar sein", "Die Antwort soll innerhalb von 2 Sekunden erfolgen"). Rechtliche/qualitative Rahmenbedingungen wie Datenschutz können dabei sowohl nichtfunktionale Anforderungen erzeugen als auch konkrete funktionale Anforderungen nach sich ziehen (z. B. "Nutzer können ihre Einwilligung widerrufen"). Priorisierung nach **Muss/Soll/Kann**:
 
-| Stufe | Bedeutung |
-| --- | --- |
-| **Muss** | Ohne Erfüllung ist der vereinbarte Kernnutzen oder eine zwingende Grenze verfehlt |
-| **Soll** | Hoher Nutzen, aber bei begründeter Abwägung verschiebbar |
-| **Kann** | Zusätzlicher Nutzen, sofern Zeit und Risiko es erlauben |
+| Stufe | Bedeutung | IHK-Relevanz |
+| --- | --- | --- |
+| **Muss** | Ohne Erfüllung ist der vereinbarte Kernnutzen oder eine zwingende Grenze verfehlt | 🔴 |
+| **Soll** | Hoher Nutzen, aber bei begründeter Abwägung verschiebbar | 🔴 |
+| **Kann** | Zusätzlicher Nutzen, sofern Zeit und Risiko es erlauben | 🟡 |
 
 Ein **Akzeptanzkriterium** macht eine Anforderung beobachtbar. Eine häufige Form ist Gegeben–Wenn–Dann (Given/When/Then): *"Gegeben sei ein definierter Ausgangszustand. Wenn eine Person eine Handlung ausführt, dann tritt ein sichtbares, prüfbares Ergebnis ein."* Entscheidend ist nicht die genaue Formulierung, sondern dass das Kriterium eindeutig beobachtbar und prüfbar ist. Wörter wie "intuitiv", "modern" oder "schnell" sind ohne mess-/beobachtbares Kriterium zu unbestimmt.
 
@@ -71,7 +71,7 @@ Ein **Akzeptanzkriterium** macht eine Anforderung beobachtbar. Eine häufige For
 
 Für jedes Datenfeld wird geprüft: Zweck und fachliche Entscheidung, benötigte Nutzergruppe, Pflicht/optional, Sichtbarkeit, Schutzbedarf, Aufbewahrungs-/Löschfrage. **Datensparsamkeit** bedeutet, nur für den festgelegten Zweck erforderliche personenbezogene Daten zu verarbeiten – Freitext ist besonders kritisch, da dort unvorhersehbare Informationen landen können.
 
-> **Typische Prüfungsfalle:** "Ausgeblendete oder deaktivierte UI-Funktionen sind bereits eine Berechtigungsprüfung" – das stimmt nicht. Ausblenden kann Orientierung verbessern, verhindert aber keinen manipulierten Aufruf. Echte Autorisierung muss serverseitig erfolgen (vertieft in LF10a Teil 3).
+> **Typische Prüfungsfalle:** "Ausgeblendete oder deaktivierte UI-Funktionen sind bereits eine Berechtigungsprüfung" – das stimmt nicht. Ausblenden kann Orientierung verbessern, verhindert aber keinen manipulierten Aufruf. Echte Autorisierung muss serverseitig erfolgen (vertieft in LF10a Teil 3). 🔴
 
 ---
 
@@ -83,16 +83,16 @@ Für jedes Datenfeld wird geprüft: Zweck und fachliche Entscheidung, benötigte
 
 Eine **Benutzerschnittstelle** ist Teil eines Mensch-Maschine-Systems (MMS). Aufgabe und Nutzungskontext entscheiden über die passende Interaktionsform:
 
-| Kürzel | Art | Kennzeichen |
-| --- | --- | --- |
-| CLI | Command Line Interface | Textbasierte Befehlseingabe, ressourcensparend, gut automatisierbar |
-| GUI | Graphical User Interface | Grafische Elemente (Fenster, Schaltflächen, Eingabefelder) |
-| NUI | Natural User Interface | Berührung/Geste |
-| VUI | Voice User Interface | Sprachbasierte Ein-/Ausgabe |
+| Kürzel | Art | Kennzeichen | IHK-Relevanz |
+| --- | --- | --- | --- |
+| CLI | Command Line Interface | Textbasierte Befehlseingabe, ressourcensparend, gut automatisierbar | 🟡 |
+| GUI | Graphical User Interface | Grafische Elemente (Fenster, Schaltflächen, Eingabefelder) | 🔴 |
+| NUI | Natural User Interface | Berührung/Geste | 🟢 |
+| VUI | Voice User Interface | Sprachbasierte Ein-/Ausgabe | 🟢 |
 
 🟢 *Randnotiz:* Weitere, seltenere Kategorien sind **OUI** (Organic User Interface, verformbare/räumliche Oberflächen) und **BCI** (Brain-Computer Interface, Steuerung über neuronale Signale, oft als assistive Schnittstelle) – für den FIAE-Schwerpunkt dieses Artikels nachrangig.
 
-> **Wichtig für die Prüfung:** Die Klassifikation beschreibt die Interaktionsform, nicht automatisch die Qualität – eine CLI kann für eine wiederholbare Administrationsaufgabe angemessener sein als eine GUI.
+> **Wichtig für die Prüfung:** Die Klassifikation beschreibt die Interaktionsform, nicht automatisch die Qualität – eine CLI kann für eine wiederholbare Administrationsaufgabe angemessener sein als eine GUI. 🟢
 
 ### 2.2 Informationsarchitektur und Architekturmuster
 
@@ -100,24 +100,24 @@ Eine robuste Reihenfolge: (1) Nutzeraufgaben/benötigte Informationen sammeln �
 
 Drei häufig verwechselte Architekturmuster beantworten unterschiedliche Fragen:
 
-| Muster | Beantwortet | Kernidee |
-| --- | --- | --- |
-| **Drei-Schichten-Architektur** | Welche fachlichen Zuständigkeiten gibt es? | Trennt Präsentation, Anwendungslogik, Datenhaltung |
-| **Client-Server-Architektur** | Wie sind Dienste auf Systeme verteilt? | Client fordert Leistung an, Server stellt sie über Schnittstelle bereit |
-| **Model View Controller (MVC)** | Wie sind Darstellung, Eingabe und Modell strukturiert? | Model = Daten/Zustand, View = Darstellung, Controller = Interaktionsverarbeitung |
+| Muster | Beantwortet | Kernidee | IHK-Relevanz |
+| --- | --- | --- | --- |
+| **Drei-Schichten-Architektur** | Welche fachlichen Zuständigkeiten gibt es? | Trennt Präsentation, Anwendungslogik, Datenhaltung | 🔴 |
+| **Client-Server-Architektur** | Wie sind Dienste auf Systeme verteilt? | Client fordert Leistung an, Server stellt sie über Schnittstelle bereit | 🔴 |
+| **Model View Controller (MVC)** | Wie sind Darstellung, Eingabe und Modell strukturiert? | Model = Daten/Zustand, View = Darstellung, Controller = Interaktionsverarbeitung | 🔴 |
 
-> **Wichtig für die Prüfung:** Die drei Begriffe sind **keine Synonyme** – wer sie austauschbar verwendet, dokumentiert eine Systemgrenze falsch. Sie schließen sich auch nicht gegenseitig aus: MVC beschreibt häufig die interne Struktur *innerhalb* der Präsentationsschicht einer Drei-Schichten-Architektur, während Client-Server zusätzlich beschreibt, wie diese Schichten auf kommunizierende Systeme verteilt sind. Rollenbezogene Navigation (unterschiedliche Menüs je Rolle) ist zudem eine Darstellungsentscheidung, **keine Sicherheitsgrenze** – die lässt sich im Browser manipulieren; echte Autorisierung bleibt Backend-Aufgabe.
+> **Wichtig für die Prüfung:** Die drei Begriffe sind **keine Synonyme** – wer sie austauschbar verwendet, dokumentiert eine Systemgrenze falsch. Sie schließen sich auch nicht gegenseitig aus: MVC beschreibt häufig die interne Struktur *innerhalb* der Präsentationsschicht einer Drei-Schichten-Architektur, während Client-Server zusätzlich beschreibt, wie diese Schichten auf kommunizierende Systeme verteilt sind. Rollenbezogene Navigation (unterschiedliche Menüs je Rolle) ist zudem eine Darstellungsentscheidung, **keine Sicherheitsgrenze** – die lässt sich im Browser manipulieren; echte Autorisierung bleibt Backend-Aufgabe. 🔴
 
 ### 2.3 Design Thinking, Prototypenstufen und UI-Zustände
 
 **Design Thinking** ist ein nutzerzentrierter, iterativer Prozessrahmen (verstehen/beobachten → Problem schärfen → Ideen entwickeln → prototypisieren → testen) – keine einmalig linear abzuarbeitende Phasenfolge.
 
-| Stufe | Detailgrad |
-| --- | --- |
-| **Sketch** | Schnelle, bewusst grobe Ideenskizze |
-| **Wireframe** | Grobe Struktur, Reihenfolge, Bedienelemente |
-| **Mockup** | Visuell ausgearbeitet, meist noch statisch |
-| **Prototyp** | Prüfbare Simulation eines Ablaufs |
+| Stufe | Detailgrad | IHK-Relevanz |
+| --- | --- | --- |
+| **Sketch** | Schnelle, bewusst grobe Ideenskizze | 🟡 |
+| **Wireframe** | Grobe Struktur, Reihenfolge, Bedienelemente | 🔴 |
+| **Mockup** | Visuell ausgearbeitet, meist noch statisch | 🟡 |
+| **Prototyp** | Prüfbare Simulation eines Ablaufs | 🔴 |
 
 Bereits im Prototyp gehören mindestens fünf UI-Zustände dazu (je nach Anwendung ergänzt um weitere wie "deaktiviert", "Berechtigung fehlt" oder "offline"): **Normal** (erwartete Daten/Aktionen), **Leer** (keine Daten, aber Ursache + nächster Schritt), **Laden** (laufender Vorgang, angemessene Rückmeldung), **Fehler** (Problem, Auswirkung, Fortsetzungsmöglichkeit), **Erfolg** (Ergebnis, Folgemöglichkeit). Jeder Zustand beantwortet: Was ist passiert? Was bedeutet das für mich? Was kann ich jetzt tun?
 
@@ -130,32 +130,32 @@ Bereits im Prototyp gehören mindestens fünf UI-Zustände dazu (je nach Anwendu
 
 Die sieben Interaktionsprinzipien nach **DIN EN ISO 9241-110:2020**:
 
-| Prinzip | Kernaussage |
-| --- | --- |
-| Aufgabenangemessenheit | Unterstützt die Aufgabe ohne unnötige Schritte |
-| Selbstbeschreibungsfähigkeit | Zustand und nächste Schritte sind verständlich |
-| Erwartungskonformität | Begriffe/Reaktionen entsprechen dem Nutzungskontext |
-| Erlernbarkeit | Bedienung mit vertretbarem Aufwand erschließbar |
-| Steuerbarkeit | Ablauf, Richtung, Tempo beeinflussbar (inkl. Unterbrechbarkeit, Flexibilität, Individualisierbarkeit) |
-| Robustheit gegen Benutzungsfehler | Fehler werden vermieden, erkannt, korrigierbar |
-| Benutzerbindung | Fördert Vertrauen, ohne manipulative Gestaltung |
+| Prinzip | Kernaussage | IHK-Relevanz |
+| --- | --- | --- |
+| Aufgabenangemessenheit | Unterstützt die Aufgabe ohne unnötige Schritte | 🟡 |
+| Selbstbeschreibungsfähigkeit | Zustand und nächste Schritte sind verständlich | 🟡 |
+| Erwartungskonformität | Begriffe/Reaktionen entsprechen dem Nutzungskontext | 🟡 |
+| Erlernbarkeit | Bedienung mit vertretbarem Aufwand erschließbar | 🟡 |
+| Steuerbarkeit | Ablauf, Richtung, Tempo beeinflussbar (inkl. Unterbrechbarkeit, Flexibilität, Individualisierbarkeit) | 🟡 |
+| Robustheit gegen Benutzungsfehler | Fehler werden vermieden, erkannt, korrigierbar | 🟡 |
+| Benutzerbindung | Fördert Vertrauen, ohne manipulative Gestaltung | 🟢 |
 
-> **Wichtig für die Prüfung:** Die Prinzipien sind Beurteilungsperspektiven, keine unabhängig voneinander abhakbaren technischen Regeln – für einen konkreten Entwurf müssen sie in beobachtbare Kriterien übersetzt werden.
+> **Wichtig für die Prüfung:** Die Prinzipien sind Beurteilungsperspektiven, keine unabhängig voneinander abhakbaren technischen Regeln – für einen konkreten Entwurf müssen sie in beobachtbare Kriterien übersetzt werden. 🟡
 
 ### 2.5 UX-Testverfahren passend auswählen
 
 Bei einem **Usability-Test** wird untersucht, wie gut repräsentative Nutzer:innen einen Entwurf, Prototyp oder ein Produkt für konkrete Aufgaben verwenden können – nicht die Person selbst wird "getestet". Die Aufgabe nennt das Ziel, nicht den Bedienweg. Schlecht: "Klicke oben rechts auf Filter." Gut: "Finde einen Raum für 18 Personen am Dienstagvormittag." Ein Befund besteht aus: Aufgabe, Beobachtung, Problem, Auswirkung, Priorität, Entscheidung – Beobachtung und Interpretation werden getrennt.
 
-| Verfahren | Liefert |
-| --- | --- |
-| Kontextanalyse | Beobachtung/Befragung im tatsächlichen Nutzungskontext |
-| Fokusgruppe | Moderierte Gruppendiskussion mit Zielgruppe |
-| Online-Befragung | Rückmeldung vieler Personen, ohne Verhaltensbeobachtung |
-| Expertenbasierte Überprüfung (z. B. heuristische Evaluation) | Fachkundige Prüfung anhand Heuristiken |
-| Labortest | Kontrollierte Aufgabenbearbeitung, gezielte Beobachtung |
-| Eye-Tracking | Blickverlauf als ergänzender Hinweis (erklärt Ursache nicht allein) |
+| Verfahren | Liefert | IHK-Relevanz |
+| --- | --- | --- |
+| Kontextanalyse | Beobachtung/Befragung im tatsächlichen Nutzungskontext | 🟡 |
+| Fokusgruppe | Moderierte Gruppendiskussion mit Zielgruppe | 🟡 |
+| Online-Befragung | Rückmeldung vieler Personen, ohne Verhaltensbeobachtung | 🟡 |
+| Expertenbasierte Überprüfung (z. B. heuristische Evaluation) | Fachkundige Prüfung anhand Heuristiken | 🔴 |
+| Labortest | Kontrollierte Aufgabenbearbeitung, gezielte Beobachtung | 🔴 |
+| Eye-Tracking | Blickverlauf als ergänzender Hinweis (erklärt Ursache nicht allein) | 🟢 |
 
-> **Wichtig für die Prüfung:** Ein **Usability-Test** untersucht, wie gut repräsentative Nutzer:innen mit einem Entwurf, Prototyp oder fertigen Produkt konkrete Aufgaben bewältigen – er setzt also keine bereits fertig implementierte Software voraus. Ein **Akzeptanztest** prüft dagegen, ob vorher vereinbarte Anforderungen/Akzeptanzkriterien erfüllt sind – derselbe Ablauf kann in beiden vorkommen, aber Fragestellung und Auswertung unterscheiden sich.
+> **Wichtig für die Prüfung:** Ein **Usability-Test** untersucht, wie gut repräsentative Nutzer:innen mit einem Entwurf, Prototyp oder fertigen Produkt konkrete Aufgaben bewältigen – er setzt also keine bereits fertig implementierte Software voraus. Ein **Akzeptanztest** prüft dagegen, ob vorher vereinbarte Anforderungen/Akzeptanzkriterien erfüllt sind – derselbe Ablauf kann in beiden vorkommen, aber Fragestellung und Auswertung unterscheiden sich. 🔴
 
 ---
 
@@ -198,7 +198,7 @@ Ein **Skip-Link** überspringt wiederkehrende Navigation und führt direkt zum H
 
 Prüfschritte ohne Maus: (1) mit `Tab`/`Shift+Tab` alle interaktiven Elemente erreichen, (2) Links/Schaltflächen mit erwarteten Tasten auslösen, (3) sichtbaren Fokus erkennen, (4) in überlagerten Bereichen nicht feststecken, (5) nach Aktionen nachvollziehbaren Fokusort behalten. Anschließend CSS ausschalten: Bleiben Inhalte, Überschriften, Reihenfolge verständlich?
 
-> **Typische Prüfungsfalle:** Positive `tabindex`-Werte "reparieren" die Fokusreihenfolge nicht – sie legen eine zweite, schwer wartbare Reihenfolge über das Dokument, die bei jeder Änderung erneut von der visuellen/DOM-Reihenfolge abweicht. Besser: sinnvolle HTML-Reihenfolge ohne positive Werte. Ebenso: Ein automatisierter Accessibility-Scan ist ein **Teilnachweis**, kein Beweis vollständiger Barrierefreiheit – Verständlichkeit und vollständige Tastaturbedienung müssen manuell geprüft werden.
+> **Typische Prüfungsfalle:** Positive `tabindex`-Werte "reparieren" die Fokusreihenfolge nicht – sie legen eine zweite, schwer wartbare Reihenfolge über das Dokument, die bei jeder Änderung erneut von der visuellen/DOM-Reihenfolge abweicht. Besser: sinnvolle HTML-Reihenfolge ohne positive Werte. Ebenso: Ein automatisierter Accessibility-Scan ist ein **Teilnachweis**, kein Beweis vollständiger Barrierefreiheit – Verständlichkeit und vollständige Tastaturbedienung müssen manuell geprüft werden. 🔴
 
 ---
 
@@ -210,12 +210,12 @@ Prüfschritte ohne Maus: (1) mit `Tab`/`Shift+Tab` alle interaktiven Elemente er
 
 Die **Kaskade** entscheidet bei widersprüchlichen Regeln anhand Herkunft, Wichtigkeit, Spezifität und Reihenfolge, welche gewinnt. ID-Selektoren haben höhere Spezifität als Klassen/Typen und sollten nicht als Standardmittel dienen – ständig steigende Spezifität löst Konflikte kurzfristig, erschwert aber spätere Änderungen. Im **Boxmodell** besteht ein Element aus Inhalt, Innenabstand, Rahmen, Außenabstand; `box-sizing: border-box` vereinfacht oft die Größenplanung.
 
-| Einheit | Zweck |
-| --- | --- |
-| `rem` | Skalierbare Abstände/Schriftgrößen, relativ zur Basisschriftgröße des Dokuments (im Unterschied zu `em`, das relativ zum jeweiligen Elternelement skaliert und sich dadurch bei Verschachtelung aufsummieren kann) |
-| `%`, `fr`, `minmax()`, `auto` | Flexible Verteilung |
-| `ch` | Lesbare Textzeilen |
-| `px` | Präzise Größenangaben für feine Details (z. B. Rahmenstärke); für responsive Hauptdimensionen nicht unnötig starr einsetzen |
+| Einheit | Zweck | IHK-Relevanz |
+| --- | --- | --- |
+| `rem` | Skalierbare Abstände/Schriftgrößen, relativ zur Basisschriftgröße des Dokuments (im Unterschied zu `em`, das relativ zum jeweiligen Elternelement skaliert und sich dadurch bei Verschachtelung aufsummieren kann) | 🔴 |
+| `%`, `fr`, `minmax()`, `auto` | Flexible Verteilung | 🟡 |
+| `ch` | Lesbare Textzeilen | 🟢 |
+| `px` | Präzise Größenangaben für feine Details (z. B. Rahmenstärke); für responsive Hauptdimensionen nicht unnötig starr einsetzen | 🟡 |
 
 Starre Pixel-Breiten für Hauptbereiche brechen bei Zoom, Übersetzung oder längeren Inhalten leicht.
 
@@ -236,15 +236,15 @@ Der Name beschreibt den **Zweck**, nicht den konkreten Wert (`--color-danger` bl
 
 ### 4.3 Layoutmodelle und Breakpoints
 
-| Modell | Einsatz |
-| --- | --- |
-| Normalfluss | Inhalte, die natürlich untereinanderstehen |
-| Flexbox | Eindimensionale Anordnung (Zeile/Spalte) |
-| Grid | Zweidimensionale Zeilen-/Spaltenbeziehungen |
+| Modell | Einsatz | IHK-Relevanz |
+| --- | --- | --- |
+| Normalfluss | Inhalte, die natürlich untereinanderstehen | 🟡 |
+| Flexbox | Eindimensionale Anordnung (Zeile/Spalte) | 🔴 |
+| Grid | Zweidimensionale Zeilen-/Spaltenbeziehungen | 🔴 |
 
 **Mobile-first** bedeutet, eine einfache Grunddarstellung zu definieren und bei verfügbarer Fläche zu erweitern – nicht, dass nur Smartphones wichtig sind. Ein **Breakpoint** liegt dort, wo Inhalt kollidiert, unlesbar wird oder eine Bedienhandlung unnötig schwer wird.
 
-> **Typische Prüfungsfalle:** CSS-`order` verändert nur die **visuelle** Anordnung, nicht DOM-, Lese- oder Fokusreihenfolge – Tastaturnutzende springen dann scheinbar rückwärts durch die Seite. Die logische HTML-Reihenfolge muss die verständliche Grundlage bleiben.
+> **Typische Prüfungsfalle:** CSS-`order` verändert nur die **visuelle** Anordnung, nicht DOM-, Lese- oder Fokusreihenfolge – Tastaturnutzende springen dann scheinbar rückwärts durch die Seite. Die logische HTML-Reihenfolge muss die verständliche Grundlage bleiben. 🔴
 
 ### 4.4 Ausgewählte WCAG-2.2-AA-Prüfwerte
 
@@ -273,18 +273,18 @@ Die vier Module bauen direkt aufeinander auf: **Anforderungen und Zielgruppen** 
 
 ## 6. Typische Prüfungsfallen
 
-| # | Falle | Richtigstellung |
-| --- | --- | --- |
-| 1 | Ein genannter Lösungsvorschlag ("ein Portal") beschreibt bereits das Problem | Problem- und Lösungsraum sind getrennt zu betrachten – erst der belegte Ist-Prozess rechtfertigt eine konkrete Lösung |
-| 2 | Eine Persona braucht Alter, Namen und Hobbys | Relevant sind nur Merkmale, die eine nachvollziehbare UI-Entscheidung beeinflussen (Ziel, Zeitdruck, Umgebung, Endgerät, Einschränkungen) |
-| 3 | Der Happy Path ist der vollständige User Flow | Der Happy Path ist nur der Erfolgsweg ohne Ausnahme – ein vollständiger Flow enthält auch Fehler, Abbruch und Korrektur |
-| 4 | Drei-Schichten-Architektur, Client-Server und MVC meinen dasselbe | Sie beantworten unterschiedliche Fragen (fachliche Zuständigkeiten / Verteilung auf Systeme / Struktur innerhalb einer Anwendung) und sind keine Synonyme |
-| 5 | Rollenbezogene Navigation ist bereits eine Sicherheitsgrenze | Sie ist eine Darstellungsentscheidung, im Browser manipulierbar – echte Autorisierung ist Backend-Aufgabe |
-| 6 | Mehr ARIA bedeutet mehr Barrierefreiheit | ARIA kann native Rollen überschreiben oder widersprüchliche Zustände erzeugen – es schließt gezielt Lücken, ersetzt aber kein passendes HTML |
-| 7 | Positive `tabindex`-Werte reparieren die Fokusreihenfolge | Sie erzeugen eine zweite, schwer wartbare Reihenfolge – besser ist eine sinnvolle HTML-Reihenfolge ohne positive Werte |
-| 8 | Ein bekannter Gerätewert ist automatisch ein guter Breakpoint | Ein Breakpoint ist erst begründet, wenn an dieser Stelle ein konkretes Inhalts-/Bedienproblem auftritt |
-| 9 | CSS-`order` sorgt für die richtige Reihenfolge | `order` verändert nur die visuelle Anordnung, nicht DOM-/Lese-/Fokusreihenfolge |
-| 10 | Ein grüner Accessibility-Scan beweist Barrierefreiheit | Automatisierte Werkzeuge sind ein Teilnachweis – Verständlichkeit und vollständige Tastaturbedienung müssen manuell geprüft werden |
+| # | Falle | Richtigstellung | IHK-Relevanz |
+| --- | --- | --- | --- |
+| 1 | Ein genannter Lösungsvorschlag ("ein Portal") beschreibt bereits das Problem | Problem- und Lösungsraum sind getrennt zu betrachten – erst der belegte Ist-Prozess rechtfertigt eine konkrete Lösung | 🔴 |
+| 2 | Eine Persona braucht Alter, Namen und Hobbys | Relevant sind nur Merkmale, die eine nachvollziehbare UI-Entscheidung beeinflussen (Ziel, Zeitdruck, Umgebung, Endgerät, Einschränkungen) | 🟡 |
+| 3 | Der Happy Path ist der vollständige User Flow | Der Happy Path ist nur der Erfolgsweg ohne Ausnahme – ein vollständiger Flow enthält auch Fehler, Abbruch und Korrektur | 🔴 |
+| 4 | Drei-Schichten-Architektur, Client-Server und MVC meinen dasselbe | Sie beantworten unterschiedliche Fragen (fachliche Zuständigkeiten / Verteilung auf Systeme / Struktur innerhalb einer Anwendung) und sind keine Synonyme | 🔴 |
+| 5 | Rollenbezogene Navigation ist bereits eine Sicherheitsgrenze | Sie ist eine Darstellungsentscheidung, im Browser manipulierbar – echte Autorisierung ist Backend-Aufgabe | 🔴 |
+| 6 | Mehr ARIA bedeutet mehr Barrierefreiheit | ARIA kann native Rollen überschreiben oder widersprüchliche Zustände erzeugen – es schließt gezielt Lücken, ersetzt aber kein passendes HTML | 🔴 |
+| 7 | Positive `tabindex`-Werte reparieren die Fokusreihenfolge | Sie erzeugen eine zweite, schwer wartbare Reihenfolge – besser ist eine sinnvolle HTML-Reihenfolge ohne positive Werte | 🟡 |
+| 8 | Ein bekannter Gerätewert ist automatisch ein guter Breakpoint | Ein Breakpoint ist erst begründet, wenn an dieser Stelle ein konkretes Inhalts-/Bedienproblem auftritt | 🟡 |
+| 9 | CSS-`order` sorgt für die richtige Reihenfolge | `order` verändert nur die visuelle Anordnung, nicht DOM-/Lese-/Fokusreihenfolge | 🔴 |
+| 10 | Ein grüner Accessibility-Scan beweist Barrierefreiheit | Automatisierte Werkzeuge sind ein Teilnachweis – Verständlichkeit und vollständige Tastaturbedienung müssen manuell geprüft werden | 🔴 |
 
 ---
 
@@ -392,5 +392,8 @@ review_historie:
   - runde: 4
     datum: 2026-09-14
     ergebnis: "Eigene Abschlussprüfung: Usability-Test-Definition in Abschnitt 2.5 trug noch die alte, engere Formulierung ('Entwurf getestet'), während der Wichtig-Block direkt darunter bereits die erweiterte Fassung (Entwurf/Prototyp/Produkt) hatte - genau die Spannung, die eine Review in Runde 3 explizit anmerkte. Nachgezogen. Selbsttest 4 (UI-Zustände) und 7 (role=alert) trugen ebenfalls noch alte, in Runde 2/3 bereits präzisierte Formulierungen - angeglichen. Keine weiteren Fachfehler gefunden."
-freigabe: "Final gesetzt nach 4 Runden (3 externe Prüfrunden + 1 eigene Abschlussprüfung, 2026-09-14) – Freigabe durch Autor:in bestätigt"
+  - runde: 5
+    datum: 2026-09-14
+    ergebnis: "Nachträgliche Ergänzung auf Wunsch des Auftraggebers (Konsistenz-Nacharbeit, analog zu LF10a Teil 3): IHK-Relevanz-Markierungen (🔴/🟡/🟢) tatsächlich in den Fließtext eingebaut - alle Begriffstabellen (Belegt/Annahme/Offene-Frage, Muss/Soll/Kann, UI-Arten, Architekturmuster, Sketch/Wireframe/Mockup/Prototyp, 7 Interaktionsprinzipien, UX-Testverfahren, Einheiten, Layoutmodelle, Prüfungsfallen) sowie alle Wichtig-für-die-Prüfung-/Typische-Prüfungsfalle-Blöcke markiert. Von 2 auf 58 tatsächliche Markierungen. WCAG-Tabelle bewusst ohne Relevanz-Spalte belassen (Konsistenz mit Teil 3, das dieselbe Tabelle übernimmt). Keine inhaltlichen Änderungen, rein ergänzende Markierung."
+freigabe: "Final gesetzt nach 4 Runden (3 externe Prüfrunden + 1 eigene Abschlussprüfung, 2026-09-14) – Freigabe durch Autor:in bestätigt. Runde 5: nachträgliche Markierungs-Ergänzung, Inhalt unverändert final."
 ```
