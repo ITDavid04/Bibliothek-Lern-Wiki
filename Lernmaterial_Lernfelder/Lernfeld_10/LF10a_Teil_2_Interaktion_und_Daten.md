@@ -32,7 +32,7 @@ Der **DOM (Document Object Model)** ist die Objektstruktur, über die JavaScript
 
 Eine Interaktion ist ein Zustandsübergang: Ausgangszustand + Ereignis (+ Bedingung) → neuer Zustand + sichtbare Rückmeldung. Beispiel: Im Zustand "Entwurf" führt das Absenden gültiger Daten zum Zustand "wird gespeichert" – die Schaltfläche wird deaktiviert, der Vorgang verständlich angekündigt.
 
-> **Wichtig für die Prüfung:** Der sichtbare DOM ist **kein** Zustandsmodell. Wenn mehrere Funktionen Klassen, Texte und Attribute unabhängig verändern, kann die Oberfläche gleichzeitig widersprüchliche Situationen anzeigen. Ein expliziter fachlicher Zustand ist die gemeinsame Quelle, aus der die Darstellung abgeleitet wird – nicht umgekehrt.
+> **Wichtig für die Prüfung:** Der sichtbare DOM ist **kein** Zustandsmodell. Wenn mehrere Funktionen Klassen, Texte und Attribute unabhängig verändern, kann die Oberfläche gleichzeitig widersprüchliche Situationen anzeigen. Ein expliziter fachlicher Zustand ist die gemeinsame Quelle, aus der die Darstellung abgeleitet wird – nicht umgekehrt. 🔴
 
 ### 1.2 Ereignisbehandlung strukturieren
 
@@ -53,19 +53,19 @@ function handleSubmit(event) {
 
 Bei mehreren Submit-Buttons mit unterschiedlicher Bedeutung liefert `event.submitter` den konkret verwendeten Button – die zentrale Verarbeitung bleibt dabei am Formular, ohne die Bedeutung des jeweiligen Submitters zu verlieren.
 
-> **Wichtig für die Prüfung:** Ein Formular wird über `submit` verarbeitet statt über den `click` einer bestimmten Schaltfläche – aber nicht, weil `click` die Eingabetaste grundsätzlich verpasst: Beim impliziten Absenden löst der Browser laut HTML-Standard zuerst ein `click`-Event auf dem Standard-Submit-Button aus, bevor das `submit`-Event auf dem Formular feuert. Ein einzelner `click`-Listener auf dem Standard-Button erreicht die Eingabetaste in einfachen Formularen also durchaus. `submit` ist trotzdem die robustere Stelle, weil die Logik an die **Formularaktion** statt an einen einzelnen Submitter gebunden wird: Das deckt mehrere Submit-Buttons, `form.requestSubmit()` und spätere Strukturänderungen zuverlässiger ab als ein Listener auf genau einer Schaltfläche. Programmatisches `form.submit()` (ohne "request") löst weder `click` noch `submit` aus und umgeht die native Constraint-Validierung – dafür ist `form.requestSubmit()` die passendere Wahl.
+> **Wichtig für die Prüfung:** Ein Formular wird über `submit` verarbeitet statt über den `click` einer bestimmten Schaltfläche – aber nicht, weil `click` die Eingabetaste grundsätzlich verpasst: Beim impliziten Absenden löst der Browser laut HTML-Standard zuerst ein `click`-Event auf dem Standard-Submit-Button aus, bevor das `submit`-Event auf dem Formular feuert. Ein einzelner `click`-Listener auf dem Standard-Button erreicht die Eingabetaste in einfachen Formularen also durchaus. `submit` ist trotzdem die robustere Stelle, weil die Logik an die **Formularaktion** statt an einen einzelnen Submitter gebunden wird: Das deckt mehrere Submit-Buttons, `form.requestSubmit()` und spätere Strukturänderungen zuverlässiger ab als ein Listener auf genau einer Schaltfläche. Programmatisches `form.submit()` (ohne "request") löst weder `click` noch `submit` aus und umgeht die native Constraint-Validierung – dafür ist `form.requestSubmit()` die passendere Wahl. 🔴
 
 ### 1.3 Bibliothek, Modul und Framework
 
-| Begriff | Kernidee |
-| --- | --- |
-| **Bibliothek** | Stellt wiederverwendbare Funktionen bereit – der Anwendungscode ruft sie gezielt auf |
-| **Modul** | Kapselt zusammengehörigen Code und stellt definierte Schnittstellen/Exporte bereit |
-| **Framework** | Gibt Anwendungsrahmen und zentrale Abläufe vor – ruft an festgelegten Stellen den Anwendungscode auf |
+| Begriff | Kernidee | IHK-Relevanz |
+| --- | --- | --- |
+| **Bibliothek** | Stellt wiederverwendbare Funktionen bereit – der Anwendungscode ruft sie gezielt auf | 🔴 |
+| **Modul** | Kapselt zusammengehörigen Code und stellt definierte Schnittstellen/Exporte bereit | 🟡 |
+| **Framework** | Gibt Anwendungsrahmen und zentrale Abläufe vor – ruft an festgelegten Stellen den Anwendungscode auf | 🔴 |
 
 "Vorhanden" bedeutet nicht automatisch "geeignet". Bei jeder Abhängigkeit werden dokumentiert: Zweck im Projekt, Version/Quelle, Lizenz, Wartungs-/Abhängigkeitsfolgen, Einfluss auf Semantik/Barrierefreiheit, begründete Alternative.
 
-> **Wichtig für die Prüfung:** Bibliothek und Framework sind **keine austauschbaren Begriffe** – bei einer Bibliothek ruft der Anwendungscode Funktionen auf, bei einem Framework ruft dieses den eigenen Code an vorgesehenen Stellen auf ("Inversion of Control"). Diese Abgrenzung ist in realen Paketen nicht immer trennscharf; entscheidend ist, welche Rolle die Abhängigkeit im eigenen Projekt tatsächlich übernimmt.
+> **Wichtig für die Prüfung:** Bibliothek und Framework sind **keine austauschbaren Begriffe** – bei einer Bibliothek ruft der Anwendungscode Funktionen auf, bei einem Framework ruft dieses den eigenen Code an vorgesehenen Stellen auf ("Inversion of Control"). Diese Abgrenzung ist in realen Paketen nicht immer trennscharf; entscheidend ist, welche Rolle die Abhängigkeit im eigenen Projekt tatsächlich übernimmt. 🔴
 
 ### 1.4 Rückmeldung, Live-Region und Fokusführung
 
@@ -84,15 +84,15 @@ Fokusregeln: Beim Öffnen Fokus an sinnvollen Anfang setzen; beim Schließen zum
 
 Drei Regelarten beschreiben, **was** geprüft wird – der Durchsetzungsort beschreibt separat, **wo** verbindlich geprüft werden muss:
 
-| Regelart | Bedeutung |
-| --- | --- |
-| **Syntaktisch** | Form/Wertebereich, z. B. Pflichtfeld, maximale Länge |
-| **Semantisch** | Fachliche Bedeutung, z. B. Enddatum nicht vor Startdatum |
-| **Feldübergreifend** | Beziehung mehrerer Werte (oft zugleich eine semantische Regel) |
+| Regelart | Bedeutung | IHK-Relevanz |
+| --- | --- | --- |
+| **Syntaktisch** | Form/Wertebereich, z. B. Pflichtfeld, maximale Länge | 🔴 |
+| **Semantisch** | Fachliche Bedeutung, z. B. Enddatum nicht vor Startdatum | 🔴 |
+| **Feldübergreifend** | Beziehung mehrerer Werte (oft zugleich eine semantische Regel) | 🟡 |
 
 Jede Regel wird vor der Implementierung dokumentiert: betroffenes Feld, fachlicher Zweck, gültige/ungültige Beispiele, erwartete Meldung, Zuständigkeit Client/Server.
 
-> **Wichtig für die Prüfung:** "Serverseitig" ist **keine vierte, gleichrangige Regelart**, sondern der **Durchsetzungsort**: Clientseitig für unmittelbares Feedback, serverseitig als verbindliche Instanz – dieselbe syntaktische, semantische oder feldübergreifende Regel kann auf beiden Seiten geprüft werden müssen. Clientvalidierung verbessert die Bedienung, ist aber **keine Sicherheitsgrenze** – Code im Browser kann verändert oder umgangen werden, Eingaben können am Browser vorbei direkt an ein Backend gesendet werden. Jede sicherheits- oder geschäftsrelevante Regel muss zusätzlich serverseitig durchgesetzt werden (vertieft in LF10a Teil 3).
+> **Wichtig für die Prüfung:** "Serverseitig" ist **keine vierte, gleichrangige Regelart**, sondern der **Durchsetzungsort**: Clientseitig für unmittelbares Feedback, serverseitig als verbindliche Instanz – dieselbe syntaktische, semantische oder feldübergreifende Regel kann auf beiden Seiten geprüft werden müssen. Clientvalidierung verbessert die Bedienung, ist aber **keine Sicherheitsgrenze** – Code im Browser kann verändert oder umgangen werden, Eingaben können am Browser vorbei direkt an ein Backend gesendet werden. Jede sicherheits- oder geschäftsrelevante Regel muss zusätzlich serverseitig durchgesetzt werden (vertieft in LF10a Teil 3). 🔴
 
 ### 2.2 Native HTML-Validierung zuerst
 
@@ -131,11 +131,11 @@ Ein **Datenvertrag** beschreibt die zwischen UI und Datenquelle erwartete Strukt
 
 ### 3.2 Fixture, Mock-Service und Test-API
 
-| Variante | Stärke | Grenze |
-| --- | --- | --- |
-| **Fixture** | Einfach, offline, reproduzierbar | Simuliert Transport/Schreibvorgänge nur begrenzt |
-| **Mock-Service** | Realistische Zustände steuerbar | Zusätzlicher Aufbau und Pflege |
-| **Test-API** | Echter Transport und Vertrag | Verfügbarkeit, Umgebung, sichere Testdaten nötig |
+| Variante | Stärke | Grenze | IHK-Relevanz |
+| --- | --- | --- | --- |
+| **Fixture** | Einfach, offline, reproduzierbar | Simuliert Transport/Schreibvorgänge nur begrenzt | 🔴 |
+| **Mock-Service** | Realistische Zustände steuerbar | Zusätzlicher Aufbau und Pflege | 🟡 |
+| **Test-API** | Echter Transport und Vertrag | Verfügbarkeit, Umgebung, sichere Testdaten nötig | 🟡 |
 
 Produktive Endpunkte und Produktionszugangsdaten gehören nicht in Test-Fixtures oder unkontrollierte Lernumgebungen. Externe/fremde Systeme dürfen nur verwendet werden, wenn ihre Nutzung ausdrücklich vorgesehen und autorisiert ist und geeignete, dafür bestimmte Testdaten verwendet werden.
 
@@ -181,7 +181,7 @@ Der äußere `catch`-Block fängt technische Probleme wie Netzwerkfehler ab. HTT
 
 **Bei einer Datenabfrage** (wie im Beispiel oben) benötigt die UI mindestens: **Laden**, **Daten vorhanden**, **keine Daten vorhanden**, **Vertragsverletzung** (`contract-error`), **technischer/unbekannter Fehler** – je nach Anwendung kommt ein **erwartbarer fachlicher Fehler** hinzu. **Bei einer Datenübermittlung** (Schreibvorgang) werden typischerweise eigene Zustände wie `saving` (verhindert Mehrfachübermittlung), `success` und ein fachlicher `business-error` benötigt – das sind zwei unterschiedliche, wenn auch verwandte Zustandsmaschinen. Jeder Zustand nennt den nächsten sinnvollen Schritt.
 
-> **Wichtig für die Prüfung:** `fetch()` erfüllt sein Promise **auch bei vielen HTTP-Fehlerstatus** – `response.ok` muss deshalb separat geprüft werden, sonst kann eine Fehlerantwort wie ein Erfolg weiterverarbeitet werden. Zusätzlich muss geprüft werden, ob der Antwortkörper überhaupt dem Datenvertrag entspricht (im Beispiel: ist `items` ein Array?) – eine Vertragsverletzung bekommt einen eigenen Zustand (`contract-error`) und darf **nicht** als leerer Datenbestand erscheinen. "Keine Daten" (erfolgreiche Anfrage, leeres Ergebnis) und "Fehler" (Ergebnis unbekannt) sind unterschiedliche Situationen mit unterschiedlichen nächsten Schritten.
+> **Wichtig für die Prüfung:** `fetch()` erfüllt sein Promise **auch bei vielen HTTP-Fehlerstatus** – `response.ok` muss deshalb separat geprüft werden, sonst kann eine Fehlerantwort wie ein Erfolg weiterverarbeitet werden. Zusätzlich muss geprüft werden, ob der Antwortkörper überhaupt dem Datenvertrag entspricht (im Beispiel: ist `items` ein Array?) – eine Vertragsverletzung bekommt einen eigenen Zustand (`contract-error`) und darf **nicht** als leerer Datenbestand erscheinen. "Keine Daten" (erfolgreiche Anfrage, leeres Ergebnis) und "Fehler" (Ergebnis unbekannt) sind unterschiedliche Situationen mit unterschiedlichen nächsten Schritten. 🔴
 
 ### 3.5 Race Conditions, optimistische UI und Verantwortungsgrenzen
 
@@ -202,17 +202,17 @@ Die drei Module bilden zusammen die technische Umsetzung der in Teil 1 konzipier
 
 ## 5. Typische Prüfungsfallen
 
-| # | Falle | Richtigstellung |
-| --- | --- | --- |
-| 1 | Der sichtbare DOM ist das Zustandsmodell | Ein expliziter fachlicher Zustand ist die gemeinsame Quelle, aus der die Darstellung abgeleitet wird – nicht umgekehrt |
-| 2 | Ein `click`-Listener auf die Speichern-Schaltfläche deckt das Formular vollständig ab | Erreicht die Eingabetaste beim Standard-Button meist durchaus, bindet die Logik aber an genau diesen Submitter statt an die Formularaktion – bei mehreren Buttons oder `requestSubmit()` unzuverlässig |
-| 3 | Bibliothek und Framework sind austauschbare Begriffe | Bibliothek: Anwendungscode ruft auf; Framework: ruft eigenen Code an vorgesehenen Stellen auf |
-| 4 | Clientvalidierung ist eine vertrauenswürdige Sicherheits- oder Autorisierungsgrenze | Sie verbessert nur die Bedienung – Code im Browser kann umgangen werden, sicherheitsrelevante Regeln müssen serverseitig gelten |
-| 5 | Native HTML-Validierung sollte durch eigene Logik ersetzt werden | Native Funktionen sind in Browser/Tastatur integriert und sollten nicht pauschal per `novalidate` abgeschaltet werden |
-| 6 | Ein normaler gültiger Testwert beweist die Regel | Viele Fehler liegen genau am Übergang zwischen gültig und ungültig – Grenztests sind nötig |
-| 7 | `fetch()` wirft bei jedem HTTP-Fehler eine Exception | Viele Fehlerstatus erfüllen das Promise regulär – `response.ok` muss separat geprüft werden |
-| 8 | Eine leere Liste und ein Fehler sind derselbe Bildschirm | Bei leerer Liste war die Anfrage erfolgreich, bei einem Fehler ist das Ergebnis unbekannt – beide brauchen unterschiedliche nächste Schritte |
-| 9 | Ein Beispiel-JSON ist bereits ein Datenvertrag | Ohne Bedeutung, Format, Pflichtstatus und Fehlerfälle bleibt offen, wie die UI auf Abweichungen reagieren soll |
+| # | Falle | Richtigstellung | IHK-Relevanz |
+| --- | --- | --- | --- |
+| 1 | Der sichtbare DOM ist das Zustandsmodell | Ein expliziter fachlicher Zustand ist die gemeinsame Quelle, aus der die Darstellung abgeleitet wird – nicht umgekehrt | 🔴 |
+| 2 | Ein `click`-Listener auf die Speichern-Schaltfläche deckt das Formular vollständig ab | Erreicht die Eingabetaste beim Standard-Button meist durchaus, bindet die Logik aber an genau diesen Submitter statt an die Formularaktion – bei mehreren Buttons oder `requestSubmit()` unzuverlässig | 🔴 |
+| 3 | Bibliothek und Framework sind austauschbare Begriffe | Bibliothek: Anwendungscode ruft auf; Framework: ruft eigenen Code an vorgesehenen Stellen auf | 🔴 |
+| 4 | Clientvalidierung ist eine vertrauenswürdige Sicherheits- oder Autorisierungsgrenze | Sie verbessert nur die Bedienung – Code im Browser kann umgangen werden, sicherheitsrelevante Regeln müssen serverseitig gelten | 🔴 |
+| 5 | Native HTML-Validierung sollte durch eigene Logik ersetzt werden | Native Funktionen sind in Browser/Tastatur integriert und sollten nicht pauschal per `novalidate` abgeschaltet werden | 🟡 |
+| 6 | Ein normaler gültiger Testwert beweist die Regel | Viele Fehler liegen genau am Übergang zwischen gültig und ungültig – Grenztests sind nötig | 🟡 |
+| 7 | `fetch()` wirft bei jedem HTTP-Fehler eine Exception | Viele Fehlerstatus erfüllen das Promise regulär – `response.ok` muss separat geprüft werden | 🔴 |
+| 8 | Eine leere Liste und ein Fehler sind derselbe Bildschirm | Bei leerer Liste war die Anfrage erfolgreich, bei einem Fehler ist das Ergebnis unbekannt – beide brauchen unterschiedliche nächste Schritte | 🔴 |
+| 9 | Ein Beispiel-JSON ist bereits ein Datenvertrag | Ohne Bedeutung, Format, Pflichtstatus und Fehlerfälle bleibt offen, wie die UI auf Abweichungen reagieren soll | 🟡 |
 
 ---
 
@@ -319,5 +319,8 @@ review_historie:
   - runde: 4
     datum: 2026-09-14
     ergebnis: "Eigene Abschlussprüfung: Abschnittsüberschrift 2.4 trug noch 'Testklassen' statt der in Runde 3 korrigierten 'Testwerte' - nachgezogen. Selbsttest 7 listete 'Beispielwert, Verwendung in der UI' noch als Kernbestandteil des Datenvertrags, obwohl 3.1 das gerade als optionale Ergänzung statt Kernbestandteil präzisiert hatte - angeglichen. Keine weiteren Fachfehler gefunden."
-freigabe: "Final gesetzt nach 4 Runden (3 externe Prüfrunden + 1 eigene Abschlussprüfung, 2026-09-14) – Freigabe durch Autor:in bestätigt"
+  - runde: 5
+    datum: 2026-09-14
+    ergebnis: "Nachträgliche Ergänzung auf Wunsch des Auftraggebers (Konsistenz-Nacharbeit, analog zu LF10a Teil 1 und Teil 3): IHK-Relevanz-Markierungen (🔴/🟡/🟢) tatsächlich in den Fließtext eingebaut - Begriffstabellen (Bibliothek/Modul/Framework, Regelarten, Fixture/Mock-Service/Test-API, Prüfungsfallen) sowie alle Wichtig-für-die-Prüfung-Blöcke markiert. Von 1 auf 24 tatsächliche Markierungen. Keine inhaltlichen Änderungen, rein ergänzende Markierung."
+freigabe: "Final gesetzt nach 4 Runden (3 externe Prüfrunden + 1 eigene Abschlussprüfung, 2026-09-14) – Freigabe durch Autor:in bestätigt. Runde 5: nachträgliche Markierungs-Ergänzung, Inhalt unverändert final."
 ```
