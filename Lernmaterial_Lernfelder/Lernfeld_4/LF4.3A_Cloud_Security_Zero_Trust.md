@@ -240,7 +240,7 @@ lernfeld: LF4.3
 teil: "1 von 2 – Cloud Security & Zero Trust (Teil B: Security Awareness, Supply-Chain, KI-Bedrohungen, OWASP LLM Top 10)"
 titel: "Cloud Security & Zero Trust"
 typ: "Typ A – Kompakter Prüfungs-Wiki"
-status: draft
+status: final
 stand: 2026-09-09
 quellen_intern:
   - "LF4.3.1: Cloud Security & Shared-Responsibility.md"
@@ -266,5 +266,5 @@ review_historie:
   - runde: 3
     datum: 2026-09-09
     ergebnis: "Externe Prüfung (3 Reviews) eingearbeitet. Von zwei Reviews unabhängig bestätigt: YAML-CISA-Quellenangabe widersprach dem im Fließtext bereits verifizierten Stand ('Version 2.0, April 2023') – synchronisiert; Selbsttest 7 fragte generisch nach 'fünf Säulen einer Zero-Trust-Architektur' statt konsistent nach dem CISA-Modell, wie in 3.4 sauber eingeführt – korrigiert, inkl. korrekter Bezeichnung 'Anwendungen und Workloads'. Weitere Präzisierungen (eine Review, mit AWS-Doku-Zitat): Shared-Responsibility-Tabelle differenziert ('typischerweise' statt fixer Zuordnung, IaaS-Netz-Zeile auf virtuelle Netzwerkkonfiguration statt physisches Netz präzisiert, Verschlüsselung als geteilte statt reine Kundenaufgabe dargestellt); 'Goldene Regel' von 'immer' auf 'behält Verantwortung für...' entschärft, mit Konsistenzfolgen in Prüfungsfalle 1/Cheatsheet/Merksatz; verbliebene kategorische 'häufigste Ursache'-Formulierung in der goldenen Regel selbst nachgezogen; Kernfrage 3 von 'Zero Trust ersetzt Perimeter-Modell' auf 'warum reicht Perimeter-Modell allein nicht mehr aus' präzisiert (Firewalls/VPN-Gateways bleiben relevant, ersetzt wird das implizite Standort-Vertrauen); Burg-Analogie und 3.1-Fließtext entsprechend von 'ungehindert'/'keine feste Netzwerkgrenze' auf differenziertere Formulierungen umgestellt, Selbsttest 8 nachgezogen; BSIG-Quellenangabe um konkrete Fundstelle (§ 30 Abs. 2) ergänzt; Deep-Dive-Verweis auf CISA-Modell von Abschnitt 3.5 auf 3.4 korrigiert; Minikube-Formulierung vereinfacht und ins Cheatsheet aufgenommen; PEP-Selbsttest-Antwort präzisiert. Weitere Scope-Vorschläge (Trivy/Snyk-Tool-Namen, Azure/GCP-Beispiele, zusätzliche Prüfungsfalle, DORA-Erwähnung) als optionale, nicht-blockierende Erweiterungen eingestuft und nicht übernommen."
-naechste_review: "Keine harten Fachfehler mehr gefunden – bereit für final nach Bestätigung" Status Final erteilt durch Autor.
+naechste_review: "Keine harten Fachfehler mehr gefunden – bereit für final nach Bestätigung. Status Final erteilt durch Autor."
 ```
