@@ -66,7 +66,9 @@ Die Status-Zeile listet bereits mehrere in einer Vorrunde korrigierte Punkte (Ba
 
 Alle anderen sieben LF2-Artikel (2.1, 2.2, 2.4–2.8) sind konsistent Final.
 
----
+🟢 Artikel überarbeitet/Fehler behoben Stand Final 
+
+--- 
 
 ## 4. Lernfeld 5 – Veraltete Orientierungsdatei
 
