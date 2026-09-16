@@ -226,7 +226,7 @@
 ```yaml
 lernfeld: LF3.2
 titel: Die Kommunikation begreifen (OSI-Modell, Transportprotokolle & Dienste)
-status: draft
+status: Final
 stand: 2026-09-01
 review: fachliche Praezisierungen auf Basis von Fachreview eingearbeitet (Kapselung, TLS-Einordnung, TCP/UDP-Streaming-Pauschale, DNS UDP/TCP, IEEE-Beschreibung, Bluetooth, ARP/NDP, ICMP-Typen, Port-Bereiche)
 quellen:
