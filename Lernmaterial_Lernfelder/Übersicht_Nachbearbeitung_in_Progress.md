@@ -31,7 +31,7 @@ Zwei Dateien haben im sichtbaren Kopf "Status: Final", aber im maschinenlesbaren
 | Datei | Kopf | YAML |
 |---|---|---|
 | `Lernfeld_3/LF3.2_OSI-Modell_Transportprotokolle_Dienste.md` | Final | draft 🟢 korregiert
-| `Lernfeld_4/LF4.3A_Cloud_Security_Zero_Trust.md` | Final | draft | 🟢 korregiert
+| `Lernfeld_4/LF4.3A_Cloud_Security_Zero_Trust.md` | Final | draft 🟢 korregiert
 
 **Vorschlag:** In beiden Dateien das YAML-Feld `status: draft` auf `status: final` setzen – reine Ein-Zeilen-Korrektur, der Inhalt selbst ist laut Review-Historie bereits final freigegeben.
 
@@ -43,8 +43,10 @@ Die beiden "Einstieg"-Dateien zu LF9 (FISI-Fokus) und LF10 (FIAE-Fokus) verlinke
 
 | Datei | Fehlerhafter Link | Tatsächliche Zieldatei |
 |---|---|---|
-| `Lernfeld_9/0.1_Zusatz_zu_LF9.md` | `[LF10](LF10a_Einstieg.md)` | `Lernfeld_10/0.1_Zusatz_zu_LF10.md` | 🟢 Link entfernt
-| `Lernfeld_10/0.1_Zusatz_zu_LF10.md` | `[Einstieg zu LF9](LF9_Einstieg.md)` (2×) | `Lernfeld_9/0.1_Zusatz_zu_LF9.md` | 🟢 Link entfernt
+| `Lernfeld_9/0.1_Zusatz_zu_LF9.md` | `[LF10](LF10a_Einstieg.md)` | `Lernfeld_10/0.1_Zusatz_zu_LF10.md` | 
+| `Lernfeld_10/0.1_Zusatz_zu_LF10.md` | `[Einstieg zu LF9](LF9_Einstieg.md)` (2×) | `Lernfeld_9/0.1_Zusatz_zu_LF9.md` |  
+
+🟢 Links wurden entfernt da unnötig
 
 **Vermutliche Ursache:** Die Dateien wurden ursprünglich als `LF9_Einstieg.md`/`LF10a_Einstieg.md` im selben Ordner konzipiert, dann aber beim Hochladen in die getrennten Lernfeld-Ordner verschoben und umbenannt – die Links wurden dabei nicht mitgezogen.
 
