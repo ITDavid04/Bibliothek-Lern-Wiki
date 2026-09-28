@@ -6,7 +6,7 @@
 >
 > Musterlösungen mit Punktevergabe. Bei Freitextfragen sind sinngemäß gleichwertige, fachlich richtige Antworten ebenfalls zu werten. Folgefehler werden berücksichtigt: Wurde mit einem falschen Wert aus einem früheren Unterpunkt korrekt weitergerechnet, sind die Punkte zu vergeben.
 
-**Punkte-Noten-Schlüssel (übliches IHK-Schema):** 100–92 Punkte = Note 1 · 91–81 = Note 2 · 80–67 = Note 3 · 66–50 = Note 4 · 49–30 = Note 5 · 29–0 = Note 6
+**Orientierungswert (Punkte-Noten-Schlüssel):** 100–92 Punkte = Note 1 · 91–81 = Note 2 · 80–67 = Note 3 · 66–50 = Note 4 · 49–30 = Note 5 · 29–0 = Note 6. Der Schlüssel kann je nach IHK bzw. Prüfung abweichen und ist nicht Bestandteil der echten AP1-Bewertung.
 
 ---
 
@@ -240,5 +240,8 @@ review_historie:
   - runde: 5
     datum: 2026-09-28
     ergebnis: "Abschluss-Selbstcheck, danach von David final freigegeben. Alle Lösungswerte unabhängig aus den Tabellen der Dateien neu berechnet und mit dem Lösungsblatt abgeglichen (Netzplan inkl. kritischem Pfad und Verzug, Nutzwertanalyse, Stromkosten, Subnetting, Schreibtischtest, Zuordnungen 1c und 4d, KI-Kosten); Python-Ausschnitte kompiliert und ausgeführt, Ausschnitt 1 ist wie vorgesehen fehlerhaft. Punktsummen je Aufgabe 25, gesamt 100. Drei Kleinigkeiten behoben: nicht geschlossene Klammer in der Tabellenzeile zur Leistungsaufnahme, doppelte Aussage zur 4 x 25-Punkte-Verteilung im Formathinweis, und die YAML-Quellenangabe nannte 'BSI Grundlagen zur Härtung', obwohl diese Quelle nicht eingesehen wurde - auf die tatsächlich gegengeprüfte DSGVO-Grundlage begrenzt, Härtungs- und Passwortmaßnahmen ausdrücklich als allgemein üblicher Prüfungsstoff ohne Einzelbeleg gekennzeichnet."
+  - runde: 6
+    datum: 2026-09-28
+    ergebnis: "Redaktionelle Änderung nach Freigabe, auf Wunsch von David bei weiterhin gültigem Status Final: Der Punkte-Noten-Schlüssel ist jetzt als Orientierungswert gekennzeichnet (kann je nach IHK bzw. Prüfung abweichen, nicht Bestandteil der echten AP1-Bewertung) statt als 'übliches IHK-Schema'. Angleichung an das AP2-Blatt; Zahlen des Schlüssels unverändert. Aufgaben, Lösungen und Punkte unverändert."
 naechste_review: "Bei Änderung des Prüfungskatalogs oder nach Auswertung neuer AP1-Prüfungen"
 ```
