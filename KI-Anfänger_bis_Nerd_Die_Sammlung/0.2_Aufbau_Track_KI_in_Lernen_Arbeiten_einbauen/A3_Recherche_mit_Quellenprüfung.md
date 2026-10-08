@@ -28,13 +28,13 @@ Merke dir die Arbeitsteilung: **Die KI findet und formuliert, du prüfst und bes
 
 ## 2. Vier Schritte, die sich bewährt haben
 
-Eine Recherche mit KI lässt sich in vier Schritte teilen. Du musst sie nicht stur abhaken, aber sie helfen, nichts zu überspringen.
+Eine Recherche mit KI lässt sich in vier Schritte teilen. Du musst sie nicht stur abhaken. Sie helfen dir trotzdem, nichts zu überspringen.
 
 **Schritt 1: Die Frage schärfen.** „Erzähl mir was über Zero Trust" liefert einen Wikipedia-Verschnitt. „Welche Grundprinzipien nennt das BSI zu Zero Trust, und worin unterscheidet sich das von klassischer Perimeter-Sicherheit?" liefert etwas, das du nachprüfen kannst. Gib dazu Kontext mit (A2): wofür du die Antwort brauchst und welche Art Quelle du willst, etwa „bevorzuge offizielle Stellen und Herstellerdokumentation".
 
-**Schritt 2: Funde sammeln.** Lass das Werkzeug suchen, und bitte um eine Liste von Fundstellen mit Link. Notiere dir die Links getrennt von der Zusammenfassung, denn die Zusammenfassung ist nicht die Quelle, und die Links sind zunächst nur Kandidaten, noch keine geprüften Belege.
+**Schritt 2: Funde sammeln.** Wie die Suche mit Quellen funktioniert, steht in E2. Lass das Werkzeug suchen, und bitte um eine Liste von Fundstellen mit Link. Notiere dir die Links getrennt von der Zusammenfassung, denn die Zusammenfassung ist nicht die Quelle, und die Links sind zunächst nur Kandidaten, noch keine geprüften Belege.
 
-**Schritt 3: Quellen selbst öffnen und prüfen.** Das ist der Kern, und Abschnitt 3 geht ihn genau durch.
+**Schritt 3: Quellen selbst öffnen und prüfen.** Das ist der wichtigste Schritt, und Abschnitt 3 geht ihn genau durch.
 
 **Schritt 4: Nur das Bestätigte aufschreiben.** Was du nicht belegen konntest, bleibt draußen oder wird als „ungeprüft" markiert. Aussage und Fundstelle gehören zusammen (Abschnitt 7).
 
@@ -60,7 +60,7 @@ Für dich heißt das: Kennst du den Betreiber nicht, such nach ihm in einem neue
 
 ## 4. Nicht jede Quelle wiegt gleich
 
-Für die meisten fachlichen Fragen im Lernalltag hilft eine grobe Ordnung. Sie ist eine Faustregel, kein Gesetz, und die passendste Quelle hängt von der Aussage ab: Für den genauen Wortlaut eines Gesetzes ist der Gesetzestext entscheidend, für eine verständliche Einordnung kann ein fachlicher Leitfaden hilfreicher sein, und Herstellerdokumentation ist gut für Funktionen und Versionen eines Produkts, aber nicht zwingend neutral, wenn es um Vergleiche oder Wertungen geht.
+Für die meisten fachlichen Fragen im Lernalltag hilft eine grobe Ordnung. Sie ist eine Faustregel, kein Gesetz, und die passendste Quelle hängt von der Aussage ab. Für den genauen Wortlaut eines Gesetzes ist der Gesetzestext entscheidend. Für eine verständliche Einordnung kann ein fachlicher Leitfaden hilfreicher sein. Herstellerdokumentation ist gut für Funktionen und Versionen eines Produkts, bei Vergleichen oder Wertungen aber nicht zwingend neutral.
 
 | Quellenart | Beispiele | Wofür sie taugt |
 | --- | --- | --- |
@@ -79,13 +79,13 @@ Zwei Gedanken gehören dazu. Erstens: Gehe bei wichtigen Aussagen **bis zur Ursp
 
 **Der Link ist kaputt oder existiert nicht.** KI-Systeme können Adressen ausgeben, die plausibel aussehen, aber ins Leere laufen. Öffnest du den Link nicht, merkst du es nicht.
 
-**Es ist eine Kopie statt des Originals.** Gerade bei Nachrichten und Texten, die von mehreren Seiten übernommen werden, landet die Zusammenfassung manchmal bei einer Abschrift und nicht bei der ursprünglichen Veröffentlichung.
+**Es ist eine Kopie statt des Originals.** Gerade bei Nachrichten und Texten, die mehrere Seiten übernehmen, landet die Zusammenfassung manchmal bei einer Abschrift statt beim Original.
 
 **Sicherer Ton trotz Unsicherheit.** Werkzeuge antworten selten mit „Das weiß ich nicht".
 
 Wie weit das gehen kann, zeigt ein Test des Tow Center for Digital Journalism an der Columbia Journalism School (März 2025). Acht KI-Suchwerkzeuge sollten aus Textausschnitten von Nachrichtenartikeln Überschrift, Verlag, Datum und Link des Originals nennen, insgesamt 1.600 Anfragen. Nach den Kriterien der Forschenden waren über 60 Prozent der Antworten falsch, je nach Werkzeug zwischen 37 und 94 Prozent. Viele falsche Antworten kamen ohne Hinweis auf Unsicherheit, und bei zwei der acht Werkzeuge führte mehr als die Hälfte der angegebenen Adressen auf Fehlerseiten oder ins Nichts.
 
-Der Test untersuchte eine eng umrissene Aufgabe mit **Nachrichtenartikeln**, nicht Fachrecherche allgemein, und die Werkzeuge entwickeln sich weiter. Er zeigt daher nicht, dass jede KI-Recherche so schlecht ist. Er zeigt, dass **Quellenangaben, die Werkzeuge ausgeben, nicht automatisch stimmen**, und dass Öffnen und Prüfen deshalb nötig bleibt.
+Der Test untersuchte eine eng umrissene Aufgabe mit **Nachrichtenartikeln**, keine Fachrecherche im Allgemeinen, und die Werkzeuge entwickeln sich weiter. Über jede KI-Recherche sagt er deshalb nichts aus. Er zeigt aber, dass **Quellenangaben, die Werkzeuge ausgeben, nicht automatisch stimmen**, und dass Öffnen und Prüfen deshalb nötig bleibt.
 
 ---
 
@@ -111,7 +111,7 @@ Damit die Arbeit nicht verpufft, lohnt eine kleine Notiz zu jeder Aussage, auf d
 - das **Abrufdatum**, also der Tag, an dem du sie geöffnet hast,
 - ein Vermerk, ob du sie **geprüft** hast.
 
-Das ist kein Bürokratiemonster, sondern spart dir später die Frage „Woher hatte ich das nochmal?".
+Das ist kein Bürokratiemonster. Es spart dir später die Frage „Woher hatte ich das nochmal?".
 
 Für Berichte, Referate und Projektarbeiten gilt: Du gibst die **ursprünglichen Quellen** an, die du geprüft hast, nicht „die KI hat gesagt". Ob und wie du KI-Unterstützung kenntlich machen musst, regeln Institut, Schule oder Betrieb. Frag im Zweifel vorher nach, bevor du abgibst.
 
@@ -131,7 +131,12 @@ Für Berichte, Referate und Projektarbeiten gilt: Du gibst die **ursprünglichen
 
 ## Zum Ausprobieren
 
-Such dir eine Frage aus deinem Lernstoff oder Praktikum, bei der du die Antwort später gut prüfen kannst. Lass ein Werkzeug mit Suche drei bis fünf Fundstellen liefern und prüfe jede mit den drei Fragen aus Abschnitt 3: Gibt es sie, steht es da, taugt sie? Mach dir eine Mini-Tabelle mit den Spalten „Aussage", „Fundstelle", „geprüft ja/nein". Zähle am Ende, wie viele Quellen die Prüfung bestanden haben. Das Ergebnis zeigt dir, wie oft du bei diesem einen Rechercheversuch nachprüfen musstest, und mehr nicht. Auch wenn alle fünf bestehen, ist das keine Erlaubnis, beim nächsten Mal weniger zu prüfen.
+1. Such dir eine Frage aus deinem Lernstoff oder Praktikum, bei der du die Antwort später gut prüfen kannst.
+2. Lass ein Werkzeug mit Suche drei bis fünf Fundstellen liefern und prüfe jede mit den drei Fragen aus Abschnitt 3: Gibt es sie, steht es da, taugt sie?
+3. Mach dir eine Mini-Tabelle mit den Spalten „Aussage", „Fundstelle", „geprüft ja/nein".
+4. Zähle am Ende, wie viele Quellen die Prüfung bestanden haben.
+
+Das Ergebnis zeigt dir, wie oft du bei diesem einen Rechercheversuch nachprüfen musstest, und mehr nicht. Auch wenn alle fünf bestehen, ist das keine Erlaubnis, beim nächsten Mal weniger zu prüfen.
 
 ---
 
@@ -166,4 +171,7 @@ review_historie:
   - runde: 2
     datum: 2026-10-02
     ergebnis: "Abschluss-Selbstcheck: Querverweise (Abschnitt 3, 5, 7), Voraussetzungen E2/E6/E7/E8/A1/A2, Tow- und Wineburg-Aussagen gegen Quellen konsistent, keine Produktnamen im Fließtext, keine verbotenen Typ-C-Elemente. Kopfzeile und YAML-Status gemeinsam auf final. Freigabe durch David."
+  - runde: 3
+    datum: 2026-10-08
+    ergebnis: "Sprachliche Überarbeitung durch Claude zur Angleichung an die Einsteiger-Reihe E1 bis E8: Verneinungs-Gegensatz-Muster aufgelöst, lange Sätze geteilt, Kontextarten-Tabelle in Liste, Übungen als nummerierte Liste, kurze Querverweise ergänzt. Inhaltlich unverändert (Zahlen, Fachbegriffe, Studienangaben, Verweise maschinell geprüft). Freigabe durch David steht aus."
 ```

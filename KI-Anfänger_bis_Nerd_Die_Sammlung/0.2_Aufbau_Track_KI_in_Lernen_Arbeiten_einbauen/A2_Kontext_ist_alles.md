@@ -6,9 +6,9 @@
 
 ## Worum es geht
 
-Stell dir vor, du kommst am ersten Tag in eine fremde Gärtnerei und der Chef sagt nur: „Mach mal den Vorgarten." Ohne Plan, ohne Fotos, ohne Budget, ohne zu wissen, ob die Kundin Rosen hasst. Du würdest raten. Oder zurückfragen. Ein KI-Werkzeug fragt oft nicht zurück, sondern **rät einfach los**, und es rät meist erstaunlich überzeugend.
+Stell dir vor, du kommst am ersten Tag in eine fremde Gärtnerei und der Chef sagt nur: „Mach mal den Vorgarten." Ohne Plan, ohne Fotos, ohne Budget, ohne zu wissen, ob die Kundin Rosen hasst. Du würdest raten. Oder zurückfragen. Ein KI-Werkzeug fragt oft nicht zurück. Es **rät einfach los**, und meist rät es erstaunlich überzeugend.
 
-Ein wichtiger Hebel im Alltag ist deshalb nicht der clevere Prompt-Trick, sondern das, was du dem Werkzeug **mitgibst**. In E3 hast du gesehen, dass ein Gespräch aus Kontext besteht, und in E4, dass Ziel und Kontext die wichtigsten Prompt-Bausteine sind. Dieser Artikel macht daraus eine Arbeitsweise: Was gehört in den Kontext, in welcher Form, wie viel davon, und was lässt du besser draußen?
+Ein wichtiger Hebel im Alltag ist deshalb das, was du dem Werkzeug **mitgibst**, mehr als jeder clevere Prompt-Trick. In E3 hast du gesehen, dass ein Gespräch aus Kontext besteht, und in E4, dass Ziel und Kontext die wichtigsten Prompt-Bausteine sind. Dieser Artikel macht daraus eine Arbeitsweise: Was gehört in den Kontext, in welcher Form, wie viel davon, und was lässt du besser draußen? Danach stellst du Anfragen so zusammen, dass das Werkzeug nicht raten muss.
 
 Vorausgesetzt werden E3 (Gespräch und Kontext), E4 (Prompts), E6 (Grenzen), E7 (Daten-Ampel), E8 (Dokumente) und A1 (Werkzeugwahl).
 
@@ -18,14 +18,12 @@ Vorausgesetzt werden E3 (Gespräch und Kontext), E4 (Prompts), E6 (Grenzen), E7 
 
 Kontext sind alle Informationen, Anweisungen und Materialien, die dem Werkzeug für eine Aufgabe zur Verfügung stehen und seine Antwort beeinflussen können. Das ist mehr als dein letzter Satz. Als Faustbild: Der Auftrag sagt, was das Werkzeug tun soll; Hintergrund, Material, Beispiele und Vorgaben sagen ihm, worum es geht und woran es sich halten soll.
 
-| Kontextart | Beispiel | Wirkt wie |
-| --- | --- | --- |
-| **Auftrag** | „Erkläre mir Subnetting für meine Netzwerktechnik-Klausur" | Das Ziel |
-| **Hintergrund** | „Ich bin Umschüler, kenne Binärzahlen, aber keine Netzwerke" | Das Niveau |
-| **Material** | Skriptseiten, Fehlermeldung, Entwurf, Tabelle | Die Grundlage |
-| **Beispiele** | Ein gelungener Absatz, eine Musterlösung | Die Vorlage |
-| **Vorgaben** | „Maximal eine Seite, Du-Form, keine Aufzählung" | Der Rahmen |
-| **Dauerhafte Anweisungen** | In Projekten oder Einstellungen hinterlegt (Abschnitt 5) | Der Standard |
+- **Auftrag**: das Ziel, zum Beispiel „Erkläre mir Subnetting für meine Netzwerktechnik-Klausur".
+- **Hintergrund**: das Niveau, zum Beispiel „Ich bin Umschüler, kenne Binärzahlen, aber keine Netzwerke".
+- **Material**: die Grundlage, etwa Skriptseiten, eine Fehlermeldung, ein Entwurf oder eine Tabelle.
+- **Beispiele**: die Vorlage, etwa ein gelungener Absatz oder eine Musterlösung.
+- **Vorgaben**: der Rahmen, zum Beispiel „Maximal eine Seite, Du-Form, keine Aufzählung".
+- **Dauerhafte Anweisungen**: der Standard, in Projekten oder Einstellungen hinterlegt (Abschnitt 5).
 
 Nicht jede Aufgabe braucht alle sechs. Wenn eine Antwort enttäuscht, lohnt sich zuerst der Blick auf diese Zeilen, und die Fehlersuche wird einfacher: Welche Zeile hätte ich ausfüllen können?
 
@@ -51,7 +49,7 @@ Das klingt nach viel, ist aber in zwei, drei Sätzen erledigt. Ein Beispiel:
 >
 > *Mit Kontext:* „Ich bereite mich auf eine mündliche Prüfung in Netzwerktechnik vor und kenne Switche, aber VLANs noch nicht. Erkläre mir in etwa einer Bildschirmseite, wozu man sie braucht und was ein Trunk-Port ist. Hier ist die Folie aus dem Unterricht: [Text]. Gib mir am Ende drei Fragen, mit denen ich mich selbst testen kann."
 
-Die zweite Anfrage ist nicht „besser formuliert", sie ist **besser ausgestattet**.
+Die zweite Anfrage ist vor allem **besser ausgestattet**, an der Formulierung liegt der Unterschied weniger.
 
 ---
 
@@ -106,7 +104,7 @@ Wie du daraus wiederverwendbare Anweisungen und Vorlagen baust, ist Thema von A7
 ## 6. Häufige Fehlgriffe
 
 - **Zu wenig sagen und dann über „generische" Antworten ärgern.** Das Werkzeug kann nur verwenden, was im Kontext steht.
-- **Alles hineinkippen.** Zehn Seiten Material für eine Frage, die eine Seite beantwortet, verwässern die Antwort.
+- **Alles hineinkippen.** Zehn Seiten Material für eine Frage, die eine Seite beantwortet, verwässern die Antwort (E3, Kontextfenster).
 - **Material beschreiben statt zeigen.** Wer seinen Code „sinngemäß" schildert, bekommt Antworten zu einem Code, den es so nicht gibt.
 - **Vertrauliches mitgeben, weil es „zum Kontext gehört".** Erst die Daten-Ampel (E7), dann das Einfügen.
 - **Alte Hinterlegungen nie aufräumen.** Ein überholter Hinweis in den Einstellungen färbt jede künftige Antwort.
@@ -116,7 +114,10 @@ Wie du daraus wiederverwendbare Anweisungen und Vorlagen baust, ist Thema von A7
 
 ## Zum Ausprobieren
 
-Nimm eine Frage, die du in letzter Zeit gestellt und eher mittelmäßig beantwortet bekommen hast. Stell sie in einem neuen Gespräch noch einmal, aber diesmal mit dem Kontext-Paket aus Abschnitt 2: Zweck, Stand, Material, Vorgaben und, wenn Ton oder Form wichtig sind, ein Beispiel. Vergleiche die beiden Antworten und überlege, welcher Baustein den größten Unterschied gemacht hat. Wenn du Lust hast, schreib dir daraus drei Sätze, die du künftig als Standardstart verwendest.
+1. Nimm eine Frage, die du in letzter Zeit gestellt und eher mittelmäßig beantwortet bekommen hast.
+2. Stell sie in einem neuen Gespräch noch einmal, diesmal mit dem Kontext-Paket aus Abschnitt 2: Zweck, Stand, Material, Vorgaben und, wenn Ton oder Form wichtig sind, ein Beispiel.
+3. Vergleiche die beiden Antworten und überlege, welcher Baustein den größten Unterschied gemacht hat.
+4. Wenn du Lust hast, schreib dir daraus drei Sätze, die du künftig als Standardstart verwendest.
 
 ---
 
@@ -150,4 +151,7 @@ review_historie:
   - runde: 2
     datum: 2026-10-01
     ergebnis: "Zwei Re-Reviews hatten die alte Fassung geprüft; Abgleich mit der Datei: alle genannten Punkte bereits umgesetzt. Abschluss-Selbstcheck: Querverweise (E3, E4, E6, E7, E8, A1, A7, A3) konsistent, sechs Kontextarten und fünf Bausteine stimmen mit Text und Fazit überein, keine verbotenen Typ-C-Elemente. Kopfzeile und YAML-Status gemeinsam auf final. Freigabe durch David."
+  - runde: 3
+    datum: 2026-10-08
+    ergebnis: "Sprachliche Überarbeitung durch Claude zur Angleichung an die Einsteiger-Reihe E1 bis E8: Verneinungs-Gegensatz-Muster aufgelöst, lange Sätze geteilt, Kontextarten-Tabelle in Liste, Übungen als nummerierte Liste, kurze Querverweise ergänzt. Inhaltlich unverändert (Zahlen, Fachbegriffe, Studienangaben, Verweise maschinell geprüft). Freigabe durch David steht aus."
 ```

@@ -8,7 +8,7 @@
 
 In der Gärtnerei greift niemand für jede Aufgabe zur Schere. Für die Hecke nimmt man die Heckenschere, für den Boden den Spaten, und für den Rasenrand wieder etwas ganz anderes. Wer nur ein Werkzeug kennt, schneidet am Ende auch Tomaten mit dem Spaten.
 
-Bei KI ist es ähnlich. In E2 hast du die Werkzeugtypen kennengelernt. Dieser Artikel macht daraus Handwerk: Wie entscheidest du schnell, welches Werkzeug zu deiner Aufgabe passt? Und wie kombinierst du mehrere, damit mehr herauskommt als bei einem einzigen? Das Ganze ist der Startpunkt des Aufbau-Tracks, in dem KI vom Spielzeug zum festen Werkzeug im Lernen und Arbeiten wird.
+Bei KI ist es ähnlich. In E2 hast du die Werkzeugtypen kennengelernt. Dieser Artikel macht daraus Handwerk: Wie entscheidest du schnell, welches Werkzeug zu deiner Aufgabe passt? Und wie kombinierst du mehrere, damit mehr herauskommt als bei einem einzigen? Danach kannst du für jede Aufgabe schnell sagen, welche Fähigkeiten sie braucht. Das Ganze ist der Startpunkt des Aufbau-Tracks, in dem KI vom Spielzeug zum festen Werkzeug im Lernen und Arbeiten wird.
 
 Vorausgesetzt wird der Einsteiger-Track E1 bis E8, besonders E2 (Werkzeugtypen), E4 (Prompts), E6 (Grenzen) und E7 (Datenschutz).
 
@@ -19,7 +19,7 @@ Vorausgesetzt wird der Einsteiger-Track E1 bis E8, besonders E2 (Werkzeugtypen),
 Bevor du irgendetwas eintippst, lohnt sich ein kurzer Blick auf die Aufgabe. Fünf Fragen reichen:
 
 1. **Was soll am Ende rauskommen?** Eine Erklärung, ein Text, Code, eine Entscheidung, ein Bild? Das Ergebnis bestimmt das Werkzeug mehr als das Thema.
-2. **Brauche ich aktuelle Fakten oder überprüfbare Belege?** Dann brauchst du eine Suchfunktion mit Fundstellen, die du selbst nachprüfen kannst, ganz gleich, ob sie in einem Chat oder einem anderen Werkzeug steckt. Eine Antwort, deren Aktualität du nicht nachvollziehen kannst, reicht dafür nicht (E1, E6).
+2. **Brauche ich aktuelle Fakten oder überprüfbare Belege?** Dann brauchst du eine Suchfunktion mit Fundstellen, die du selbst nachprüfen kannst. Ob sie in einem Chat oder einem anderen Werkzeug steckt, ist dabei egal. Eine Antwort, deren Aktualität du nicht nachvollziehen kannst, reicht dafür nicht (E1, E6).
 3. **Hängt die Antwort an meinen eigenen Unterlagen?** Vorlesungsskript, Handbuch, Angebot, Protokoll: Dann brauchst du ein Werkzeug, das diese Dateien wirklich liest. Dass du eine Datei hochgeladen hast, heißt noch nicht, dass die Antwort auf ihr beruht (E8).
 4. **Muss etwas ausgeführt oder getestet werden?** Rechnen, Code laufen lassen, Dateien umbauen: Dafür taugen Werkzeuge mit Ausführung besser als reine Textantworten.
 5. **Wie sensibel sind die Daten, und wie gründlich muss ich das Ergebnis prüfen?** Das erste entscheidet über die Daten-Ampel (E7), das zweite über den Prüfaufwand (E6).
@@ -30,7 +30,7 @@ Du musst das nicht schriftlich durchgehen. Mit etwas Übung läuft es nebenbei. 
 
 ## 2. Die Matrix: Aufgabe mal Fähigkeit
 
-Die Tabelle zeigt, welche Fähigkeiten bei typischen Aufgaben im Lern- und Arbeitsalltag helfen. **●** heißt „guter Startpunkt", **○** „mögliche Ergänzung", leer heißt „meist nicht nötig". Die Spalten beschreiben Fähigkeiten und keine festen Produktkategorien: **Ein einziges Produkt kann mehrere davon gleichzeitig anbieten.** Auf die Fähigkeiten kommt es an, nicht auf den Namen auf der Verpackung.
+Die Tabelle zeigt, welche Fähigkeiten bei typischen Aufgaben im Lern- und Arbeitsalltag helfen. **●** heißt „guter Startpunkt", **○** „mögliche Ergänzung", leer heißt „meist nicht nötig". Die Spalten beschreiben Fähigkeiten und keine festen Produktkategorien: **Ein einziges Produkt kann mehrere davon gleichzeitig anbieten.** Auf die Fähigkeiten kommt es an, der Name auf der Verpackung ist egal.
 
 | Aufgabe | Dialog | Suche mit Quellen | Dokumente | Code ausführen | Audio | Bild | Agent |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -56,9 +56,9 @@ Und noch zwei Warnungen für die Tabelle: **Ein Textvorschlag ist noch kein Test
 
 Bei manchen Aufgaben hilft es, Werkzeuge hintereinander zu schalten, jedes für das, was es am besten kann. Nicht jede Aufgabe braucht das: Eine einfache Frage erledigt ein Werkzeug allein, und jede zusätzliche Station kostet Aufwand und kann einen Übergabefehler einbauen. Drei nützliche Beispiele:
 
-**Die Recherche-Kette.** Suche mit Quellen liefert Funde, du öffnest die wichtigsten selbst und prüfst, ob die Fundstelle deine konkrete Aussage wirklich trägt (E6). Erst dann hilft ein Chat-Assistent beim Ordnen, Vergleichen und Formulieren. So steckt in der Gliederung echte Recherche und nicht nur Plausibilität.
+**Die Recherche-Kette.** Suche mit Quellen liefert Funde, du öffnest die wichtigsten selbst und prüfst, ob die Fundstelle deine konkrete Aussage wirklich trägt (E6). Erst dann hilft ein Chat-Assistent beim Ordnen, Vergleichen und Formulieren. So steckt in der Gliederung echte Recherche und nicht nur Plausibilität. Wie du Quellen genau prüfst, steht in A3.
 
-**Die Lern-Kette.** Ein Dokumenten-Werkzeug beantwortet Fragen zu deinem Skript, ein Chat macht daraus Übungsfragen (E5), und du beantwortest sie erst selbst, bevor du Rückmeldung holst. Das Skript bleibt die Quelle, die KI wird zum Sparringspartner.
+**Die Lern-Kette.** Ein Dokumenten-Werkzeug beantwortet Fragen zu deinem Skript, ein Chat macht daraus Übungsfragen (E5), und du beantwortest sie erst selbst, bevor du Rückmeldung holst. Das Skript bleibt die Quelle, die KI wird zum Sparringspartner. Wie daraus ein Lernsystem über mehrere Wochen wird, zeigt A4.
 
 **Die Besprechungs-Kette.** Spracherkennung macht aus einer zulässig aufgenommenen Besprechung einen Text (E7). Du prüfst zuerst unklare Namen, Zahlen und Aussagen im Text gegen die Aufnahme (E8). Danach arbeitet ein Chat Entscheidungen und Aufgaben heraus, und die fertige Zusammenfassung vergleichst du noch einmal mit dem geprüften Text, besonders bei Zuständigkeiten und Zusagen. Jede Station hat ihre eigene Fehlerquelle, deshalb wird an den Übergaben und am Ende geprüft.
 
@@ -81,7 +81,7 @@ Das Prinzip dahinter: **Jede Station macht eine Sache. Kritische Ergebnisse prü
 Manchmal merkst du mitten in der Arbeit, dass du das falsche Werkzeug gegriffen hast. Typische Signale:
 
 - **Die Antworten klingen gut, aber du findest keine Belege.** Wechsle zu Suche mit Quellen oder prüfe von Hand.
-- **Das Gespräch driftet oder wiederholt sich.** Starte neu mit einer sauberen Zusammenfassung (E3).
+- **Das Gespräch driftet oder wiederholt sich.** Starte neu mit einer sauberen Zusammenfassung (E3). Wie du dabei Kontext mitgibst, zeigt A2.
 - **Zahlen stimmen nicht.** Lass rechnen oder Code ausführen, statt im Text zu raten.
 - **Die Antwort ignoriert dein Dokument.** Prüfe, ob das Werkzeug es wirklich lesen konnte, und frag nach der Fundstelle (E8).
 - **Die Daten sind heikler als gedacht.** Stopp, Daten-Ampel (E7): Was ist rot oder gelb, und gibt es ein freigegebenes oder lokales Werkzeug?
@@ -91,7 +91,7 @@ Manchmal merkst du mitten in der Arbeit, dass du das falsche Werkzeug gegriffen 
 ## 6. Häufige Fehlgriffe
 
 - **Immer dasselbe Werkzeug benutzen.** Wer nur den Chat kennt, nutzt ihn auch dort, wo Suche oder Dokumenten-Werkzeug besser wären.
-- **Nach dem Produkt statt nach der Aufgabe wählen.** Nicht das mächtigste oder neueste Werkzeug passt am besten, sondern das zur Aufgabe passende.
+- **Nach dem Produkt statt nach der Aufgabe wählen.** Das mächtigste oder neueste Werkzeug ist nicht automatisch das passende. Entscheidend ist, was die Aufgabe verlangt.
 - **Die Kette ohne Prüfung laufen lassen.** Fehler in Station eins stecken sonst in allem, was danach kommt.
 - **Zu viele verschiedene Aufgaben in einem Gespräch mischen.** Wechseln Ziel oder Unterlagen, ist ein neues Gespräch mit klarem Auftrag oft übersichtlicher (E3).
 - **Mit dem Werkzeug diskutieren, statt zu wechseln.** Kommst du nach mehreren gezielten Versuchen nicht weiter, ist ein anderes Werkzeug oft schneller als der nächste Prompt (E4). Das ist eine Faustregel, kein Naturgesetz.
@@ -100,13 +100,18 @@ Manchmal merkst du mitten in der Arbeit, dass du das falsche Werkzeug gegriffen 
 
 ## Zum Ausprobieren
 
-Schreib dir fünf Aufgaben auf, die du in der letzten Woche erledigt hast oder bald erledigen musst. Ordne jeder Aufgabe mit den fünf Fragen aus Abschnitt 1 die passenden Fähigkeiten zu, und überlege, ob eine Kette sinnvoll wäre. Wähle dann eine Aufgabe, bei der ein zweites Werkzeug wirklich etwas beitragen könnte, zum Beispiel erst Suche, dann Chat. Probiere es aus und notiere, ob sich der zusätzliche Schritt gelohnt hat. Auch „Ein Werkzeug hätte gereicht" ist ein gutes Ergebnis. Am Ende hast du eine persönliche Mini-Matrix, die besser zu dir passt als jede allgemeine Tabelle.
+1. Schreib dir fünf Aufgaben auf, die du in der letzten Woche erledigt hast oder bald erledigen musst.
+2. Ordne jeder Aufgabe mit den fünf Fragen aus Abschnitt 1 die passenden Fähigkeiten zu, und überlege, ob eine Kette sinnvoll wäre.
+3. Wähle eine Aufgabe, bei der ein zweites Werkzeug wirklich etwas beitragen könnte, zum Beispiel erst Suche, dann Chat.
+4. Probiere es aus und notiere, ob sich der zusätzliche Schritt gelohnt hat. Auch „Ein Werkzeug hätte gereicht" ist ein gutes Ergebnis.
+
+Am Ende hast du eine persönliche Mini-Matrix, die besser zu dir passt als jede allgemeine Tabelle.
 
 ---
 
 ## Fazit
 
-Gute KI-Nutzung beginnt nicht mit dem Prompt, sondern mit der Frage, was am Ende herauskommen soll. Fünf kurze Fragen führen dich zu den passenden Fähigkeiten: Was soll herauskommen? Brauche ich überprüfbare Belege? Hängt die Antwort an eigenen Unterlagen? Muss etwas ausgeführt werden? Und: Wie sensibel sind die Daten und wie gründlich muss ich prüfen? Manchmal ist eine Kette aus mehreren Werkzeugen besser als ein einzelnes, solange kritische Übergaben und das Endergebnis geprüft werden. Und wenn das Werkzeug nicht passt, wechselst du, statt weiter zu diskutieren. Als Nächstes geht es in A2 darum, wie Kontext, Dateien und dauerhafte Anweisungen ein Werkzeug erst richtig nützlich machen.
+Gute KI-Nutzung beginnt mit der Frage, was am Ende herauskommen soll, und erst danach mit dem Prompt. Fünf kurze Fragen führen dich zu den passenden Fähigkeiten: Was soll herauskommen? Brauche ich überprüfbare Belege? Hängt die Antwort an eigenen Unterlagen? Muss etwas ausgeführt werden? Und: Wie sensibel sind die Daten und wie gründlich muss ich prüfen? Manchmal ist eine Kette aus mehreren Werkzeugen besser als ein einzelnes, solange kritische Übergaben und das Endergebnis geprüft werden. Und wenn das Werkzeug nicht passt, wechselst du, statt weiter zu diskutieren. Als Nächstes geht es in A2 darum, wie Kontext, Dateien und dauerhafte Anweisungen ein Werkzeug erst richtig nützlich machen.
 
 ```yaml
 dokument: ki-a1-werkzeugwahl-im-alltag
@@ -133,4 +138,7 @@ review_historie:
   - runde: 3
     datum: 2026-10-01
     ergebnis: "Abschluss-Selbstcheck: Querverweise E1 bis E8, fünf Fragen in Abschnitt 1, Fazit und Übung konsistent; Kopfzeile und YAML-Status gemeinsam auf final gesetzt. Freigabe durch David."
+  - runde: 4
+    datum: 2026-10-08
+    ergebnis: "Sprachliche Überarbeitung durch Claude zur Angleichung an die Einsteiger-Reihe E1 bis E8: Verneinungs-Gegensatz-Muster aufgelöst, lange Sätze geteilt, Kontextarten-Tabelle in Liste, Übungen als nummerierte Liste, kurze Querverweise ergänzt. Inhaltlich unverändert (Zahlen, Fachbegriffe, Studienangaben, Verweise maschinell geprüft). Freigabe durch David steht aus."
 ```
