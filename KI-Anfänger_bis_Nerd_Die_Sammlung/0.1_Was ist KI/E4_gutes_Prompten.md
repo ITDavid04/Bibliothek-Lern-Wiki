@@ -61,7 +61,7 @@ Zwei Dinge sind dabei zu beachten: Beispiele sollten **verschiedene Fälle** abd
 - **Schrittfolge nennen.** Wenn die Reihenfolge zählt, nummerierst du die Schritte: „1. Fasse zusammen, 2. nenne drei Schwächen, 3. schlage Verbesserungen vor."
 - **Unsicherheit erlauben.** Der Satz „Wenn du etwas nicht sicher weißt, sag das ausdrücklich, statt zu raten" kann erzwungene Antworten verringern. Er ersetzt aber keine Prüfung (mehr in E6).
 - **Aufgaben aufteilen.** Eine große Aufgabe lässt sich oft besser in mehrere Prompts zerlegen, deren Ergebnisse du nacheinander verwendest, als in einem einzigen riesigen Prompt.
-- **Auf das Modell achten.** Hersteller empfehlen für verschiedene Modelltypen unterschiedliche Stile. Modelle, die direkt auf Anweisungen reagieren, profitieren oft von präzisen Vorgaben. Sogenannte Reasoning-Modelle (Modelle, die vor der Antwort ausführlicher „nachdenken", mehr dazu in D8) profitieren eher von einem klaren Ziel und weniger Mikro-Vorgaben. Ob „Denke Schritt für Schritt" noch hilft, hängt deshalb vom Modell ab. Bei Reasoning-Modellen halten Anbieter es teils für überflüssig.
+- **Auf das Modell achten.** Hersteller empfehlen für verschiedene Modelltypen unterschiedliche Stile. Modelle, die direkt auf Anweisungen reagieren, profitieren oft von präzisen Vorgaben. Sogenannte Reasoning-Modelle (Modelle, die vor der Antwort ausführlicher „nachdenken", mehr dazu in D7) profitieren eher von einem klaren Ziel und weniger Mikro-Vorgaben. Ob „Denke Schritt für Schritt" noch hilft, hängt deshalb vom Modell ab. Bei Reasoning-Modellen halten Anbieter es teils für überflüssig.
 
 ---
 
@@ -164,4 +164,7 @@ review_historie:
   - runde: 4
     datum: 2026-10-07
     ergebnis: "Sprachliche Überarbeitung durch Claude zur Angleichung der Reihe E1 bis E8: Ansprache durchgehend du, Bild vor Regel, einzelne Tabellen in Fließtext oder Liste, Querverweise und kurze Hinweise ergänzt, lange Sätze geteilt. Inhaltlich unverändert (Zahlen, Fachbegriffe, Verweise maschinell geprüft). Freigabe durch David steht aus."
+  - runde: 5
+    datum: 2026-10-08
+    ergebnis: "Verweis nach Umnummerierung des Dahinter-Blocks angepasst (D8 wird D7, Argumentieren und Denken). Inhaltlich unverändert. Freigabe durch David steht weiterhin aus."
 ```
