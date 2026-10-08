@@ -6,7 +6,7 @@
 
 ## Worum es geht
 
-Ein Chat-Assistent kann Lernen erleichtern oder aushöhlen. Er kann dir einen Zusammenhang geduldig dreimal anders erklären, Übungsfragen stellen und deine Lösung prüfen. Er kann dir aber ebenso die fertige Lösung liefern, bevor du selbst nachgedacht hast, und dann fühlt sich alles verstanden an, ohne dass es hängen bleibt. Dieser Artikel zeigt drei Arten, KI zum Lernen einzusetzen (erklären lassen, abfragen lassen, Fehler finden lassen) und die Leitplanken, die den Unterschied machen.
+Ein Chat-Assistent kann dir einen Zusammenhang geduldig dreimal anders erklären, Übungsfragen stellen und deine Lösung prüfen. Er kann dir aber ebenso die fertige Lösung liefern, bevor du selbst nachgedacht hast, und dann fühlt sich alles verstanden an, ohne dass es hängen bleibt. Deshalb kann er Lernen erleichtern oder aushöhlen. Dieser Artikel zeigt drei Arten, KI zum Lernen einzusetzen (erklären lassen, abfragen lassen, Fehler finden lassen) und die Leitplanken, die den Unterschied machen.
 
 Vorausgesetzt werden E3 (Gespräch führen) und E4 (gute Prompts). Die Überprüfung von Antworten vertieft E6.
 
@@ -23,8 +23,8 @@ Für KI folgt daraus: Eine glatte, gut lesbare Erklärung erzeugt leicht genau d
 Die Forschung zu KI und Lernen ist jung, die Befunde sind noch uneinheitlich. Drei Beispiele zeigen die Bandbreite:
 
 - In einem Feldexperiment mit knapp 1.000 Schülerinnen und Schülern im Fach Mathematik half ein frei nutzbarer KI-Chat bei den Übungsaufgaben. Bei der anschließenden Prüfung ohne KI, die noch in derselben Sitzung stattfand, schnitt diese Gruppe jedoch schlechter ab als die Kontrollgruppe. Bei einer anders gestalteten Tutor-Variante, die Hinweise statt fertiger Lösungen gab und auf von Lehrkräften bereitgestellte Lösungen zurückgriff, war dieser Nachteil gegenüber der Kontrollgruppe nicht nachweisbar. Einen zusätzlichen Lernvorteil gegenüber der Kontrollgruppe zeigte diese Variante allerdings ebenfalls nicht. Das Ergebnis beschreibt diesen Unterrichtskontext; es belegt keinen allgemeinen Effekt jeder KI-Nutzung auf langfristiges Lernen.
-- In einem Experiment mit 194 Physikstudierenden (jeder bekam zwei Lektionen zu verschiedenen Themen, einmal mit KI-Tutor, einmal im aktivierenden Präsenzunterricht) lernten die Studierenden bei den Lektionen mit dem eigens gestalteten KI-Tutor im Mittel mehr als bei den Lektionen im aktivierenden Präsenzunterricht. Der Tutor war gezielt nach pädagogischen Lernprinzipien gestaltet und mit von den Forschenden vorbereiteten Lösungen und strukturierten Aufgaben abgesichert. Das heißt nicht, dass ein beliebiger Chat-Assistent automatisch lerntauglich ist. Die Autoren selbst sehen die Grenzen bei Grundlagenstoff und anderen Kontexten.
-- Eine kleine Vorveröffentlichung (Preprint, noch ohne Begutachtung) untersuchte kognitive Aktivität beim Essay-Schreiben: Bei 54 Teilnehmenden fand sie mit KI-Hilfe eine schwächere Vernetzung der Hirnaktivität (gemessen per EEG) und ein geringeres Gefühl, den Text selbst geschrieben zu haben. Das ist ein Hinweis, kein Beweis, und es ging ums Schreiben, nicht um das langfristige Lernen von Fachstoff.
+- In einem Experiment mit 194 Physikstudierenden bekam jeder zwei Lektionen zu verschiedenen Themen, einmal mit KI-Tutor, einmal im aktivierenden Präsenzunterricht. Bei den Lektionen mit dem eigens gestalteten KI-Tutor lernten die Studierenden im Mittel mehr als bei den Lektionen im aktivierenden Präsenzunterricht. Der Tutor war gezielt nach pädagogischen Lernprinzipien gestaltet und mit von den Forschenden vorbereiteten Lösungen und strukturierten Aufgaben abgesichert. Das heißt nicht, dass ein beliebiger Chat-Assistent automatisch lerntauglich ist. Die Autoren selbst sehen die Grenzen bei Grundlagenstoff und anderen Kontexten.
+- Eine kleine Vorveröffentlichung (Preprint, noch ohne Begutachtung) untersuchte kognitive Aktivität beim Essay-Schreiben. Bei 54 Teilnehmenden fand sie mit KI-Hilfe eine schwächere Vernetzung der Hirnaktivität (gemessen per EEG) und ein geringeres Gefühl, den Text selbst geschrieben zu haben. Das ist ein Hinweis, kein Beweis, und es ging ums Schreiben, nicht um das langfristige Lernen von Fachstoff.
 
 Ein vorsichtiger gemeinsamer Hinweis dieser Untersuchungen: Die Art der KI-Nutzung und die Gestaltung des Tutors können einen großen Unterschied machen. Systeme, die zum eigenen Denken und Abrufen anleiten, schneiden anders ab als Systeme, die einfach Antworten liefern. Die Forschung ist allerdings noch jung und betrachtet sehr unterschiedliche Situationen.
 
@@ -39,7 +39,7 @@ Die naheliegendste Lernhilfe ist die Erklärung, die zu dir passt. Ein Vorteil g
 - **Das Material mitgeben.** Eigener Skripttext oder eine Passage aus dem Lernmaterial als Grundlage (E4). So bleibt die Erklärung näher an deinem Stoff. Gib dabei keine personenbezogenen oder vertraulichen Inhalte weiter und fremde Texte nur, wenn du das darfst (mehr in E7).
 - **Erst selbst, dann KI.** Schreibe in eigenen Worten auf, was du verstanden hast, und bitte um Rückmeldung: „Hier ist meine Erklärung. Was stimmt, was fehlt, was ist ungenau?"
 
-Der letzte Punkt ist wertvoller als die dritte Erklärung des Assistenten: Wer selbst formuliert, merkt Lücken, die beim bloßen Lesen unsichtbar bleiben.
+Der letzte Punkt ist wertvoller als die dritte Erklärung des Assistenten: Wenn du selbst formulierst, merkst du Lücken, die beim bloßen Lesen unsichtbar bleiben.
 
 ---
 
@@ -51,7 +51,7 @@ Der Testeffekt lässt sich mit KI gut nutzen. Du lässt dir Fragen zu einem Them
 - **Eine Frage nach der anderen.** „Stelle mir die Fragen einzeln. Gib die Lösung erst, nachdem ich geantwortet habe."
 - **Verschiedene Formen.** Verständnisfragen, Rechen- oder Anwendungsaufgaben, kurze Begründungsfragen, nicht nur Auswendiglernen.
 - **Rückmeldung verlangen.** „Bewerte meine Antwort, nenne, was fehlt, und gib mir einen Hinweis statt der Lösung."
-- **Später wiederholen.** Frage dasselbe Thema nach einigen Tagen erneut ab. Was du nach einigen Tagen noch ohne Hilfe beantworten kannst, ist besser überprüft als direkt nach dem Lesen. Eine Meta-Analyse von 317 Experimenten zeigt außerdem, dass verteiltes Lernen gegenüber gebündeltem Lernen die spätere Behaltensleistung verbessern kann; wie groß der sinnvolle Abstand ist, hängt unter anderem davon ab, wie lange das Gelernte später behalten werden soll. Die Studien arbeiteten meist mit Wortlisten oder Texten, der Übertrag auf IT-Stoff ist eine plausible Annahme.
+- **Später wiederholen.** Frage dasselbe Thema nach einigen Tagen erneut ab. Was du nach einigen Tagen noch ohne Hilfe beantworten kannst, ist besser überprüft als direkt nach dem Lesen. Eine Meta-Analyse von 317 Experimenten zeigt außerdem, dass verteiltes Lernen gegenüber gebündeltem Lernen die spätere Behaltensleistung verbessern kann. Wie groß der sinnvolle Abstand ist, hängt unter anderem davon ab, wie lange das Gelernte später behalten werden soll. Die Studien arbeiteten meist mit Wortlisten oder Texten, der Übertrag auf IT-Stoff ist eine plausible Annahme.
 
 Wichtig: Die Fragen und Musterlösungen der KI können Fehler enthalten. Vergleiche Lösungen mit dem eigenen Lernmaterial, vor allem bei Zahlen, Fachbegriffen und Rechenwegen.
 
@@ -78,7 +78,7 @@ Aus den bisherigen Abschnitten ergeben sich einfache Regeln:
 - **Datenschutz und Urheberrecht.** Gib keine personenbezogenen oder vertraulichen Daten ein und fremde Texte nur, wenn du das darfst. Frage im Zweifel bei deiner Schule oder deinem Betrieb nach (mehr in E7).
 - **Hinweise vor Lösungen.** Bitte ausdrücklich um Hinweise, Rückfragen oder den nächsten Schritt, nicht um die Komplettlösung.
 - **Eigene Worte.** Fasse zusammen, was du verstanden hast, statt Antworten nur zu kopieren.
-- **Prüfen.** Zahlen, Begriffe und Quellen gegen das Lernmaterial oder eine verlässliche Quelle abgleichen.
+- **Prüfen.** Gleiche Zahlen, Begriffe und Quellen mit dem Lernmaterial oder einer verlässlichen Quelle ab (mehr in E6).
 - **Mit dem Ziel abgleichen.** Frage dich am Ende: Könnte ich das jetzt ohne KI? Wenn nicht, übe den Schritt noch einmal ohne KI.
 
 Viele Werkzeuge bieten inzwischen **Lern- oder Tutor-Modi** an, die genau dieses Verhalten voreinstellen: Rückfragen statt Antworten, Hinweise, Wissensüberprüfungen. Das ist eine Hilfe, ersetzt aber nicht die eigene Haltung. Ein Anbieter beschreibt seinen Modus selbst als noch nicht durchgehend zuverlässig (Näheres in der Beispielbox).
@@ -89,39 +89,41 @@ Viele Werkzeuge bieten inzwischen **Lern- oder Tutor-Modi** an, die genau dieses
 
 ## 6. Beispiel: Ein Thema in vier Schritten lernen
 
-Das Thema: Unterschied zwischen TCP und UDP. Die Tabelle zeigt nur deine Eingaben.
+Das Thema: Unterschied zwischen TCP und UDP. Die Liste zeigt nur deine Eingaben.
 
-| Schritt | Eingabe | Zweck |
-| --- | --- | --- |
-| 1 | „Ich lerne für die Umschulung zum Fachinformatiker und kenne IP-Adressen und Ports, aber TCP und UDP noch nicht. Erkläre den Unterschied in wenigen Sätzen mit einem Alltagsbild." | Erklären lassen |
-| 2 | „Ich fasse zusammen: [eigene Zusammenfassung]. Was stimmt, was fehlt oder ist ungenau? Nur Hinweise, keine Lösung." | Eigene Worte, Rückmeldung |
-| 3 | „Stelle mir vier Fragen dazu, eine nach der anderen. Gib die Lösung erst, nachdem ich geantwortet habe." | Abfragen lassen |
-| 4 | „Ich habe Frage 3 so beantwortet: [Antwort]. Prüfe meine Antwort. Falls du einen Denkfehler findest, gib mir einen Hinweis statt der Lösung." | Fehler finden lassen |
+1. „Ich lerne für die Umschulung zum Fachinformatiker und kenne IP-Adressen und Ports, aber TCP und UDP noch nicht. Erkläre den Unterschied in wenigen Sätzen mit einem Alltagsbild." Zweck: Erklären lassen.
+2. „Ich fasse zusammen: [eigene Zusammenfassung]. Was stimmt, was fehlt oder ist ungenau? Nur Hinweise, keine Lösung." Zweck: Eigene Worte, Rückmeldung.
+3. „Stelle mir vier Fragen dazu, eine nach der anderen. Gib die Lösung erst, nachdem ich geantwortet habe." Zweck: Abfragen lassen.
+4. „Ich habe Frage 3 so beantwortet: [Antwort]. Prüfe meine Antwort. Falls du einen Denkfehler findest, gib mir einen Hinweis statt der Lösung." Zweck: Fehler finden lassen.
 
-Danach: Erklärung und Fragen mit dem eigenen Lernmaterial abgleichen, und nach einigen Tagen erneut abfragen lassen.
+Danach gleichst du Erklärung und Fragen mit deinem Lernmaterial ab und lässt dich nach einigen Tagen erneut abfragen.
 
 ---
 
 ## 7. Häufige Fehlgriffe
 
-- **Lösung zuerst.** Die fertige Lösung ansehen, bevor man selbst versucht hat, das Problem zu lösen. Das kann kurzfristig ein gutes Verständnisgefühl erzeugen, ohne dass man die Lösung später selbstständig abrufen oder anwenden kann.
-- **Nur lesen.** Erklärung um Erklärung lesen und nie selbst abrufen oder formulieren.
-- **Quiz nie prüfen.** Fragen und Musterlösungen der KI ungeprüft für richtig halten.
-- **Alles in einem Anlauf.** Ein riesiges Quiz zu einem Thema, das man gerade erst gelesen hat, statt Fragen über mehrere Tage zu verteilen.
-- **Zu leichte Fragen.** Wer sich nur Fragen stellen lässt, die er ohnehin kann, merkt keine Lücken. Schwierigkeit steigern lassen.
-- **Hilfsmittel mit Fähigkeit verwechseln.** Wer Aufgaben nur mit KI löst und in der Prüfung ohne KI dasteht, hat Übung vorgetäuscht.
+- **Lösung zuerst.** Du siehst dir die fertige Lösung an, bevor du selbst versucht hast, das Problem zu lösen. Das kann kurzfristig ein gutes Verständnisgefühl erzeugen, ohne dass du die Lösung später selbstständig abrufen oder anwenden kannst.
+- **Nur lesen.** Du liest Erklärung um Erklärung und rufst nie selbst ab oder formulierst.
+- **Quiz nie prüfen.** Du hältst Fragen und Musterlösungen der KI ungeprüft für richtig.
+- **Alles in einem Anlauf.** Du machst ein riesiges Quiz zu einem Thema, das du gerade erst gelesen hast, statt Fragen über mehrere Tage zu verteilen.
+- **Zu leichte Fragen.** Wenn du dir nur Fragen stellen lässt, die du ohnehin kannst, merkst du keine Lücken. Lass die Schwierigkeit steigern.
+- **Hilfsmittel mit Fähigkeit verwechseln.** Wenn du Aufgaben nur mit KI löst und in der Prüfung ohne KI dastehst, hast du Übung vorgetäuscht.
 
 ---
 
 ## Zum Ausprobieren
 
-Nimm ein Thema, das du gerade lernst, und bereite es als Quiz auf: Gib den Lernstoff oder eine Passage aus deinen Unterlagen mit und lass dir fünf Fragen stellen, mit steigender Schwierigkeit, einzeln und mit Lösung erst nach deiner Antwort. Notiere, welche Fragen du richtig hattest und wo du dich geirrt hast. Prüfe zwei Lösungen der KI gegen dein Lernmaterial. Wiederhole das Quiz nach drei Tagen und vergleiche.
+1. Nimm ein Thema, das du gerade lernst, und bereite es als Quiz auf.
+2. Gib den Lernstoff oder eine Passage aus deinen Unterlagen mit und lass dir fünf Fragen stellen, mit steigender Schwierigkeit, einzeln und mit Lösung erst nach deiner Antwort.
+3. Notiere, welche Fragen du richtig hattest und wo du dich geirrt hast.
+4. Prüfe zwei Lösungen der KI gegen dein Lernmaterial.
+5. Wiederhole das Quiz nach drei Tagen und vergleiche.
 
 ---
 
 ## Fazit
 
-KI kann beim Lernen helfen, wenn sie dich zum Denken bringt, statt es dir abzunehmen: erklären lassen mit eigenen Worten als Gegenprobe, abfragen lassen und selbst antworten, Fehler suchen lassen und Hinweise statt Lösungen verlangen. Aus der Lernforschung gibt es gute Hinweise darauf, dass aktives Abrufen die langfristige Behaltensleistung stärker fördern kann als reines Wiederlesen. Die ersten Studien zu KI-Tutoren zeigen, dass die Gestaltung der Lerninteraktion einen wichtigen Unterschied machen kann, sind aber noch jung. Die Antworten der KI gehören geprüft, auch wenn sie überzeugend klingen (E6). Als Nächstes geht es in E6 um Grenzen und Halluzinationen und darum, wie man KI-Antworten systematisch überprüft.
+KI kann beim Lernen helfen, wenn sie dich zum Denken bringt, statt es dir abzunehmen. Das heißt: erklären lassen mit eigenen Worten als Gegenprobe, abfragen lassen und selbst antworten, Fehler suchen lassen und Hinweise statt Lösungen verlangen. Aus der Lernforschung gibt es gute Hinweise darauf, dass aktives Abrufen die langfristige Behaltensleistung stärker fördern kann als reines Wiederlesen. Die ersten Studien zu KI-Tutoren zeigen, dass die Gestaltung der Lerninteraktion einen wichtigen Unterschied machen kann, sind aber noch jung. Die Antworten der KI gehören geprüft, auch wenn sie überzeugend klingen (E6). Als Nächstes geht es in E6 um Grenzen und Halluzinationen und darum, wie du KI-Antworten systematisch überprüfst.
 
 ```yaml
 dokument: ki-e5-ki-zum-lernen-nutzen
@@ -156,4 +158,7 @@ review_historie:
   - runde: 3
     datum: 2026-10-01
     ergebnis: "Letzter Selbstcheck (Typ-C-Regeln, Anbieternamen im Fließtext, abgeschwächte Formulierungen, Querverweise E2–E7, Konsistenz-Sweep): ein Befund (Anbietername im Fließtext, jetzt nur in der Beispielbox) behoben, sonst keine. Final nach ausdrücklichem OK von David."
+  - runde: 4
+    datum: 2026-10-07
+    ergebnis: "Sprachliche Überarbeitung durch Claude zur Angleichung der Reihe E1 bis E8: Ansprache durchgehend du, Bild vor Regel, einzelne Tabellen in Fließtext oder Liste, Querverweise und kurze Hinweise ergänzt, lange Sätze geteilt. Inhaltlich unverändert (Zahlen, Fachbegriffe, Verweise maschinell geprüft). Freigabe durch David steht aus."
 ```

@@ -6,7 +6,7 @@
 
 ## Worum es geht
 
-Wer an KI denkt, denkt an ein Chatfenster. Dabei begegnet dir KI täglich an Stellen, an denen kein Chat zu sehen ist: Dein Handy versteht Gesprochenes, übersetzt eine Speisekarte per Kamera, sortiert Fotos, fasst eine lange Mail zusammen oder liest ein PDF vor. Meist läuft das unauffällig als Funktion in einer App. Dieser Artikel zeigt die wichtigsten Alltagsfelder, was dort typischerweise gut klappt und wo man zweimal hinschauen sollte. Er schließt den Einsteiger-Track mit einer Übung ab, die alles zusammenführt: ein PDF zusammenfassen lassen und die Zusammenfassung gegenprüfen.
+Wer an KI denkt, denkt an ein Chatfenster. Dabei begegnet dir KI täglich an Stellen, an denen kein Chat zu sehen ist. Dein Handy versteht Gesprochenes, übersetzt eine Speisekarte per Kamera, sortiert Fotos, fasst eine lange Mail zusammen oder liest ein PDF vor. Meist läuft das unauffällig als Funktion in einer App. Dieser Artikel zeigt die wichtigsten Alltagsfelder, was dort typischerweise gut klappt und wo du zweimal hinschauen solltest. Er schließt den Einsteiger-Track mit einer Übung ab, die alles zusammenführt: ein PDF zusammenfassen lassen und die Zusammenfassung gegenprüfen.
 
 Vorausgesetzt werden E1, E2, E3 und E6 (Grenzen und Halluzinationen). Für alles, was du hochlädst oder ansagst, gilt E7.
 
@@ -14,25 +14,25 @@ Vorausgesetzt werden E1, E2, E3 und E6 (Grenzen und Halluzinationen). Für alles
 
 ## 1. Fünf Alltagsfelder im Überblick
 
-| Feld | Was die KI tut | Wo man hinschauen sollte |
-| --- | --- | --- |
-| **Sprache zu Text** | Gesprochenes mitschreiben: Diktat, Untertitel, Protokoll einer Besprechung | Fehlhörungen, erfundene Sätze in Sprechpausen, Namen und Fachbegriffe |
-| **Übersetzen** | Texte, Gespräche und Kamerabilder in eine andere Sprache bringen | Fachbegriffe, Verneinungen, Zahlen, Tonfall |
-| **Zusammenfassen** | Lange Texte, Mails oder Dokumente auf das Wesentliche kürzen | Weggelassenes, verschobene Gewichtung, falsch wiedergegebene Details |
-| **Fotos und Bilder** | Text im Bild erkennen, Motive beschreiben, Fotos sortieren und bearbeiten | Fehlbeschreibungen, versteckte Informationen im Bild |
-| **Dokumente** | PDFs, Tabellen und Formulare auslesen, Fragen dazu beantworten | Falsch gelesene Zahlen, übersehene Stellen, Vertraulichkeit |
+Diese fünf Felder sind der Kern dieses Artikels:
 
-Dazu kommen Funktionen, in denen heute häufig maschinelles Lernen oder andere KI-Verfahren stecken, ohne dass man es merkt: Spamfilter, Rechtschreibhilfen, Navigation, Empfehlungen. Viele beruhen ebenfalls auf gelernten Mustern (E1), und sie haben eine gemeinsame Eigenschaft: Sie liegen meistens richtig, aber nicht immer.
+- **Sprache zu Text:** Die KI schreibt Gesprochenes mit, etwa Diktat, Untertitel oder das Protokoll einer Besprechung. Schau hin bei Fehlhörungen, erfundenen Sätzen in Sprechpausen sowie Namen und Fachbegriffen.
+- **Übersetzen:** Die KI bringt Texte, Gespräche und Kamerabilder in eine andere Sprache. Schau hin bei Fachbegriffen, Verneinungen, Zahlen und Tonfall.
+- **Zusammenfassen:** Die KI kürzt lange Texte, Mails oder Dokumente auf das Wesentliche. Schau hin bei Weggelassenem, verschobener Gewichtung und falsch wiedergegebenen Details.
+- **Fotos und Bilder:** Die KI erkennt Text im Bild, beschreibt Motive, sortiert und bearbeitet Fotos. Schau hin bei Fehlbeschreibungen und versteckten Informationen im Bild.
+- **Dokumente:** Die KI liest PDFs, Tabellen und Formulare aus und beantwortet Fragen dazu. Schau hin bei falsch gelesenen Zahlen, übersehenen Stellen und Vertraulichkeit.
+
+Dazu kommen Funktionen, in denen heute häufig maschinelles Lernen oder andere KI-Verfahren stecken, ohne dass du es merkst: Spamfilter, Rechtschreibhilfen, Navigation, Empfehlungen. Viele beruhen ebenfalls auf gelernten Mustern (E1), und sie haben eine gemeinsame Eigenschaft: Sie liegen meistens richtig, aber nicht immer.
 
 ---
 
 ## 2. Sprache zu Text
 
-Ein Diktat auf dem Handy, automatische Untertitel in einem Video, ein Protokoll nach einer Online-Besprechung: Hinter diesen Funktionen steckt Spracherkennung. Sie ist in den letzten Jahren sehr gut geworden, und gerade deshalb übersieht man ihre Fehler leicht.
+Ein Diktat auf dem Handy, automatische Untertitel in einem Video, ein Protokoll nach einer Online-Besprechung: Hinter diesen Funktionen steckt Spracherkennung. Sie ist in den letzten Jahren sehr gut geworden, und gerade deshalb übersiehst du ihre Fehler leicht.
 
 Dass auch hier etwas „halluzinieren" kann (E6), zeigt eine Untersuchung von 2024 zu einem verbreiteten Spracherkennungssystem. Die Forschenden fanden, dass etwa 1 Prozent der untersuchten Transkriptionen ganze erfundene Phrasen oder Sätze enthielten, die in der Aufnahme gar nicht vorkamen. Rund 38 Prozent dieser erfundenen Stellen stuften sie als ausdrücklich schädlich ein, zum Beispiel wegen Gewalt oder falscher Zuschreibungen. In den untersuchten Daten traten sie häufiger bei längeren nichtsprachlichen Abschnitten auf. Die Zahlen gelten für ein bestimmtes System und die untersuchten Aufnahmen und lassen sich nicht auf jedes Werkzeug übertragen. Die Lehre ist trotzdem allgemein: **Eine Transkription ist ein Entwurf, keine verlässliche Mitschrift.**
 
-Im Alltag heißt das: Für eine Notiz an dich selbst reicht überfliegen. Wird das Ergebnis weitergegeben, etwa als Besprechungsprotokoll, sollten Namen, Zahlen, Termine und Zusagen gegen die Aufnahme oder das Gedächtnis geprüft werden. Und: Eine Aufnahme enthält die Stimmen anderer. Kläre vor dem Aufzeichnen oder Transkribieren, ob du die dafür erforderliche Zustimmung oder Berechtigung hast; die rechtlichen Anforderungen hängen von der Situation ab (siehe E7).
+Im Alltag heißt das: Für eine Notiz an dich selbst reicht überfliegen. Gibst du das Ergebnis weiter, etwa als Besprechungsprotokoll, prüfe Namen, Zahlen, Termine und Zusagen gegen die Aufnahme oder dein Gedächtnis. Und: Eine Aufnahme enthält die Stimmen anderer. Kläre vor dem Aufzeichnen oder Transkribieren, ob du die dafür erforderliche Zustimmung oder Berechtigung hast; die rechtlichen Anforderungen hängen von der Situation ab (siehe E7).
 
 ---
 
@@ -45,7 +45,7 @@ Maschinelle Übersetzung ist eines der ältesten und nützlichsten KI-Felder. F�
 - **Tonfall und Höflichkeit.** Die Übersetzung kann sachlich stimmen und trotzdem zu locker oder zu steif klingen.
 - **Mehrdeutigkeit.** Fehlt Kontext, rät das Werkzeug.
 
-Eine einfache Gegenprobe ist die **Rückübersetzung**: Lass das Ergebnis zurück in die Ausgangssprache übersetzen und vergleiche mit dem Original. Weicht der Sinn ab, ist eine Stelle verdächtig. Stimmt er überein, ist das aber kein Beweis für eine korrekte Übersetzung, denn derselbe Fehler kann in beide Richtungen auftreten. Bei Verträgen, Bescheiden und anderen Texten mit rechtlichen Folgen sollte eine Fachperson hinzugezogen werden.
+Eine einfache Gegenprobe ist die **Rückübersetzung**: Lass das Ergebnis zurück in die Ausgangssprache übersetzen und vergleiche mit dem Original. Weicht der Sinn ab, ist eine Stelle verdächtig. Stimmt er überein, ist das aber kein Beweis für eine korrekte Übersetzung, denn derselbe Fehler kann in beide Richtungen auftreten. Ziehe bei Verträgen, Bescheiden und anderen Texten mit rechtlichen Folgen eine Fachperson hinzu.
 
 ---
 
@@ -53,7 +53,7 @@ Eine einfache Gegenprobe ist die **Rückübersetzung**: Lass das Ergebnis zurüc
 
 Zusammenfassen ist die vielleicht verführerischste Funktion: Aus zehn Seiten werden fünf Sätze. Das spart Zeit, und es ist dennoch heikel, denn jede Zusammenfassung **entscheidet, was weggelassen wird**. Dabei können drei Dinge schiefgehen: Wichtiges fehlt, die Gewichtung verschiebt sich, oder ein Detail wird falsch wiedergegeben (E6).
 
-Wie verbreitet Fehler bei KI-Assistenten sein können, zeigt eine internationale Untersuchung von 2025 unter Beteiligung von 22 öffentlich-rechtlichen Medienorganisationen. Sie prüfte über 3.000 Antworten von vier bekannten KI-Assistenten auf Nachrichtenfragen, in 14 Sprachen und 18 Ländern. Bei 45 Prozent der Antworten fand sich mindestens ein erhebliches Problem, bei 31 Prozent gab es gravierende Mängel bei den Quellenangaben, bei 20 Prozent erhebliche Probleme bei der Genauigkeit, etwa erfundene oder veraltete Angaben. Die Untersuchung testete keine Dokumentzusammenfassungen und zeigt deshalb nicht, dass eine PDF-Zusammenfassung mit denselben Raten fehlerhaft ist; die Werte unterschieden sich außerdem zwischen den Assistenten deutlich. Sie ist aber ein guter Grund, auch bei scheinbar einfachen Informationsaufgaben nicht der bloßen Plausibilität einer Antwort zu vertrauen.
+Wie verbreitet Fehler bei KI-Assistenten sein können, zeigt eine internationale Untersuchung von 2025 unter Beteiligung von 22 öffentlich-rechtlichen Medienorganisationen. Sie prüfte über 3.000 Antworten von vier bekannten KI-Assistenten auf Nachrichtenfragen, in 14 Sprachen und 18 Ländern. Bei 45 Prozent der Antworten fand sich mindestens ein erhebliches Problem, bei 31 Prozent gab es gravierende Mängel bei den Quellenangaben, bei 20 Prozent erhebliche Probleme bei der Genauigkeit, etwa erfundene oder veraltete Angaben. Die Untersuchung testete keine Dokumentzusammenfassungen und zeigt deshalb nicht, dass eine PDF-Zusammenfassung mit denselben Raten fehlerhaft ist. Die Werte unterschieden sich außerdem zwischen den Assistenten deutlich. Die Untersuchung ist aber ein guter Grund, auch bei scheinbar einfachen Informationsaufgaben nicht der bloßen Plausibilität einer Antwort zu vertrauen.
 
 Praktische Regeln: Eine Zusammenfassung ersetzt das Original nicht, wenn etwas davon abhängt. Frag nach, was ausgelassen wurde. Und vergleiche Stichproben, besonders bei Zahlen, Namen und Fristen, mit dem Original (Abschnitt 7).
 
@@ -61,7 +61,7 @@ Praktische Regeln: Eine Zusammenfassung ersetzt das Original nicht, wenn etwas d
 
 ## 5. Fotos und Bilder
 
-Auch bei Fotos arbeitet KI im Hintergrund: Sie erkennt Text im Bild (etwa eine Visitenkarte oder ein Schild), beschreibt Motive, sortiert Fotos nach Personen oder Orten und kann Bilder bearbeiten, etwa einen Hintergrund entfernen. Nützlich ist das auch für Barrierefreiheit, zum Beispiel wenn ein Bild für blinde Menschen beschrieben wird.
+Auch bei Fotos arbeitet KI im Hintergrund. Sie erkennt Text im Bild (etwa eine Visitenkarte oder ein Schild), beschreibt Motive, sortiert Fotos nach Personen oder Orten und kann Bilder bearbeiten, etwa einen Hintergrund entfernen. Nützlich ist das auch für Barrierefreiheit, zum Beispiel wenn ein Bild für blinde Menschen beschrieben wird.
 
 Zwei Dinge sind im Alltag wichtig:
 
@@ -85,13 +85,11 @@ Viele Werkzeuge lesen PDFs, Tabellen, Scans oder Formulare aus und beantworten F
 
 Angenommen, du hast einen öffentlich zugänglichen Bericht oder eine Anleitung als PDF mit 15 Seiten, der keine personenbezogenen oder vertraulichen Angaben enthält (grün in E7). So gehst du vor:
 
-| Schritt | Was du tust | Warum |
-| --- | --- | --- |
-| 1 | Bitte um eine Zusammenfassung in fünf Sätzen und um eine Liste der **drei wichtigsten Zahlen oder Fakten mit Seitenangabe** | Die Seitenangabe macht Prüfen leicht (aber auch sie ist nur eine Behauptung der KI, E6) |
-| 2 | Öffne das PDF und suche jede genannte Zahl und jede Stelle selbst | Stimmt der Wert, steht er auf der genannten Seite? |
-| 3 | Frag: „Was hast du ausgelassen, was für jemanden mit [deinem Ziel] wichtig sein könnte?" | Zusammenfassen heißt auswählen; so wird die Auswahl sichtbar |
-| 4 | Lies selbst einen Abschnitt, den die Zusammenfassung kaum berührt, und vergleiche | Fehlt dort etwas Wichtiges? |
-| 5 | Notiere, was falsch, ungenau oder weggelassen war | So lernst du, wie zuverlässig dieses Werkzeug bei diesem Dokumenttyp ist |
+1. Bitte um eine Zusammenfassung in fünf Sätzen und um eine Liste der **drei wichtigsten Zahlen oder Fakten mit Seitenangabe**. Die Seitenangabe macht Prüfen leicht (aber auch sie ist nur eine Behauptung der KI, E6).
+2. Öffne das PDF und suche jede genannte Zahl und jede Stelle selbst. Stimmt der Wert, steht er auf der genannten Seite?
+3. Frag: „Was hast du ausgelassen, was für jemanden mit [deinem Ziel] wichtig sein könnte?" Zusammenfassen heißt auswählen, so wird die Auswahl sichtbar.
+4. Lies selbst einen Abschnitt, den die Zusammenfassung kaum berührt, und vergleiche. Fehlt dort etwas Wichtiges?
+5. Notiere, was falsch, ungenau oder weggelassen war. So lernst du, wie zuverlässig dieses Werkzeug bei diesem Dokumenttyp ist.
 
 Beachte: Die Gegenprüfung findet **im Dokument** statt, nicht durch die Frage „Stimmt das?" an dieselbe KI (E6).
 
@@ -102,7 +100,7 @@ Beachte: Die Gegenprüfung findet **im Dokument** statt, nicht durch die Frage �
 - **„Funktion in der App, also zuverlässig."** Auch eine eingebaute Funktion beruht auf Mustern und liegt manchmal daneben.
 - **Zusammenfassung statt Lesen, wenn es wichtig ist.** Wo etwas davon abhängt, gehört das Original dazu.
 - **Nur auf Text achten.** Auch Aufnahmen, Fotos und Dokumente enthalten Daten anderer (E7).
-- **Übersetzung ohne Gegenprobe bei Wichtigem.** Zahlen, Verneinungen und Fristen kurz prüfen.
+- **Übersetzung ohne Gegenprobe bei Wichtigem.** Prüfe Zahlen, Verneinungen und Fristen kurz.
 - **Aufnahmen ohne erforderliche Zustimmung oder Berechtigung.** Kläre das vor dem Aufzeichnen.
 - **„Die KI hat das PDF gelesen, also kennt sie jede Stelle."** Auch bei Dokumenten können Inhalte übersehen oder falsch gedeutet werden.
 
@@ -110,13 +108,16 @@ Beachte: Die Gegenprüfung findet **im Dokument** statt, nicht durch die Frage �
 
 ## Zum Ausprobieren
 
-Wähle ein PDF, das du ohne Bedenken hochladen darfst, etwa eine öffentliche Anleitung oder einen Bericht, und gehe die fünf Schritte aus Abschnitt 7 durch. Halte fest, wie viele der genannten Fakten stimmen, was die Zusammenfassung ausgelassen hat und wie lange die Gegenprüfung gedauert hat. Wenn du magst, mache dieselbe Probe mit einem zweiten Werkzeug und vergleiche die Ergebnisse.
+1. Wähle ein PDF, das du ohne Bedenken hochladen darfst, etwa eine öffentliche Anleitung oder einen Bericht.
+2. Gehe die fünf Schritte aus Abschnitt 7 durch.
+3. Halte fest, wie viele der genannten Fakten stimmen, was die Zusammenfassung ausgelassen hat und wie lange die Gegenprüfung gedauert hat.
+4. Optional: Mache dieselbe Probe mit einem zweiten Werkzeug und vergleiche die Ergebnisse.
 
 ---
 
 ## Fazit
 
-KI steckt längst in Spracherkennung, Übersetzung, Zusammenfassungen, Foto-Funktionen und Dokumenten-Assistenten, oft ohne dass ein Chat zu sehen ist. Diese Funktionen sind nützlich, ihre Ergebnisse sind aber nicht automatisch zuverlässig. Je wichtiger die Information, desto gründlicher gehört sie geprüft: Namen, Zahlen und Verneinungen zuerst, das Original dazu, wo etwas davon abhängt. Alles, was du hochlädst, aufnimmst oder ansagst, gehört durch die Daten-Ampel aus E7. Damit schließt der Einsteiger-Track: Du weißt, was KI ist (E1), welche Werkzeuge es gibt (E2), wie man ein gutes Gespräch führt (E3, E4), wie man damit lernt (E5), wo die Grenzen liegen (E6), welche Daten draußen bleiben (E7) und wo KI im Alltag steckt (E8). Der Aufbau-Track baut darauf auf.
+KI steckt längst in Spracherkennung, Übersetzung, Zusammenfassungen, Foto-Funktionen und Dokumenten-Assistenten, oft ohne dass ein Chat zu sehen ist. Diese Funktionen sind nützlich, ihre Ergebnisse sind aber nicht automatisch zuverlässig. Je wichtiger die Information, desto gründlicher gehört sie geprüft: Namen, Zahlen und Verneinungen zuerst, das Original dazu, wo etwas davon abhängt. Alles, was du hochlädst, aufnimmst oder ansagst, gehört durch die Daten-Ampel aus E7. Damit schließt der Einsteiger-Track: Du weißt, was KI ist (E1), welche Werkzeuge es gibt (E2), wie du ein gutes Gespräch führst (E3, E4), wie du damit lernst (E5), wo die Grenzen liegen (E6), welche Daten draußen bleiben (E7) und wo KI im Alltag steckt (E8). Der Aufbau-Track baut darauf auf.
 
 ```yaml
 dokument: ki-e8-ki-alltag-ausserhalb-des-chats
@@ -143,4 +144,7 @@ review_historie:
   - runde: 2
     datum: 2026-10-01
     ergebnis: "Letzter Selbstcheck (Typ-C-Regeln, keine Produktnamen im Fließtext, Querverweise E1 bis E3, E6, E7, Header und YAML konsistent, Voraussetzungen um E3 ergänzt). Final nach ausdrücklichem OK von David; offen bleiben die Original-PDFs der beiden Studien."
+  - runde: 3
+    datum: 2026-10-07
+    ergebnis: "Sprachliche Überarbeitung durch Claude zur Angleichung der Reihe E1 bis E8: Ansprache durchgehend du, Bild vor Regel, einzelne Tabellen in Fließtext oder Liste, Querverweise und kurze Hinweise ergänzt, lange Sätze geteilt. Inhaltlich unverändert (Zahlen, Fachbegriffe, Verweise maschinell geprüft). Freigabe durch David steht aus."
 ```

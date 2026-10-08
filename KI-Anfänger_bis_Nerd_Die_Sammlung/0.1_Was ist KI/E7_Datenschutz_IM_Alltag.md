@@ -6,21 +6,19 @@
 
 ## Worum es geht
 
-Ein Chatfenster fühlt sich an wie ein privates Gespräch. Bei einem cloudbasierten Chat-Assistenten ist es das technisch nicht: Deine Eingabe wird an die Infrastruktur des Anbieters übertragen und dort verarbeitet. „Eingabe" meint dabei nicht nur getippten Text, sondern auch eingefügte Inhalte, hochgeladene Dateien, Screenshots, Fotos und Audioaufnahmen. Dieser Artikel zeigt, welche Daten du besser nicht eingibst, wie du trotzdem mit realen Aufgaben arbeiten kannst (weglassen, ersetzen, erfinden), welche Einstellungen und Kontoarten einen Unterschied machen und was in Ausbildung, Schule und Betrieb zusätzlich gilt. Am Ende steht eine kleine Übung: deine eigene Daten-Ampel.
+Ein Chatfenster fühlt sich an wie ein privates Gespräch. Bei einem cloudbasierten Chat-Assistenten ist es das technisch nicht: Deine Eingabe wird an die Infrastruktur des Anbieters übertragen und dort verarbeitet. „Eingabe" meint dabei nicht nur getippten Text, sondern auch eingefügte Inhalte, hochgeladene Dateien, Screenshots, Fotos und Audioaufnahmen. Dieser Artikel zeigt, welche Daten du besser nicht eingibst und wie du trotzdem mit realen Aufgaben arbeiten kannst (weglassen, ersetzen, erfinden). Außerdem erfährst du, welche Einstellungen und Kontoarten einen Unterschied machen und was in Ausbildung, Schule und Betrieb zusätzlich gilt. Am Ende steht eine kleine Übung: deine eigene Daten-Ampel.
 
-Vorausgesetzt werden E1 (Gesprächskontext, Memory), E2 (Werkzeugtypen) und E3 (Gespräch führen). Der Artikel ist keine Rechtsberatung, sondern eine Orientierung für den Alltag.
+Vorausgesetzt werden E1 (Gesprächskontext, Memory), E2 (Werkzeugtypen) und E3 (Gespräch führen). Der Artikel ist eine Orientierung für den Alltag und keine Rechtsberatung.
 
 ---
 
 ## 1. Warum Eingaben ein Thema sind
 
-Bei einem Cloud-Chat-Assistenten wird deine Eingabe auf Servern des Anbieters verarbeitet. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) rät dazu, **so wenig sensible Daten wie möglich** mit einer KI-Anwendung zu teilen, die Geschäftsbedingungen und die Datenschutzerklärung zu lesen und zu bedenken, wie der Anbieter mit den Eingaben umgeht und welche Zugriffs- und Verarbeitungsmöglichkeiten dafür vorgesehen sind. (Das BSI äußert sich zur Sicherheit, die Datenschutzaufsichtsbehörden zum Datenschutzrecht; beides kommt in diesem Artikel vor.) Was konkret geschieht, unterscheidet sich je nach Anbieter, Tarif und Einstellung. Drei Dinge werden dabei von Einsteigern oft verwechselt:
+Bei einem Cloud-Chat-Assistenten wird deine Eingabe auf Servern des Anbieters verarbeitet. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) rät dazu, **so wenig sensible Daten wie möglich** mit einer KI-Anwendung zu teilen. Außerdem rät es, die Geschäftsbedingungen und die Datenschutzerklärung zu lesen und zu bedenken, wie der Anbieter mit den Eingaben umgeht und welche Zugriffs- und Verarbeitungsmöglichkeiten dafür vorgesehen sind. (Das BSI äußert sich zur Sicherheit, die Datenschutzaufsichtsbehörden zum Datenschutzrecht; beides kommt in diesem Artikel vor.) Was konkret geschieht, unterscheidet sich je nach Anbieter, Tarif und Einstellung. Drei Dinge werden dabei von Einsteigern oft verwechselt:
 
-| Begriff | Vereinfacht | Frage dazu |
-| --- | --- | --- |
-| **Chatverlauf** | Das Gespräch wird für dich im Konto gespeichert und angezeigt | Bleibt der Chat in meinem Konto sichtbar? |
-| **Memory** | Bestimmte Angaben können in späteren Gesprächen wieder auftauchen (E1) | Merkt sich das Werkzeug etwas über mich? |
-| **Modelltraining** | Inhalte können zur Verbesserung eines Modells verwendet werden | Darf der Anbieter meine Eingaben dafür nutzen? |
+- **Chatverlauf:** Das Gespräch wird für dich im Konto gespeichert und angezeigt. Frage dazu: Bleibt der Chat in meinem Konto sichtbar?
+- **Memory:** Bestimmte Angaben können in späteren Gesprächen wieder auftauchen (E1). Frage dazu: Merkt sich das Werkzeug etwas über mich?
+- **Modelltraining:** Inhalte können zur Verbesserung eines Modells verwendet werden. Frage dazu: Darf der Anbieter meine Eingaben dafür nutzen?
 
 Das sind drei verschiedene Funktionen. Aus E1 gilt weiterhin: Ein Modell „lernt" nicht bei jedem Gespräch von selbst dazu. Ob Eingaben später ins Training einfließen, ist eine Entscheidung des Anbieters und seiner Einstellungen, kein automatischer Vorgang. Dazu kommt eine vierte Frage, die mit keiner der drei identisch ist: **Wie lange werden Inhalte aufbewahrt**, auch wenn sie nicht im Verlauf erscheinen?
 
@@ -30,19 +28,17 @@ Daraus folgt eine einfache Grundregel: **Die beste Datenschutzmaßnahme ist, mö
 
 ## 2. Welche Daten besonders heikel sind
 
-| Kategorie | Beispiele | Warum heikel |
-| --- | --- | --- |
-| **Personenbezogene Daten** | Name, Adresse, Telefonnummer, E-Mail, Kennzeichen, Kundennummer, Fotos, Aussagen über eine bestimmte Person | Gemeint sind alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen (Art. 4 Nr. 1 DSGVO). Auch eine Kombination kann ausreichen, etwa „die Abteilungsleiterin der Filiale X". |
-| **Besondere Kategorien** | Gesundheit, rassische und ethnische Herkunft, politische Meinung, Religion, Gewerkschaftszugehörigkeit, Sexualleben oder sexuelle Orientierung, genetische Daten sowie biometrische Daten, wenn sie zur eindeutigen Identifizierung einer Person verarbeitet werden (Art. 9 DSGVO) | Besonders schützenswert; ihre Verarbeitung ist nur unter engen Voraussetzungen erlaubt. Nicht jedes Foto gehört allein deshalb in diese Kategorie. |
-| **Zugangsdaten und Geheimnisse** | Passwörter, API-Schlüssel, Tokens, private Schlüssel, Verbindungsstrings mit Passwort | Wer sie hat, kann sich anmelden. Eine einmal eingegebene Zugangsinformation solltest du als offengelegt behandeln und ersetzen. Das ist ein IT-Sicherheitsproblem, kein reines Datenschutzproblem. |
-| **Vertrauliche Betriebsinformationen und Geschäftsgeheimnisse** | Interne Dokumente, Kundenlisten, Preise, Quellcode des Arbeitgebers, nicht veröffentlichte Pläne | Vertraulichkeitspflichten und Arbeitsvertrag gelten auch gegenüber einem KI-Dienst. |
-| **Vertrauliche Inhalte und fremde Rechte** | Geschützte Texte, Material unter Vertraulichkeitsvereinbarung, Unterlagen Dritter | Hier geht es oft um Urheberrecht oder vertragliche Vertraulichkeit, nicht automatisch um Datenschutz (siehe auch E5). Du darfst nicht alles weitergeben, nur weil es dir vorliegt. |
+- **Personenbezogene Daten:** Name, Adresse, Telefonnummer, E-Mail, Kennzeichen, Kundennummer, Fotos, Aussagen über eine bestimmte Person. Gemeint sind alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen (Art. 4 Nr. 1 DSGVO). Auch eine Kombination kann ausreichen, etwa „die Abteilungsleiterin der Filiale X".
+- **Besondere Kategorien:** Gesundheit, rassische und ethnische Herkunft, politische Meinung, Religion, Gewerkschaftszugehörigkeit, Sexualleben oder sexuelle Orientierung, genetische Daten sowie biometrische Daten, wenn sie zur eindeutigen Identifizierung einer Person verarbeitet werden (Art. 9 DSGVO). Diese Daten sind besonders schützenswert, ihre Verarbeitung ist nur unter engen Voraussetzungen erlaubt. Nicht jedes Foto gehört allein deshalb in diese Kategorie.
+- **Zugangsdaten und Geheimnisse:** Passwörter, API-Schlüssel, Tokens, private Schlüssel, Verbindungsstrings mit Passwort. Wer sie hat, kann sich anmelden. Eine einmal eingegebene Zugangsinformation solltest du als offengelegt behandeln und ersetzen. Das ist ein IT-Sicherheitsproblem und kein reines Datenschutzproblem.
+- **Vertrauliche Betriebsinformationen und Geschäftsgeheimnisse:** Interne Dokumente, Kundenlisten, Preise, Quellcode des Arbeitgebers, nicht veröffentlichte Pläne. Vertraulichkeitspflichten und Arbeitsvertrag gelten auch gegenüber einem KI-Dienst.
+- **Vertrauliche Inhalte und fremde Rechte:** Geschützte Texte, Material unter Vertraulichkeitsvereinbarung, Unterlagen Dritter. Hier geht es oft um Urheberrecht oder vertragliche Vertraulichkeit, nicht automatisch um Datenschutz (siehe auch E5). Du darfst nicht alles weitergeben, nur weil es dir vorliegt.
 
-Eine Unterscheidung ist wichtig: Es gibt einen Unterschied zwischen **deinen eigenen** Daten und den Daten **anderer**. Bei eigenen Angaben kannst du oft selbst entscheiden, was du preisgibst, auch wenn Sparsamkeit meist klüger ist. Prüfe aber, ob darin auch Daten anderer vorkommen oder ob Regeln deiner Schule, Ausbildung oder Arbeit gelten. Bei Daten anderer (Kundschaft, Kolleginnen, Mitlernende, Patienten, Familie) trägst du Verantwortung dafür, wohin sie gelangen.
+Wichtig ist die Unterscheidung zwischen **deinen eigenen** Daten und den Daten **anderer**. Bei eigenen Angaben kannst du oft selbst entscheiden, was du preisgibst, auch wenn Sparsamkeit meist klüger ist. Prüfe aber, ob darin auch Daten anderer vorkommen oder ob Regeln deiner Schule, Ausbildung oder Arbeit gelten. Bei Daten anderer (Kundschaft, Kolleginnen, Mitlernende, Patienten, Familie) trägst du Verantwortung dafür, wohin sie gelangen.
 
 ### Auch Dateien und Bilder sind Eingaben
 
-Ein Screenshot einer Fehlermeldung kann Benutzernamen, E-Mail-Adressen, Hostnamen, IP-Adressen, Dateipfade, Ticket- oder Kundennummern zeigen, ohne dass du beim schnellen Hinsehen daran denkst. Logdateien, PDFs, Tabellen und Word-Dokumente enthalten oft mehr, als im Moment relevant ist. Dazu können Dateien neben dem sichtbaren Inhalt weitere Informationen tragen, etwa Dateinamen, Kommentare oder Metadaten. Für Dateien gilt dieselbe Regel wie für Text: nur das hochladen, was für die Aufgabe nötig ist, und vorher ansehen, was wirklich drin steht.
+Ein Screenshot einer Fehlermeldung kann Benutzernamen, E-Mail-Adressen, Hostnamen, IP-Adressen, Dateipfade, Ticket- oder Kundennummern zeigen, ohne dass du beim schnellen Hinsehen daran denkst. Logdateien, PDFs, Tabellen und Word-Dokumente enthalten oft mehr, als im Moment relevant ist. Dazu können Dateien neben dem sichtbaren Inhalt weitere Informationen tragen, etwa Dateinamen, Kommentare oder Metadaten. Für Dateien gilt dieselbe Regel wie für Text: nur das hochladen, was für die Aufgabe nötig ist, und vorher ansehen, was wirklich drin steht. Mehr zu Fotos, Bildern und Dokumenten im Alltag steht in E8.
 
 ---
 
@@ -62,13 +58,17 @@ Rot bedeutet nicht, dass solche Daten unter keinen Umständen mit KI verarbeitet
 
 ## 4. Trotzdem arbeiten: weglassen, ersetzen, erfinden
 
-Meist braucht die KI nicht die echten Daten, sondern die **Struktur** der Aufgabe.
+Meist braucht die KI die **Struktur** der Aufgabe, nicht die echten Daten.
 
 - **Weglassen.** Alles streichen, was für die Aufgabe nicht nötig ist (Adresse, Telefonnummer, Kundennummer). Statt einer ganzen Datei genügt oft eine einzelne bereinigte Zeile.
 - **Durch Platzhalter ersetzen.** Aus „Frau Meier von der Stadtwerke Beispielstadt GmbH" wird „Kundin A von Unternehmen X".
 - **Beispieldaten erfinden.** Statt einer echten Logdatei eine mit ausgedachten Werten. Für Beispiele sind eigens Adressbereiche und Domains reserviert: die IP-Bereiche 192.0.2.0/24, 198.51.100.0/24 und 203.0.113.0/24 sowie Domains wie example.com.
 
-**Platzhalter machen einen echten Fall nicht automatisch anonym.** Wenn „Kundin A" weiterhin für eine wirkliche Person steht, können die Angaben trotz ersetztem Namen personenbezogen bleiben, etwa weil sie sich mit Zusatzwissen zuordnen lassen (im besten Fall spricht man dann von Pseudonymisierung, bei der die Zuordnung getrennt und gesichert aufbewahrt wird). Die Hamburgische Datenschutzbehörde und die Datenschutzkonferenz (DSK) weisen darauf hin, dass es nicht reicht, Namen und Anschriften zu entfernen: Aus dem Zusammenhang können sich Rückschlüsse auf Personen ergeben. Ein Beispiel: „Die einzige Auszubildende in Filiale X, die am 12. Mai gefehlt hat" ist auch ohne Namen eindeutig. Prüfe deshalb den ganzen Kontext: Können Ort, Funktion, Datum, ein seltenes Ereignis oder eine Kombination daraus die Person oder das Unternehmen erkennen lassen? Wenn ja, abstrahiere den Fall weiter oder nimm vollständig erfundene Daten. Ob Angaben wirklich anonym sind, hängt vom gesamten Kontext ab; die verlässlichere Strategie ist deshalb, nicht mehr preiszugeben als nötig.
+**Platzhalter machen einen echten Fall nicht automatisch anonym.** Wenn „Kundin A" weiterhin für eine wirkliche Person steht, können die Angaben trotz ersetztem Namen personenbezogen bleiben, etwa weil sie sich mit Zusatzwissen zuordnen lassen. Im besten Fall spricht man dann von Pseudonymisierung, bei der die Zuordnung getrennt und gesichert aufbewahrt wird.
+
+Die Hamburgische Datenschutzbehörde und die Datenschutzkonferenz (DSK) weisen darauf hin, dass es nicht reicht, Namen und Anschriften zu entfernen: Aus dem Zusammenhang können sich Rückschlüsse auf Personen ergeben. Ein Beispiel: „Die einzige Auszubildende in Filiale X, die am 12. Mai gefehlt hat" ist auch ohne Namen eindeutig.
+
+Prüfe deshalb den ganzen Kontext: Können Ort, Funktion, Datum, ein seltenes Ereignis oder eine Kombination daraus die Person oder das Unternehmen erkennen lassen? Wenn ja, abstrahiere den Fall weiter oder nimm vollständig erfundene Daten. Ob Angaben wirklich anonym sind, hängt vom gesamten Kontext ab. Die verlässlichere Strategie ist deshalb, nicht mehr preiszugeben als nötig.
 
 **Beispiel: Konfigurationsdatei.** (Vollständig erfundenes Beispiel, keine echte Konfiguration.) Du möchtest wissen, warum eine Datenbankverbindung fehlschlägt, und hast diese Zeile:
 
@@ -111,7 +111,7 @@ Dasselbe Werkzeug kann sich je nach Konto unterschiedlich verhalten. Vier getren
 Sobald du in einer Organisation arbeitest, kommt ein zweiter Maßstab dazu: die Regeln der Organisation.
 
 - **Interne Regeln gehen vor.** Datenschutzaufsichtsbehörden empfehlen Organisationen, klare und dokumentierte interne Regeln aufzustellen, ob, wofür und unter welchen Bedingungen KI-Werkzeuge genutzt werden dürfen, möglichst mit Beispielen für erlaubte und untersagte Fälle. Frag nach, wenn du keine kennst.
-- **Schatten-KI.** Wenn Beschäftigte private KI-Werkzeuge ohne Freigabe für die Arbeit verwenden, spricht man von Schatten-KI. In einer Bitkom-Befragung von 604 Unternehmen ab 20 Beschäftigten aus den Kalenderwochen 27 bis 32 des Jahres 2025 (veröffentlicht am 21. Oktober 2025) berichteten 8 Prozent von verbreiteter und weitere 17 Prozent von einzelner Nutzung dieser Art; weitere 17 Prozent vermuteten sie, ohne es sicher zu wissen. 23 Prozent hatten Regeln für KI-Werkzeuge aufgestellt. Die Zahlen beruhen auf Auskünften der Unternehmen. Das Risiko für dich: Du handelst womöglich gegen interne Vorgaben, ohne es zu wissen.
+- **Schatten-KI.** Wenn Beschäftigte private KI-Werkzeuge ohne Freigabe für die Arbeit verwenden, spricht man von Schatten-KI. In einer Bitkom-Befragung von 604 Unternehmen ab 20 Beschäftigten aus den Kalenderwochen 27 bis 32 des Jahres 2025 (veröffentlicht am 21. Oktober 2025; dieselbe Befragung steht in E1) berichteten 8 Prozent von verbreiteter und weitere 17 Prozent von einzelner Nutzung dieser Art. Weitere 17 Prozent vermuteten sie, ohne es sicher zu wissen. 23 Prozent hatten Regeln für KI-Werkzeuge aufgestellt. Die Zahlen beruhen auf Auskünften der Unternehmen. Das Risiko für dich: Du handelst womöglich gegen interne Vorgaben, ohne es zu wissen.
 - **Personenbezogene Daten und Anbieter (für Organisationen).** Die Hamburgische Datenschutzbehörde empfiehlt in ihrer Checkliste von 2023 für Unternehmen und Behörden, keine personenbezogenen Daten an einen Chatbot zu übermitteln, wenn sich der Anbieter eine Nutzung für eigene Zwecke vorbehält. Sie empfiehlt außerdem berufliche statt privater Konten, nach Möglichkeit ohne den Namen einzelner Beschäftigter. Ob ein externer Dienst eingesetzt werden darf, klärt die Organisation, einschließlich Rechtsgrundlage und gegebenenfalls eines Vertrags zur Auftragsverarbeitung (Art. 28 DSGVO). Für dich heißt das: Das ist nicht deine Entscheidung allein, also nutze nur freigegebene Werkzeuge.
 - **Ausbildung und Umschulung.** Auch Unterlagen deines Trägers, Prüfungsunterlagen, Daten aus Praktikumsbetrieben und Namen von Mitlernenden gehören nicht ungefragt in ein Chatfenster. Frag bei Zweifeln im Praktikumsbetrieb nach, bevor du etwas eingibst.
 
@@ -132,10 +132,10 @@ Es kann passieren: Eine Kundenliste, ein Schlüssel, ein vertrauliches Dokument 
 ## 8. Häufige Fehlgriffe
 
 - **„Es ist doch nur ein kurzer Ausschnitt."** Auch kurze Ausschnitte können Namen, Schlüssel oder Interna enthalten.
-- **Schwärzen im Kopf.** Wer „ich lasse den Namen weg" sagt, übersieht Adresse, Ort, Funktion und Datum, die zusammen die Person verraten.
+- **Schwärzen im Kopf.** Wenn du „ich lasse den Namen weg" sagst, übersiehst du Adresse, Ort, Funktion und Datum, die zusammen die Person verraten.
 - **Nur auf Text achten.** Screenshots, Dateien und Logs enthalten oft mehr, als du siehst.
 - **„Training ist aus, also ist alles privat."** Training, Verlauf, Aufbewahrung, Memory und angebundene Dienste sind verschiedene Fragen.
-- **Alles verbieten.** Wer aus Vorsicht gar nicht mehr nutzt, verzichtet auf viele unkritische Einsatzmöglichkeiten (grün in Abschnitt 3).
+- **Alles verbieten.** Wenn du aus Vorsicht gar nicht mehr nutzt, verzichtest du auf viele unkritische Einsatzmöglichkeiten (grün in Abschnitt 3).
 - **Einstellungen einmal geprüft, nie wieder.** Anbieter ändern Bedingungen und Voreinstellungen.
 - **Löschen mit Sicherheit verwechseln.** Gelöscht im Verlauf heißt nicht automatisch überall und sofort gelöscht.
 - **Privat und dienstlich mischen.** Dienstliche Inhalte gehören nicht in private Konten, solange keine Regel das erlaubt.
@@ -144,13 +144,17 @@ Es kann passieren: Eine Kundenliste, ein Schlüssel, ein vertrauliches Dokument 
 
 ## Zum Ausprobieren: Deine eigene Daten-Ampel
 
-Lege eine Tabelle mit den Spalten **Eintrag, Farbe (grün, gelb, rot) und Wie vereinfachen?** an und ordne mindestens zehn Dinge zu, die in deinem Alltag vorkommen: etwa Lernnotizen, Fehlermeldungen, Konfigurationsdateien, Screenshots, Texte aus dem Praktikum, Namen von Personen, Zugangsdaten, Übungsaufgaben, Bewerbungsunterlagen. Notiere bei jedem gelben Eintrag, **wie** du ihn vereinfachen würdest (weglassen, ersetzen, erfinden). Mach aus einem gelben Eintrag eine kleine Bereinigungsprobe: Beschreibe das Original kurz für dich selbst, ohne sensible Details aufzuschreiben oder hochzuladen, formuliere die bereinigte Eingabe und prüfe sie noch einmal darauf, ob sich Personen oder Firmen indirekt erkennen lassen. Kopiere für diese Übung keine echten sensiblen Daten in einen Chat. Öffne danach die Einstellungen deines Chat-Werkzeugs und beantworte die vier Fragen aus Abschnitt 5 für dein Konto. Wiederhole den Check, wenn du das Werkzeug oder das Konto wechselst.
+1. Lege eine Tabelle mit den Spalten **Eintrag, Farbe (grün, gelb, rot) und Wie vereinfachen?** an und ordne mindestens zehn Dinge zu, die in deinem Alltag vorkommen: etwa Lernnotizen, Fehlermeldungen, Konfigurationsdateien, Screenshots, Texte aus dem Praktikum, Namen von Personen, Zugangsdaten, Übungsaufgaben, Bewerbungsunterlagen.
+2. Notiere bei jedem gelben Eintrag, **wie** du ihn vereinfachen würdest (weglassen, ersetzen, erfinden).
+3. Mach aus einem gelben Eintrag eine kleine Bereinigungsprobe. Beschreibe das Original kurz für dich selbst, ohne sensible Details aufzuschreiben oder hochzuladen. Formuliere die bereinigte Eingabe und prüfe sie noch einmal darauf, ob sich Personen oder Firmen indirekt erkennen lassen. Kopiere für diese Übung keine echten sensiblen Daten in einen Chat.
+4. Öffne danach die Einstellungen deines Chat-Werkzeugs und beantworte die vier Fragen aus Abschnitt 5 für dein Konto.
+5. Wiederhole den Check, wenn du das Werkzeug oder das Konto wechselst.
 
 ---
 
 ## Fazit
 
-Ein cloudbasierter Chat-Assistent ist ein Dienst eines Anbieters, und alles, was du hineinschreibst oder hochlädst, wird dort verarbeitet. Besonders heikel sind personenbezogene Daten, besondere Kategorien wie Gesundheitsdaten, Zugangsdaten, vertrauliche Betriebsinformationen und Geschäftsgeheimnisse sowie Material mit fremden Rechten. Die beste Maßnahme ist, nicht mehr preiszugeben als nötig: Viele Aufgaben lassen sich mit weggelassenen, ersetzten oder erfundenen Daten bearbeiten, ohne echte personenbezogene oder vertrauliche Daten zu verwenden. Verlauf, Memory, Training und Aufbewahrung sind vier getrennte Fragen, und Konto, Tarif und Einstellungen verändern die Antworten darauf, deshalb lohnt sich ein regelmäßiger Blick. In Ausbildung und Betrieb gelten zusätzlich die Regeln und Freigaben der Organisation. Und wenn doch etwas im Chat gelandet ist: sofort melden, Zugangsdaten ändern lassen und erst nach Rücksprache löschen. Damit ist der Einsteiger-Track bis auf den Abschlussartikel E8 vollständig.
+Ein cloudbasierter Chat-Assistent ist ein Dienst eines Anbieters, und alles, was du hineinschreibst oder hochlädst, wird dort verarbeitet. Besonders heikel sind personenbezogene Daten, besondere Kategorien wie Gesundheitsdaten, Zugangsdaten, vertrauliche Betriebsinformationen und Geschäftsgeheimnisse sowie Material mit fremden Rechten. Die beste Maßnahme ist, nicht mehr preiszugeben als nötig: Viele Aufgaben lassen sich mit weggelassenen, ersetzten oder erfundenen Daten bearbeiten, ohne echte personenbezogene oder vertrauliche Daten zu verwenden. Verlauf, Memory, Training und Aufbewahrung sind vier getrennte Fragen. Konto, Tarif und Einstellungen verändern die Antworten darauf, deshalb lohnt sich ein regelmäßiger Blick. In Ausbildung und Betrieb gelten zusätzlich die Regeln und Freigaben der Organisation. Und wenn doch etwas im Chat gelandet ist: sofort melden, Zugangsdaten ändern lassen und erst nach Rücksprache löschen. Damit ist der Einsteiger-Track bis auf den Abschlussartikel E8 vollständig.
 
 ```yaml
 dokument: ki-e7-datenschutz-im-alltag
@@ -184,4 +188,7 @@ review_historie:
   - runde: 3
     datum: 2026-10-01
     ergebnis: "Letzter Selbstcheck (Typ-C-Regeln, keine Produktnamen im Fließtext, Header und YAML konsistent). Auf Davids Hinweis, nicht zu trocken zu werden: Abschnitt 6 (Hamburger Checkliste) und Art.-33-Satz gekürzt, keine neuen Rechtsdetails. Final nach ausdrücklichem OK von David; offen bleibt nur der EUR-Lex-Artikelwortlaut."
+  - runde: 4
+    datum: 2026-10-07
+    ergebnis: "Sprachliche Überarbeitung durch Claude zur Angleichung der Reihe E1 bis E8: Ansprache durchgehend du, Bild vor Regel, einzelne Tabellen in Fließtext oder Liste, Querverweise und kurze Hinweise ergänzt, lange Sätze geteilt. Inhaltlich unverändert (Zahlen, Fachbegriffe, Verweise maschinell geprüft). Freigabe durch David steht aus."
 ```
